@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "HoNAvatarManagement.PowerShell": {
+      "commandName": "Executable",
+      "executablePath": "pwsh",
+      "commandLineArgs": "-NoExit -Command \"Import-Module .\\HoNAvatarManager.psd1\""
+    }
+  }
+}
