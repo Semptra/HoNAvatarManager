@@ -10,8 +10,9 @@ Hero avatar manager for Heroes of Newerth.
 
 ### How to run
 
-1. Run `Import-Module HoNAvatarManager`
-2. To make the completion process easier, run `Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete`
+1. Run PowerShell Core as Administrator
+2. Run `Import-Module HoNAvatarManager`
+3. To make the completion process easier, run `Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete`
 
 ## Cmdlets list
 
