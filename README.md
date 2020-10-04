@@ -8,6 +8,11 @@ Hero avatar manager for Heroes of Newerth.
 2. Run PowerShell Core as Administrator
 3. Run `Install-Module HoNAvatarManager`
 
+### How to update
+
+1. Run PowerShell Core as Administrator
+2. Run `Install-Module HoNAvatarManager -Force`
+
 ### How to run
 
 1. Run PowerShell Core as Administrator
