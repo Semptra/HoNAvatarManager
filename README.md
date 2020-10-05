@@ -21,5 +21,6 @@ Hero avatar manager for Heroes of Newerth.
 
 ## Cmdlets list
 
+* [Remove-HeroAvatar](./src/HoNAvatarManagement.PowerShell/Docs/Remove-HeroAvatar.md)
 * [Set-HeroAvatar](./src/HoNAvatarManagement.PowerShell/Docs/Set-HeroAvatar.md)
 * [Set-HoNPath](./src/HoNAvatarManagement.PowerShell/Docs/Set-HoNPath.md)
