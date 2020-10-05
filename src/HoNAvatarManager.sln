@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HoNAvatarManager.Core", "HoNAvatarManager.Core\HoNAvatarManager.Core.csproj", "{7199CBCA-9B27-429C-B7B7-3402727CCB30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoNAvatarManager.PowerShell", "HoNAvatarManagement.PowerShell\HoNAvatarManager.PowerShell.csproj", "{00783C77-418B-4E97-8373-D28E5139619C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HoNAvatarManager.PowerShell", "HoNAvatarManagement.PowerShell\HoNAvatarManager.PowerShell.csproj", "{00783C77-418B-4E97-8373-D28E5139619C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoNAvatarManager.Tools", "HoNAvatarManager.Tools\HoNAvatarManager.Tools.csproj", "{9CF44C54-E5F2-4E24-964E-8A7F9CF17B3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{00783C77-418B-4E97-8373-D28E5139619C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00783C77-418B-4E97-8373-D28E5139619C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00783C77-418B-4E97-8373-D28E5139619C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CF44C54-E5F2-4E24-964E-8A7F9CF17B3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CF44C54-E5F2-4E24-964E-8A7F9CF17B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CF44C54-E5F2-4E24-964E-8A7F9CF17B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CF44C54-E5F2-4E24-964E-8A7F9CF17B3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

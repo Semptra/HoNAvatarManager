@@ -17,7 +17,7 @@ namespace HoNAvatarManager.PowerShell
             CommandAst commandAst, 
             IDictionary fakeBoundParameters)
         {
-            return HeroNameManager.HeroNames
+            return GlobalResources.HeroNames
                 .Where(name => name.StartsWith(wordToComplete, StringComparison.InvariantCultureIgnoreCase))
                 .Select(name => new CompletionResult($"\"{name}\""));
         }

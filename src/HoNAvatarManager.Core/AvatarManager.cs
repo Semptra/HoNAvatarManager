@@ -16,9 +16,7 @@ namespace HoNAvatarManager.Core
     {
         private readonly ConfigurationManager _configurationManager;
         private readonly AppConfiguration _appConfiguration;
-
         private readonly ResourcesManager _resourcesManager;
-        private readonly HeroNameManager _heroNameMapper;
 
         public AvatarManager()
         {
@@ -31,7 +29,6 @@ namespace HoNAvatarManager.Core
             }
 
             _resourcesManager = new ResourcesManager(_appConfiguration);
-            _heroNameMapper = new HeroNameManager();
         }
 
         public void SetHeroAvatar(string hero, string avatar)
@@ -41,7 +38,7 @@ namespace HoNAvatarManager.Core
 
             try
             {
-                var heroResourcesName = _heroNameMapper.GetHeroResourcesName(hero);
+                var heroResourcesName = GetHeroResourcesName(hero);
                 var extractedHeroResourcesDirectory = _resourcesManager.ExtractHeroResources(extractionDirectory, heroResourcesName);
                 var extractedHeroEntityPath = Path.Combine(extractedHeroResourcesDirectory, "heroes", heroResourcesName, "hero.entity");
 
@@ -50,7 +47,8 @@ namespace HoNAvatarManager.Core
                 var heroNode = heroXml.QuerySelector("hero");
 
                 var avatarNodes = heroNode.QuerySelectorAll("altavatar");
-                var avatarNode = avatarNodes.FirstOrDefault(a => string.Equals(a.GetAttribute("key"), avatar, StringComparison.InvariantCultureIgnoreCase));
+                var avatarResourceName = GetHeroAvatarResourceName(hero, avatar);
+                var avatarNode = avatarNodes.FirstOrDefault(a => string.Equals(a.GetAttribute("key"), avatarResourceName, StringComparison.InvariantCultureIgnoreCase));
 
                 if (avatarNode == null)
                 {
@@ -63,7 +61,7 @@ namespace HoNAvatarManager.Core
 
                 SaveHeroXml(extractedHeroEntityPath, heroXml.ToXml());
 
-                var heroResourcesS2ZFileName = $"resources_{heroResourcesName}_{avatar}.s2z";
+                var heroResourcesS2ZFileName = $"resources_{hero.Replace(" ", string.Empty)}.s2z";
                 var heroResourcesS2ZFilePath = Path.Combine(extractedHeroResourcesDirectory, heroResourcesS2ZFileName);
                 var heroResourcesDirectory = Path.Combine(extractedHeroResourcesDirectory, "heroes");
 
@@ -81,13 +79,23 @@ namespace HoNAvatarManager.Core
             }
         }
 
+        public void RemoveHeroAvatar(string hero)
+        {
+            var heroResourcesPath = Path.Combine(_appConfiguration.HoNPath, "game", $"resources_{hero.Replace(" ", string.Empty)}.s2z");
+
+            if (File.Exists(heroResourcesPath))
+            {
+                File.Delete(heroResourcesPath);
+            }
+        }
+
         public IEnumerable<string> GetHeroAvatars(string hero)
         {
-            var heroResourcesName = _heroNameMapper.GetHeroResourcesName(hero);
+            var heroResourcesName = GetHeroResourcesName(hero);
 
             using (var heroResourcesZip = _resourcesManager.GetHeroResourcesZip(heroResourcesName))
             {
-                var heroEntryPrefix = $"heroes/{heroResourcesName}";
+                var heroEntryPrefix = $"heroes/{heroResourcesName}/";
                 var heroZipXml = heroResourcesZip.Entries.FirstOrDefault(e => e.FullName.StartsWith(heroEntryPrefix) && e.Name == "hero.entity");
 
                 var heroEntityPath = Path.GetTempFileName();
@@ -99,6 +107,20 @@ namespace HoNAvatarManager.Core
 
                 return avatarNodes.Select(n => n.Attributes["key"].Value);
             }
+        }
+
+        public string GetHeroAvatarFriendlyName(string hero, string avatarResourceName)
+        {
+            return GlobalResources.HeroAvatarMapping.SingleOrDefault(x => string.Equals(x.Hero, hero, StringComparison.InvariantCultureIgnoreCase))?
+                .AvatarInfo.SingleOrDefault(x => string.Equals(x.ResourceName, avatarResourceName, StringComparison.InvariantCultureIgnoreCase))?
+                .AvatarName ?? avatarResourceName;
+        }
+
+        private string GetHeroAvatarResourceName(string hero, string avatarFriendlyName)
+        {
+            return GlobalResources.HeroAvatarMapping.SingleOrDefault(x => string.Equals(x.Hero, hero, StringComparison.InvariantCultureIgnoreCase))?
+                .AvatarInfo.SingleOrDefault(x => string.Equals(x.AvatarName, avatarFriendlyName, StringComparison.InvariantCultureIgnoreCase))?
+                .ResourceName ?? avatarFriendlyName;
         }
 
         private void SaveHeroXml(string path, string heroXml)
@@ -137,10 +159,10 @@ namespace HoNAvatarManager.Core
             }
         }
 
-        private void SetAvatarModifiers(IElement heroNode, IElement avatarNode)
+        private void SetAvatarModifiers(IElement heroElement, IElement avatarElement)
         {
-            var avatarModifiers = avatarNode.ChildNodes.Where(n => n.NodeName == "modifier").OfType<IElement>().ToList();
-            var heroModifiers = heroNode.ChildNodes.Where(n => n.NodeName == "modifier").OfType<IElement>().ToList();
+            var avatarModifiers = avatarElement.ChildNodes.Where(n => n.NodeName == "modifier").OfType<IElement>().ToList();
+            var heroModifiers = heroElement.ChildNodes.Where(n => n.NodeName == "modifier").OfType<IElement>().ToList();
 
             foreach (var avatarModifier in avatarModifiers)
             {
@@ -149,38 +171,45 @@ namespace HoNAvatarManager.Core
 
                 if (heroModifier != null)
                 {
-                    heroNode.RemoveChild(heroModifier);
+                    heroElement.RemoveChild(heroModifier);
                 }
 
-                heroNode.AppendChild(avatarModifier);
+                heroElement.AppendChild(avatarModifier);
             }
         }
 
-        private void SetAvatarEvents(IElement heroNode, IElement avatarNode)
+        private void SetAvatarEvents(IElement heroElement, IElement avatarElement)
         {
-            foreach (var heroEvent in HeroEvents.GetAllEvents())
+            var avatarEventNodes = avatarElement.ChildNodes.Where(n => n.NodeName.StartsWith("on", StringComparison.InvariantCultureIgnoreCase)).ToList();
+
+            foreach (var avatarEventNode in avatarEventNodes)
             {
-                SetAvatarNode(heroNode, avatarNode, heroEvent);
+                SetHeroNode(heroElement, avatarEventNode);
             }
         }
 
-        private void SetAvatarNode(IElement heroNode, IElement avatarNode, string node)
+        private void SetHeroNode(IElement heroElement, INode node)
         {
-            var avatarOnSpawnNode = avatarNode.ChildNodes.FirstOrDefault(n => n.NodeName == node);
+            var heroNode = heroElement.ChildNodes.FirstOrDefault(n => n.NodeName == node.NodeName);
 
-            if (avatarOnSpawnNode == null)
+            if (heroNode != null)
             {
-                return;
+                heroElement.RemoveChild(heroNode);
             }
 
-            var heroOnSpawnNode = heroNode.ChildNodes.FirstOrDefault(n => n.NodeName == node);
+            heroElement.AppendChild(node);
+        }
 
-            if (heroOnSpawnNode != null)
+        private string GetHeroResourcesName(string hero)
+        {
+            var key = GlobalResources.HeroResourcesMapping.Keys.FirstOrDefault(k => string.Equals(k, hero, StringComparison.InvariantCultureIgnoreCase));
+
+            if (key == null)
             {
-                heroNode.RemoveChild(heroOnSpawnNode);
+                throw new KeyNotFoundException($"Hero {hero} not found.");
             }
 
-            heroNode.AppendChild(avatarOnSpawnNode);
+            return GlobalResources.HeroResourcesMapping[key];
         }
     }
 }

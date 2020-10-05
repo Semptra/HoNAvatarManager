@@ -1,0 +1,5905 @@
+[
+  {
+    "hero": "Accursed",
+    "avatarInfo": [
+      {
+        "avatarName": "Sub Zero Accursed",
+        "resourceName": "Alt"
+      },
+      {
+        "avatarName": "Diseased Accursed",
+        "resourceName": "Alt2"
+      },
+      {
+        "avatarName": "Throwback Accursed",
+        "resourceName": "Classic"
+      },
+      {
+        "avatarName": "Green Knight",
+        "resourceName": "Alt3"
+      },
+      {
+        "avatarName": "POG Accursed",
+        "resourceName": "pog_skin"
+      },
+      {
+        "avatarName": "Abaddon",
+        "resourceName": "Alt4"
+      },
+      {
+        "avatarName": "Lord of Locusts",
+        "resourceName": "Alt5"
+      },
+      {
+        "avatarName": "Rahwana",
+        "resourceName": "Alt6"
+      },
+      {
+        "avatarName": "Laboratory Accursed",
+        "resourceName": "Alt7"
+      },
+      {
+        "avatarName": "General Noroi",
+        "resourceName": "Alt8"
+      }
+    ]
+  },
+  {
+    "hero": "Adrenaline",
+    "avatarInfo": [
+      {
+        "avatarName": "Sanctum",
+        "resourceName": "Hero_Adrenaline.Alt"
+      },
+      {
+        "avatarName": "Blade of Blackwal",
+        "resourceName": "Hero_Adrenaline.Alt2"
+      },
+      {
+        "avatarName": "Songkran Adrenaline (EN)",
+        "resourceName": "Hero_Adrenaline.Alt3"
+      },
+      {
+        "avatarName": "Songkran Adrenaline",
+        "resourceName": "Hero_Adrenaline.Alt4"
+      },
+      {
+        "avatarName": "Puzzler",
+        "resourceName": "Hero_Adrenaline.Alt5"
+      },
+      {
+        "avatarName": "Adrenaline High Roller",
+        "resourceName": "Hero_Adrenaline.Alt6"
+      }
+    ]
+  },
+  {
+    "hero": "Aluna",
+    "avatarInfo": [
+      {
+        "avatarName": "Stardust Aluna",
+        "resourceName": "Hero_Aluna.Alt"
+      },
+      {
+        "avatarName": "Steampunk Aluna",
+        "resourceName": "Hero_Aluna.Alt2"
+      },
+      {
+        "avatarName": "Conquistador Aluna",
+        "resourceName": "Hero_Aluna.Alt3"
+      },
+      {
+        "avatarName": "Santa Baby Aluna",
+        "resourceName": "Hero_Aluna.Alt4"
+      },
+      {
+        "avatarName": "Spirit Warrior",
+        "resourceName": "Hero_Aluna.Alt5"
+      },
+      {
+        "avatarName": "The Emerald Princess",
+        "resourceName": "Hero_Aluna.Alt6"
+      },
+      {
+        "avatarName": "Aluna Red Riding Hood",
+        "resourceName": "Hero_Aluna.Alt7"
+      },
+      {
+        "avatarName": "Aluna (CN)",
+        "resourceName": "Hero_Aluna.Alt8"
+      }
+    ]
+  },
+  {
+    "hero": "Amun-Ra",
+    "avatarInfo": [
+      {
+        "avatarName": "King Ra",
+        "resourceName": "Alt"
+      },
+      {
+        "avatarName": "Phoenix Ra",
+        "resourceName": "Alt2"
+      },
+      {
+        "avatarName": "Risen Ra",
+        "resourceName": "Alt3"
+      },
+      {
+        "avatarName": "RoboRa",
+        "resourceName": "Alt4"
+      },
+      {
+        "avatarName": "Acolyte",
+        "resourceName": "Alt5"
+      },
+      {
+        "avatarName": "New Year's Eve Reborn Ra",
+        "resourceName": "Alt6"
+      },
+      {
+        "avatarName": "Karnak the Tomb Guardian",
+        "resourceName": "Alt7"
+      },
+      {
+        "avatarName": "Trophy Amun Ra",
+        "resourceName": "trophy_skin"
+      },
+      {
+        "avatarName": "Bask in My Presents Ra",
+        "resourceName": "Alt8"
+      },
+      {
+        "avatarName": "Montu-Ra",
+        "resourceName": "Alt9"
+      },
+      {
+        "avatarName": "Fusion Ra",
+        "resourceName": "Alt10"
+      }
+    ]
+  },
+  {
+    "hero": "Andromeda",
+    "avatarInfo": [
+      {
+        "avatarName": "Mandromeda",
+        "resourceName": "Alt"
+      },
+      {
+        "avatarName": "Alien Andromeda",
+        "resourceName": "Alt2"
+      },
+      {
+        "avatarName": "Throwback Andromeda",
+        "resourceName": "Classic"
+      },
+      {
+        "avatarName": "Gundromeda",
+        "resourceName": "Alt3"
+      },
+      {
+        "avatarName": "POG Andromeda",
+        "resourceName": "pog_skin"
+      },
+      {
+        "avatarName": "Christmas Lights Andromeda",
+        "resourceName": "Alt4"
+      },
+      {
+        "avatarName": "Eos",
+        "resourceName": "Hero_Andromeda.Alt5"
+      },
+      {
+        "avatarName": "Soccer Andromeda",
+        "resourceName": "soccer_skin"
+      },
+      {
+        "avatarName": "Nebula",
+        "resourceName": "Hero_Andromeda.Alt6"
+      }
+    ]
+  },
+  {
+    "hero": "Apex",
+    "avatarInfo": [
+      {
+        "avatarName": "Zenith",
+        "resourceName": "Hero_Apex.Alt"
+      },
+      {
+        "avatarName": "Nadir",
+        "resourceName": "Hero_Apex.Alt2"
+      }
+    ]
+  },
+  {
+    "hero": "Arachna",
+    "avatarInfo": [
+      {
+        "avatarName": "Queen Arachna",
+        "resourceName": "Hero_Arachna.Alt"
+      },
+      {
+        "avatarName": "Brass Arachna",
+        "resourceName": "Hero_Arachna.Alt2"
+      },
+      {
+        "avatarName": "Arachnabot",
+        "resourceName": "Hero_Arachna.Alt3"
+      },
+      {
+        "avatarName": "Rift Arachna",
+        "resourceName": "Hero_Arachna.Alt4"
+      },
+      {
+        "avatarName": "POG Arachna",
+        "resourceName": "Hero_Arachna.pog_skin"
+      },
+      {
+        "avatarName": "Arachnae",
+        "resourceName": "Hero_Arachna.Alt5"
+      },
+      {
+        "avatarName": "Black Widow",
+        "resourceName": "Hero_Arachna.Alt6"
+      },
+      {
+        "avatarName": "Yokai Arachna",
+        "resourceName": "Hero_Arachna.Alt7"
+      }
+    ]
+  },
+  {
+    "hero": "Armadon",
+    "avatarInfo": [
+      {
+        "avatarName": "Winston Charmadon",
+        "resourceName": "Hero_Armadon.Alt"
+      },
+      {
+        "avatarName": "Sloth",
+        "resourceName": "Hero_Armadon.Alt2"
+      },
+      {
+        "avatarName": "Vagabonadon",
+        "resourceName": "Hero_Armadon.Alt3"
+      },
+      {
+        "avatarName": "Robodon",
+        "resourceName": "Hero_Armadon.Alt4"
+      },
+      {
+        "avatarName": "POG Armadon",
+        "resourceName": "Hero_Armadon.pog_skin"
+      },
+      {
+        "avatarName": "Horny Lizardon",
+        "resourceName": "Hero_Armadon.Alt5"
+      },
+      {
+        "avatarName": "Scarlord",
+        "resourceName": "Hero_Armadon.Alt6"
+      },
+      {
+        "avatarName": "Ascension Armadon",
+        "resourceName": "Hero_Armadon.Alt7"
+      },
+      {
+        "avatarName": "Dreadmace",
+        "resourceName": "Hero_Armadon.Alt8"
+      },
+      {
+        "avatarName": "God of Fortune",
+        "resourceName": "Hero_Armadon.Alt9"
+      },
+      {
+        "avatarName": "Arma Donna",
+        "resourceName": "Hero_Armadon.Alt10"
+      }
+    ]
+  },
+  {
+    "hero": "Artesia",
+    "avatarInfo": [
+      {
+        "avatarName": "Arcannis",
+        "resourceName": "Hero_Artesia.Alt"
+      },
+      {
+        "avatarName": "Artesia le Fay",
+        "resourceName": "Hero_Artesia.Alt3"
+      },
+      {
+        "avatarName": "Corsair",
+        "resourceName": "Hero_Artesia.Alt4"
+      },
+      {
+        "avatarName": "Mechartesia",
+        "resourceName": "Hero_Artesia.Alt5"
+      },
+      {
+        "avatarName": "Yuanri",
+        "resourceName": "Hero_Artesia.Alt6"
+      }
+    ]
+  },
+  {
+    "hero": "Artillery",
+    "avatarInfo": [
+      {
+        "avatarName": "Heavy Artillery",
+        "resourceName": "Hero_Artillery.Alt"
+      },
+      {
+        "avatarName": "Gunnar the Artillerist",
+        "resourceName": "Hero_Artillery.Alt2"
+      },
+      {
+        "avatarName": "Gorilla Warfare Artillery",
+        "resourceName": "Hero_Artillery.Alt3"
+      },
+      {
+        "avatarName": "Apollo",
+        "resourceName": "Hero_Artillery.Alt4"
+      },
+      {
+        "avatarName": "Rock God Apollo",
+        "resourceName": "Hero_Artillery.Alt5"
+      },
+      {
+        "avatarName": "Boggus",
+        "resourceName": "Hero_Artillery.Alt6"
+      },
+      {
+        "avatarName": "Srikandi",
+        "resourceName": "Hero_Artillery.Alt7"
+      },
+      {
+        "avatarName": "Ravus",
+        "resourceName": "Hero_Artillery.Alt8"
+      },
+      {
+        "avatarName": "Ascension Artillery",
+        "resourceName": "Hero_Artillery.set_ascension"
+      },
+      {
+        "avatarName": "Huang Zhong",
+        "resourceName": "Hero_Artillery.Alt9"
+      },
+      {
+        "avatarName": "Huang Zhong (EN)",
+        "resourceName": "Hero_Artillery.Alt10"
+      },
+      {
+        "avatarName": "Cyber Artillery",
+        "resourceName": "Hero_Artillery.Alt11"
+      }
+    ]
+  },
+  {
+    "hero": "Balphagore",
+    "avatarInfo": [
+      {
+        "avatarName": "Crematorium Balph",
+        "resourceName": "Hero_Bephelgor.Alt2"
+      },
+      {
+        "avatarName": "Garbagore",
+        "resourceName": "Hero_Bephelgor.Alt3"
+      },
+      {
+        "avatarName": "Baker Balphagore",
+        "resourceName": "Hero_Bephelgor.Alt4"
+      },
+      {
+        "avatarName": "POG Balphagore",
+        "resourceName": "Hero_Bephelgor.pog_skin"
+      },
+      {
+        "avatarName": "Seasick Balphagore",
+        "resourceName": "Hero_Bephelgor.Alt5"
+      }
+    ]
+  },
+  {
+    "hero": "Behemoth",
+    "avatarInfo": [
+      {
+        "avatarName": "Infernal Behemoth",
+        "resourceName": "Hero_Behemoth.Alt"
+      },
+      {
+        "avatarName": "Minotaur Behemoth",
+        "resourceName": "Hero_Behemoth.Alt2"
+      },
+      {
+        "avatarName": "Bone Behemoth",
+        "resourceName": "Hero_Behemoth.Alt3"
+      },
+      {
+        "avatarName": "Steamoth",
+        "resourceName": "Hero_Behemoth.Alt4"
+      },
+      {
+        "avatarName": "Basher Behemoth",
+        "resourceName": "Hero_Behemoth.Alt5"
+      },
+      {
+        "avatarName": "POG Behemoth",
+        "resourceName": "Hero_Behemoth.pog_skin"
+      },
+      {
+        "avatarName": "Rune Weaver",
+        "resourceName": "Hero_Behemoth.Alt6"
+      },
+      {
+        "avatarName": "Atlas",
+        "resourceName": "Hero_Behemoth.Alt7"
+      },
+      {
+        "avatarName": "Surfer Dude Behemoth",
+        "resourceName": "Hero_Behemoth.Alt8"
+      },
+      {
+        "avatarName": "Construction Worker Behemoth",
+        "resourceName": "Hero_Behemoth.Alt9"
+      },
+      {
+        "avatarName": "Carnelian Paragon Behemoth",
+        "resourceName": "Hero_Behemoth.Alt10"
+      },
+      {
+        "avatarName": "Anhur",
+        "resourceName": "Hero_Behemoth.Alt11"
+      },
+      {
+        "avatarName": "Plushie Behe",
+        "resourceName": "Hero_Behemoth.Alt12"
+      },
+      {
+        "avatarName": "Misfit Behe",
+        "resourceName": "Hero_Behemoth.Alt13"
+      },
+      {
+        "avatarName": "F.L.E.X Behemoth",
+        "resourceName": "Hero_Behemoth.Alt14"
+      }
+    ]
+  },
+  {
+    "hero": "Berzerker",
+    "avatarInfo": [
+      {
+        "avatarName": "Chaos Berzerker",
+        "resourceName": "Hero_Berzerker.Alt"
+      },
+      {
+        "avatarName": "Demon Hunter Zerker",
+        "resourceName": "Hero_Berzerker.Alt2"
+      },
+      {
+        "avatarName": "Gutbuster",
+        "resourceName": "Hero_Berzerker.Alt3"
+      },
+      {
+        "avatarName": "Dale Berzerker",
+        "resourceName": "Hero_Berzerker.Alt4"
+      },
+      {
+        "avatarName": "Orbode",
+        "resourceName": "Hero_Berzerker.Alt5"
+      },
+      {
+        "avatarName": "Insanitarius Berzerker",
+        "resourceName": "Hero_Berzerker.Alt6"
+      },
+      {
+        "avatarName": "Erik the Red",
+        "resourceName": "Hero_Berzerker.Alt7"
+      },
+      {
+        "avatarName": "Bloodaxe Berzerker",
+        "resourceName": "Hero_Berzerker.Alt8"
+      },
+      {
+        "avatarName": "Xia Hou Dun",
+        "resourceName": "Hero_Berzerker.Alt9"
+      },
+      {
+        "avatarName": "Xia Hou Dun (EN)",
+        "resourceName": "Hero_Berzerker.Alt10"
+      },
+      {
+        "avatarName": "Plumb Crazy Zerker",
+        "resourceName": "Hero_Berzerker.Alt11"
+      }
+    ]
+  },
+  {
+    "hero": "Blacksmith",
+    "avatarInfo": [
+      {
+        "avatarName": "Leprechaun Blacksmith",
+        "resourceName": "Hero_DwarfMagi.Alt"
+      },
+      {
+        "avatarName": "Kuznya Blacksmith",
+        "resourceName": "Hero_DwarfMagi.Alt2"
+      },
+      {
+        "avatarName": "Dyad",
+        "resourceName": "Hero_DwarfMagi.Alt3"
+      },
+      {
+        "avatarName": "Ogre Blacksmith",
+        "resourceName": "Hero_DwarfMagi.Alt4"
+      },
+      {
+        "avatarName": "POG Blacksmith",
+        "resourceName": "Hero_DwarfMagi.pog_skin"
+      },
+      {
+        "avatarName": "Dwarf Lord",
+        "resourceName": "Hero_DwarfMagi.Alt5"
+      },
+      {
+        "avatarName": "Punk Smith",
+        "resourceName": "Hero_DwarfMagi.Alt6"
+      },
+      {
+        "avatarName": "Plinko Smith",
+        "resourceName": "Hero_DwarfMagi.Alt7"
+      }
+    ]
+  },
+  {
+    "hero": "Blitz",
+    "avatarInfo": [
+      {
+        "avatarName": "Celeris",
+        "resourceName": "Hero_Blitz.Alt"
+      },
+      {
+        "avatarName": "Quarterback Blitz",
+        "resourceName": "Hero_Blitz.Alt2"
+      },
+      {
+        "avatarName": "Flash Blitz",
+        "resourceName": "Hero_Blitz.Alt3"
+      },
+      {
+        "avatarName": "Blitzen",
+        "resourceName": "Hero_Blitz.Alt4"
+      },
+      {
+        "avatarName": "Songkran Blitz",
+        "resourceName": "Hero_Blitz.Alt5"
+      },
+      {
+        "avatarName": "Power-Up Blitz",
+        "resourceName": "Hero_Blitz.Alt6"
+      }
+    ]
+  },
+  {
+    "hero": "Blood Hunter",
+    "avatarInfo": [
+      {
+        "avatarName": "LandShark Bloodhunter",
+        "resourceName": "Hero_Hunter.Alt"
+      },
+      {
+        "avatarName": "Baby Yaga",
+        "resourceName": "Hero_Hunter.Alt2"
+      },
+      {
+        "avatarName": "Stealth Hunter",
+        "resourceName": "Hero_Hunter.Alt3"
+      },
+      {
+        "avatarName": "Throwback Blood Hunter",
+        "resourceName": "Hero_Hunter.Classic"
+      },
+      {
+        "avatarName": "Organ Grinder Bloodhunter",
+        "resourceName": "Hero_Hunter.Alt4"
+      },
+      {
+        "avatarName": "POG Blood Hunter",
+        "resourceName": "Hero_Hunter.pog_skin"
+      },
+      {
+        "avatarName": "Gargoyle",
+        "resourceName": "Hero_Hunter.Alt5"
+      },
+      {
+        "avatarName": "Balrog",
+        "resourceName": "Hero_Hunter.Alt6"
+      },
+      {
+        "avatarName": "Bonnie Blood Hunter",
+        "resourceName": "Hero_Hunter.Alt7"
+      },
+      {
+        "avatarName": "ALPHA Blood Hunter",
+        "resourceName": "Hero_Hunter.Alt8"
+      },
+      {
+        "avatarName": "Blood Fiend",
+        "resourceName": "Hero_Hunter.Alt9"
+      },
+      {
+        "avatarName": "Krahang",
+        "resourceName": "Hero_Hunter.Alt10"
+      },
+      {
+        "avatarName": "Fusion Hunter",
+        "resourceName": "Hero_Hunter.Alt11"
+      },
+      {
+        "avatarName": "Hannya Blood Hunter",
+        "resourceName": "Hero_Hunter.Alt12"
+      }
+    ]
+  },
+  {
+    "hero": "Bombardier",
+    "avatarInfo": [
+      {
+        "avatarName": "Cannon Bombardier",
+        "resourceName": "Hero_Bombardier.Alt"
+      },
+      {
+        "avatarName": "Zeppelin Bombadier",
+        "resourceName": "Hero_Bombardier.Alt2"
+      },
+      {
+        "avatarName": "Turtlepult",
+        "resourceName": "Hero_Bombardier.Alt3"
+      },
+      {
+        "avatarName": "Ice Cream Bombardier",
+        "resourceName": "Hero_Bombardier.Alt4"
+      },
+      {
+        "avatarName": "Barrage",
+        "resourceName": "Hero_Bombardier.Alt5"
+      },
+      {
+        "avatarName": "Siam Warrior Bombardier",
+        "resourceName": "Hero_Bombardier.Alt6"
+      },
+      {
+        "avatarName": "Yi Peng",
+        "resourceName": "Hero_Bombardier.Alt7"
+      },
+      {
+        "avatarName": "Oderr the Fiery Viking",
+        "resourceName": "Hero_Bombardier.Alt8"
+      },
+      {
+        "avatarName": "Songkran Bomb (EN)",
+        "resourceName": "Hero_Bombardier.Alt9"
+      },
+      {
+        "avatarName": "Songkran Bomb",
+        "resourceName": "Hero_Bombardier.Alt10"
+      },
+      {
+        "avatarName": "Short Fuse Bomber",
+        "resourceName": "Hero_Bombardier.Alt11"
+      }
+    ]
+  },
+  {
+    "hero": "Bramble",
+    "avatarInfo": [
+      {
+        "avatarName": "Spike",
+        "resourceName": "Hero_Plant.Alt"
+      },
+      {
+        "avatarName": "Fungal Bramble",
+        "resourceName": "Hero_Plant.Alt2"
+      },
+      {
+        "avatarName": "Bobbi Bramble",
+        "resourceName": "Hero_Plant.Alt3"
+      },
+      {
+        "avatarName": "Manticore",
+        "resourceName": "Hero_Plant.Alt4"
+      },
+      {
+        "avatarName": "Persian Manticore",
+        "resourceName": "Hero_Plant.Alt5"
+      },
+      {
+        "avatarName": "Bramble of the Bells",
+        "resourceName": "Hero_Plant.Alt6"
+      }
+    ]
+  },
+  {
+    "hero": "Bubbles",
+    "avatarInfo": [
+      {
+        "avatarName": "Ninja Bubbles",
+        "resourceName": "Hero_Bubbles.Alt"
+      },
+      {
+        "avatarName": "Patriot Bubbles",
+        "resourceName": "Hero_Bubbles.Alt2"
+      },
+      {
+        "avatarName": "Futbol Bubbles",
+        "resourceName": "Hero_Bubbles.Alt3"
+      },
+      {
+        "avatarName": "Rift Bubbles",
+        "resourceName": "Hero_Bubbles.Alt4"
+      },
+      {
+        "avatarName": "POG Bubbles",
+        "resourceName": "Hero_Bubbles.pog_skin"
+      },
+      {
+        "avatarName": "Cosmonaut Bubbles",
+        "resourceName": "Hero_Bubbles.Alt5"
+      },
+      {
+        "avatarName": "Venus De Bubbles",
+        "resourceName": "Hero_Bubbles.Alt6"
+      },
+      {
+        "avatarName": "Aquarius",
+        "resourceName": "Hero_Bubbles.Alt7"
+      },
+      {
+        "avatarName": "Big Boss",
+        "resourceName": "Hero_Bubbles.Alt8"
+      },
+      {
+        "avatarName": "Steam Mage Bubbles",
+        "resourceName": "Hero_Bubbles.Alt9"
+      },
+      {
+        "avatarName": "ALPHA Bubbles",
+        "resourceName": "Hero_Bubbles.Alt10"
+      },
+      {
+        "avatarName": "Plushie Bubbles",
+        "resourceName": "Hero_Bubbles.Alt11"
+      },
+      {
+        "avatarName": "Misfit Bubbles",
+        "resourceName": "Hero_Bubbles.Alt12"
+      },
+      {
+        "avatarName": "Noppamas Bubbles",
+        "resourceName": "Hero_Bubbles.Alt13"
+      },
+      {
+        "avatarName": "Trophy Bubbles (Basic)",
+        "resourceName": "Hero_Bubbles.trophy_skin"
+      },
+      {
+        "avatarName": "Trophy Bubbles (Advanced)",
+        "resourceName": "Hero_Bubbles.trophy_skin02"
+      },
+      {
+        "avatarName": "Trophy Bubbles (Elite)",
+        "resourceName": "Hero_Bubbles.trophy_skin03"
+      },
+      {
+        "avatarName": "Black Tortoise",
+        "resourceName": "Hero_Bubbles.Alt15"
+      }
+    ]
+  },
+  {
+    "hero": "Bushwack",
+    "avatarInfo": [
+      {
+        "avatarName": "Harcoon",
+        "resourceName": "Hero_Bushwack.Alt"
+      },
+      {
+        "avatarName": "Ven",
+        "resourceName": "Hero_Bushwack.Alt2"
+      },
+      {
+        "avatarName": "Hunter Bushwack",
+        "resourceName": "Hero_Bushwack.Alt3"
+      },
+      {
+        "avatarName": "Cesspool",
+        "resourceName": "Hero_Bushwack.Alt4"
+      },
+      {
+        "avatarName": "Siam Warrior Bushwack",
+        "resourceName": "Hero_Bushwack.Alt5"
+      },
+      {
+        "avatarName": "Vuvuzela Bushwack",
+        "resourceName": "Hero_Bushwack.Alt6"
+      },
+      {
+        "avatarName": "Mech Huntress",
+        "resourceName": "Hero_Bushwack.Alt7"
+      },
+      {
+        "avatarName": "F.L.E.X Bushwack",
+        "resourceName": "Hero_Bushwack.Alt8"
+      }
+    ]
+  },
+  {
+    "hero": "Calamity",
+    "avatarInfo": [
+      {
+        "avatarName": "Wynd",
+        "resourceName": "Alt"
+      },
+      {
+        "avatarName": "Cassie Calamity",
+        "resourceName": "Alt2"
+      },
+      {
+        "avatarName": "Monster Trainer",
+        "resourceName": "Alt3"
+      },
+      {
+        "avatarName": "Carnage Calamity",
+        "resourceName": "Alt4"
+      },
+      {
+        "avatarName": "Rhadamanthus",
+        "resourceName": "Alt5"
+      },
+      {
+        "avatarName": "Hunter Calamity",
+        "resourceName": "Alt6"
+      },
+      {
+        "avatarName": "Mother of Dragons",
+        "resourceName": "Alt7"
+      },
+      {
+        "avatarName": "Archimedes Calamity",
+        "resourceName": "Alt8"
+      }
+    ]
+  },
+  {
+    "hero": "Chi",
+    "avatarInfo": [
+      {
+        "avatarName": "Osho",
+        "resourceName": "Hero_Chi.Alt"
+      },
+      {
+        "avatarName": "Master Ka",
+        "resourceName": "Hero_Chi.Alt2"
+      }
+    ]
+  },
+  {
+    "hero": "Chronos",
+    "avatarInfo": [
+      {
+        "avatarName": "Father Time Chronos",
+        "resourceName": "Hero_Chronos.Alt"
+      },
+      {
+        "avatarName": "Grandfather Time Chronos",
+        "resourceName": "Hero_Chronos.Alt2"
+      },
+      {
+        "avatarName": "Time Lord Chronos",
+        "resourceName": "Hero_Chronos.Alt3"
+      },
+      {
+        "avatarName": "Ghatotkacha",
+        "resourceName": "Hero_Chronos.Alt4"
+      },
+      {
+        "avatarName": "Patience",
+        "resourceName": "Hero_Chronos.Alt5"
+      },
+      {
+        "avatarName": "Savage Mace Chronos",
+        "resourceName": "Hero_Chronos.Alt6"
+      },
+      {
+        "avatarName": "Christmas Chronos",
+        "resourceName": "Hero_Chronos.Alt8"
+      },
+      {
+        "avatarName": "Punk Chronos",
+        "resourceName": "Hero_Chronos.Alt9"
+      },
+      {
+        "avatarName": "Professor Tick Tock",
+        "resourceName": "Hero_Chronos.Alt10"
+      },
+      {
+        "avatarName": "Little Benny",
+        "resourceName": "Hero_Chronos.Alt11"
+      },
+      {
+        "avatarName": "Professor Tick Tock",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Chronos Tier ONE",
+        "resourceName": "Hero_Chronos.trophy_skin01"
+      },
+      {
+        "avatarName": "Chronos Tier TWO",
+        "resourceName": "Hero_Chronos.trophy_skin02"
+      },
+      {
+        "avatarName": "Chronos Tier THREE",
+        "resourceName": "Hero_Chronos.trophy_skin03"
+      }
+    ]
+  },
+  {
+    "hero": "Circe",
+    "avatarInfo": [
+      {
+        "avatarName": "Iron Maiden",
+        "resourceName": "Hero_Circe.Alt"
+      },
+      {
+        "avatarName": "Poison Circe",
+        "resourceName": "Hero_Circe.Alt2"
+      },
+      {
+        "avatarName": "Veil",
+        "resourceName": "Hero_Circe.Alt3"
+      },
+      {
+        "avatarName": "Dewi Sri",
+        "resourceName": "Hero_Circe.Alt4"
+      },
+      {
+        "avatarName": "Exiled Circe",
+        "resourceName": "Hero_Circe.Alt5"
+      }
+    ]
+  },
+  {
+    "hero": "Corrupted Disciple",
+    "avatarInfo": [
+      {
+        "avatarName": "Steampunk Disciple",
+        "resourceName": "Hero_CorruptedDisciple.Alt"
+      },
+      {
+        "avatarName": "Reborn Disciple",
+        "resourceName": "Hero_CorruptedDisciple.Alt2"
+      },
+      {
+        "avatarName": "Edium",
+        "resourceName": "Hero_CorruptedDisciple.Alt3"
+      },
+      {
+        "avatarName": "Loki",
+        "resourceName": "Hero_CorruptedDisciple.Alt4"
+      },
+      {
+        "avatarName": "POG Corrupted Disciple",
+        "resourceName": "Hero_CorruptedDisciple.pog_skin"
+      },
+      {
+        "avatarName": "Inquisitor",
+        "resourceName": "Hero_CorruptedDisciple.Alt5"
+      },
+      {
+        "avatarName": "Songkran Disciple",
+        "resourceName": "Hero_CorruptedDisciple.Alt6"
+      },
+      {
+        "avatarName": "Lion Dance Disciple",
+        "resourceName": "Hero_CorruptedDisciple.Alt7"
+      },
+      {
+        "avatarName": "Europa",
+        "resourceName": "Hero_CorruptedDisciple.Alt8"
+      }
+    ]
+  },
+  {
+    "hero": "Cthulhuphant",
+    "avatarInfo": [
+      {
+        "avatarName": "King Cthulhuphant",
+        "resourceName": "Hero_Cthulhuphant.Alt"
+      },
+      {
+        "avatarName": "Woolly Cthulhuphant",
+        "resourceName": "Hero_Cthulhuphant.Alt2"
+      },
+      {
+        "avatarName": "Royal Cthulhuphant",
+        "resourceName": "Hero_Cthulhuphant.Alt3"
+      },
+      {
+        "avatarName": "Caller Cthulhuphant",
+        "resourceName": "Hero_Cthulhuphant.Alt4"
+      },
+      {
+        "avatarName": "Daemon Highlord",
+        "resourceName": "Hero_Cthulhuphant.Alt5"
+      },
+      {
+        "avatarName": "Plushie Cthulu",
+        "resourceName": "Hero_Cthulhuphant.Alt6"
+      },
+      {
+        "avatarName": "Misfit Cthulu",
+        "resourceName": "Hero_Cthulhuphant.Alt7"
+      },
+      {
+        "avatarName": "Trophy Cthulhu (Basic)",
+        "resourceName": "Hero_Cthulhuphant.trophy_skin"
+      },
+      {
+        "avatarName": "Trophy Cthulhu (Advanced)",
+        "resourceName": "Hero_Cthulhuphant.trophy_skin02"
+      },
+      {
+        "avatarName": "Trophy Cthulhu (Elite)",
+        "resourceName": "Hero_Cthulhuphant.trophy_skin03"
+      },
+      {
+        "avatarName": "HoN Tour Cthulhu",
+        "resourceName": "Hero_Cthulhuphant.Alt8"
+      }
+    ]
+  },
+  {
+    "hero": "Dampeer",
+    "avatarInfo": [
+      {
+        "avatarName": "Vacation Dampeer",
+        "resourceName": "Hero_Dampeer.Alt"
+      },
+      {
+        "avatarName": "Count Dampeer",
+        "resourceName": "Hero_Dampeer.Alt2"
+      },
+      {
+        "avatarName": "Duchess Dampeer",
+        "resourceName": "Hero_Dampeer.Alt3"
+      },
+      {
+        "avatarName": "Camazotz",
+        "resourceName": "Hero_Dampeer.Alt4"
+      },
+      {
+        "avatarName": "Invader Dampeer",
+        "resourceName": "Hero_Dampeer.Alt5"
+      },
+      {
+        "avatarName": "Bloodthirsty Dampeer",
+        "resourceName": "Hero_Dampeer.Alt6"
+      },
+      {
+        "avatarName": "Kannibal",
+        "resourceName": "Hero_Dampeer.Alt7"
+      },
+      {
+        "avatarName": "The Gentleman Killer",
+        "resourceName": "Hero_Dampeer.Alt8"
+      },
+      {
+        "avatarName": "Vampeera",
+        "resourceName": "Hero_Dampeer.Alt9"
+      },
+      {
+        "avatarName": "Wing-Back Dampeer",
+        "resourceName": "Hero_Dampeer.Alt10"
+      }
+    ]
+  },
+  {
+    "hero": "Deadlift",
+    "avatarInfo": [
+      {
+        "avatarName": "Medevac",
+        "resourceName": "Alt"
+      },
+      {
+        "avatarName": "The Grand Druid",
+        "resourceName": "Alt2"
+      },
+      {
+        "avatarName": "Riftspawn Deadlift",
+        "resourceName": "Alt3"
+      }
+    ]
+  },
+  {
+    "hero": "Deadwood",
+    "avatarInfo": [
+      {
+        "avatarName": "Jollywood",
+        "resourceName": "Hero_Deadwood.Alt"
+      },
+      {
+        "avatarName": "Flaming Deadwood",
+        "resourceName": "Hero_Deadwood.Alt2"
+      },
+      {
+        "avatarName": "Icy Deadwood",
+        "resourceName": "Hero_Deadwood.Alt3"
+      },
+      {
+        "avatarName": "Toadwood Deadstool",
+        "resourceName": "Hero_Deadwood.Alt4"
+      },
+      {
+        "avatarName": "Throwback Deadwood",
+        "resourceName": "Hero_Deadwood.Classic"
+      },
+      {
+        "avatarName": "Gravewood Deadyard",
+        "resourceName": "Hero_Deadwood.Alt5"
+      },
+      {
+        "avatarName": "Corn Stalker",
+        "resourceName": "Hero_Deadwood.Alt7"
+      },
+      {
+        "avatarName": "POG Deadwood",
+        "resourceName": "Hero_Deadwood.pog_skin"
+      },
+      {
+        "avatarName": "Pret",
+        "resourceName": "Hero_Deadwood.Alt8"
+      },
+      {
+        "avatarName": "Plushie Deadwood",
+        "resourceName": "Hero_Deadwood.Alt9"
+      },
+      {
+        "avatarName": "Misfit Deadwood",
+        "resourceName": "Hero_Deadwood.Alt6"
+      }
+    ]
+  },
+  {
+    "hero": "Defiler",
+    "avatarInfo": [
+      {
+        "avatarName": "Phantom Defiler",
+        "resourceName": "Hero_Defiler.Alt"
+      },
+      {
+        "avatarName": "Kali the Destroyer",
+        "resourceName": "Hero_Defiler.Alt2"
+      },
+      {
+        "avatarName": "Throwback Defiler",
+        "resourceName": "Hero_Defiler.Classic"
+      },
+      {
+        "avatarName": "La Llorona",
+        "resourceName": "Hero_Defiler.Alt3"
+      },
+      {
+        "avatarName": "Chaos Realm Kali",
+        "resourceName": "Hero_Defiler.Alt4"
+      },
+      {
+        "avatarName": "POG Defiler",
+        "resourceName": "Hero_Defiler.pog_skin"
+      },
+      {
+        "avatarName": "Ascension Defiler",
+        "resourceName": "Hero_Defiler.Alt5"
+      },
+      {
+        "avatarName": "The Green Lady Defiler",
+        "resourceName": "Hero_Defiler.Alt6"
+      },
+      {
+        "avatarName": "Krasue",
+        "resourceName": "Hero_Defiler.Alt7"
+      }
+    ]
+  },
+  {
+    "hero": "Demented Shaman",
+    "avatarInfo": [
+      {
+        "avatarName": "Demented Witch",
+        "resourceName": "Hero_Shaman.Alt"
+      },
+      {
+        "avatarName": "Demonic Shaman",
+        "resourceName": "Hero_Shaman.Alt2"
+      },
+      {
+        "avatarName": "Lollipop Shaman",
+        "resourceName": "Hero_Shaman.Alt3"
+      },
+      {
+        "avatarName": "Battle Armor Athena",
+        "resourceName": "Hero_Shaman.Alt4"
+      },
+      {
+        "avatarName": "Goddess Armor Athena",
+        "resourceName": "Hero_Shaman.Alt5"
+      },
+      {
+        "avatarName": "POG Demented Shaman",
+        "resourceName": "Hero_Shaman.pog_skin"
+      },
+      {
+        "avatarName": "Songkran Athena",
+        "resourceName": "Hero_Shaman.Alt6"
+      },
+      {
+        "avatarName": "Winter Shaman",
+        "resourceName": "Hero_Shaman.Alt7"
+      },
+      {
+        "avatarName": "Firefighter Shaman",
+        "resourceName": "Hero_Shaman.Alt8"
+      }
+    ]
+  },
+  {
+    "hero": "Devourer",
+    "avatarInfo": [
+      {
+        "avatarName": "Clown Devourer",
+        "resourceName": "Clown"
+      },
+      {
+        "avatarName": "Oni Devourer",
+        "resourceName": "Alt2"
+      },
+      {
+        "avatarName": "Shibo Shinobi",
+        "resourceName": "Alt3"
+      },
+      {
+        "avatarName": "Gluttony",
+        "resourceName": "Alt4"
+      },
+      {
+        "avatarName": "Patchwork Devourer",
+        "resourceName": "main_reskin"
+      },
+      {
+        "avatarName": "Jin Chan",
+        "resourceName": "Alt5"
+      },
+      {
+        "avatarName": "Rift Devourer",
+        "resourceName": "Alt6"
+      },
+      {
+        "avatarName": "Throwback Devourer",
+        "resourceName": "Classic"
+      },
+      {
+        "avatarName": "Captain Gorebeard",
+        "resourceName": "Hero_Devourer.Alt7"
+      },
+      {
+        "avatarName": "Kodia",
+        "resourceName": "Hero_Devourer.Alt8"
+      },
+      {
+        "avatarName": "POG Devourer",
+        "resourceName": "Hero_Devourer.pog_skin"
+      },
+      {
+        "avatarName": "Bedsheet Devourer",
+        "resourceName": "Alt9"
+      },
+      {
+        "avatarName": "Paku Devourer",
+        "resourceName": "Alt10"
+      },
+      {
+        "avatarName": "Keelhaul Devourer",
+        "resourceName": "Alt11"
+      },
+      {
+        "avatarName": "Easter Egg Devourer",
+        "resourceName": "Alt12"
+      },
+      {
+        "avatarName": "Plushie Devo",
+        "resourceName": "Alt13"
+      },
+      {
+        "avatarName": "Misfit Devo",
+        "resourceName": "Alt14"
+      },
+      {
+        "avatarName": "Jiangshi Devo",
+        "resourceName": "Alt15"
+      }
+    ]
+  },
+  {
+    "hero": "Doctor Repulsor",
+    "avatarInfo": [
+      {
+        "avatarName": "Professor Repulsor",
+        "resourceName": "Hero_DoctorRepulsor.Alt"
+      },
+      {
+        "avatarName": "Tesla the Mad Scientist",
+        "resourceName": "Hero_DoctorRepulsor.Alt2"
+      },
+      {
+        "avatarName": "Robotron",
+        "resourceName": "Hero_DoctorRepulsor.Alt3"
+      },
+      {
+        "avatarName": "Anunnaki",
+        "resourceName": "Hero_DoctorRepulsor.Alt4"
+      },
+      {
+        "avatarName": "POG Doctor Repulsor",
+        "resourceName": "Hero_DoctorRepulsor.pog_skin"
+      },
+      {
+        "avatarName": "Dr. Gamer",
+        "resourceName": "Hero_DoctorRepulsor.Alt5"
+      },
+      {
+        "avatarName": "Garnet Paragon Dr. Repulsor",
+        "resourceName": "Hero_DoctorRepulsor.Alt6"
+      },
+      {
+        "avatarName": "Ascension Dr. Repulsor",
+        "resourceName": "Hero_DoctorRepulsor.set_ascent"
+      },
+      {
+        "avatarName": "Doctor Firecracker",
+        "resourceName": "Hero_DoctorRepulsor.Alt9"
+      },
+      {
+        "avatarName": "Punk Dr. Repulsor",
+        "resourceName": "Hero_DoctorRepulsor.Alt10"
+      }
+    ]
+  },
+  {
+    "hero": "Draconis",
+    "avatarInfo": [
+      {
+        "avatarName": "Hydraxis",
+        "resourceName": "Hero_FlameDragon.Alt"
+      },
+      {
+        "avatarName": "Chimera Draconis",
+        "resourceName": "Hero_FlameDragon.Alt2"
+      },
+      {
+        "avatarName": "Dracolich Draconis",
+        "resourceName": "Hero_FlameDragon.Alt3"
+      },
+      {
+        "avatarName": "Primal Dracon",
+        "resourceName": "Hero_FlameDragon.Alt4"
+      },
+      {
+        "avatarName": "Mecha Draconis",
+        "resourceName": "Hero_FlameDragon.Alt5"
+      },
+      {
+        "avatarName": "Sphinx",
+        "resourceName": "Hero_FlameDragon.Alt6"
+      },
+      {
+        "avatarName": "Gryphon Draconis",
+        "resourceName": "Hero_FlameDragon.Alt7"
+      },
+      {
+        "avatarName": "Knightslayer",
+        "resourceName": "Hero_FlameDragon.Alt8"
+      },
+      {
+        "avatarName": "Trophy Draconis",
+        "resourceName": "Hero_FlameDragon.trophy_skin"
+      },
+      {
+        "avatarName": "Draco",
+        "resourceName": "Hero_FlameDragon.Alt9"
+      },
+      {
+        "avatarName": "Dragoness",
+        "resourceName": "Hero_FlameDragon.Alt10"
+      }
+    ]
+  },
+  {
+    "hero": "Drunken Master",
+    "avatarInfo": [
+      {
+        "avatarName": "Hillbilly Brawler",
+        "resourceName": "Hero_DrunkenMaster.Alt"
+      },
+      {
+        "avatarName": "Drunken Wench",
+        "resourceName": "Hero_DrunkenMaster.Alt2"
+      },
+      {
+        "avatarName": "Eggnog Master",
+        "resourceName": "Hero_DrunkenMaster.Alt3"
+      },
+      {
+        "avatarName": "Tequila Master",
+        "resourceName": "Hero_DrunkenMaster.Alt4"
+      },
+      {
+        "avatarName": "Dionysus",
+        "resourceName": "Hero_DrunkenMaster.Alt5"
+      },
+      {
+        "avatarName": "Dionysus Mead Viking",
+        "resourceName": "Hero_DrunkenMaster.Alt6"
+      },
+      {
+        "avatarName": "Rum Master",
+        "resourceName": "Hero_DrunkenMaster.Alt7"
+      },
+      {
+        "avatarName": "Drunken Fool",
+        "resourceName": "Hero_DrunkenMaster.Alt8"
+      },
+      {
+        "avatarName": "Shamrock Mistress",
+        "resourceName": "Hero_DrunkenMaster.Alt9"
+      },
+      {
+        "avatarName": "Drunken Moonster",
+        "resourceName": "Hero_DrunkenMaster.Alt10"
+      }
+    ]
+  },
+  {
+    "hero": "Electrician",
+    "avatarInfo": [
+      {
+        "avatarName": "Demonbuster Electrician",
+        "resourceName": "Hero_Electrician.Alt"
+      },
+      {
+        "avatarName": "Steampunk Electrician",
+        "resourceName": "Hero_Electrician.Alt2"
+      },
+      {
+        "avatarName": "POG Electrician",
+        "resourceName": "Hero_Electrician.pog_skin"
+      },
+      {
+        "avatarName": "Osiris",
+        "resourceName": "Hero_Electrician.Alt3"
+      },
+      {
+        "avatarName": "Royal Armor Osiris",
+        "resourceName": "Hero_Electrician.Alt4"
+      },
+      {
+        "avatarName": "Killawatt",
+        "resourceName": "Hero_Electrician.Alt5"
+      },
+      {
+        "avatarName": "Osiris Reborn",
+        "resourceName": "Hero_Electrician.Alt6"
+      }
+    ]
+  },
+  {
+    "hero": "Ellonia",
+    "avatarInfo": [
+      {
+        "avatarName": "Zero",
+        "resourceName": "Hero_Ellonia.Alt"
+      },
+      {
+        "avatarName": "Jackson Frost",
+        "resourceName": "Hero_Ellonia.Alt2"
+      },
+      {
+        "avatarName": "Ymir",
+        "resourceName": "Hero_Ellonia.Alt3"
+      },
+      {
+        "avatarName": "Cursed Woodpuppet Ymir",
+        "resourceName": "Hero_Ellonia.Alt4"
+      },
+      {
+        "avatarName": "Floral Ellonia",
+        "resourceName": "Hero_Ellonia.Alt5"
+      },
+      {
+        "avatarName": "Black Ice Ellonia",
+        "resourceName": "Hero_Ellonia.Alt6"
+      },
+      {
+        "avatarName": "Da Qiao",
+        "resourceName": "Hero_Ellonia.Alt7"
+      },
+      {
+        "avatarName": "Queen of Hearts",
+        "resourceName": "Hero_Ellonia.Alt8"
+      }
+    ]
+  },
+  {
+    "hero": "Emerald Warden",
+    "avatarInfo": [
+      {
+        "avatarName": "Dryad Warden",
+        "resourceName": "Hero_EmeraldWarden.Alt"
+      },
+      {
+        "avatarName": "Jurassic Warden",
+        "resourceName": "Hero_EmeraldWarden.Alt2"
+      },
+      {
+        "avatarName": "Centaur Warden",
+        "resourceName": "Hero_EmeraldWarden.Alt3"
+      },
+      {
+        "avatarName": "Topiary Warden",
+        "resourceName": "Hero_EmeraldWarden.Alt4"
+      },
+      {
+        "avatarName": "Rift Warden",
+        "resourceName": "Hero_EmeraldWarden.Alt5"
+      },
+      {
+        "avatarName": "Sagittarius",
+        "resourceName": "Hero_EmeraldWarden.Alt6"
+      },
+      {
+        "avatarName": "Savior Emerald Warden",
+        "resourceName": "Hero_EmeraldWarden.Alt7"
+      },
+      {
+        "avatarName": "Chang Mai",
+        "resourceName": "Hero_EmeraldWarden.Alt8"
+      },
+      {
+        "avatarName": "Daemon Dragoon",
+        "resourceName": "Hero_EmeraldWarden.Alt9"
+      },
+      {
+        "avatarName": "Trophy Emerald Warden (Basic)",
+        "resourceName": "Hero_EmeraldWarden.trophy_skin"
+      },
+      {
+        "avatarName": "Trophy Emerald Warden (Advanced)",
+        "resourceName": "Hero_EmeraldWarden.trophy_skin02"
+      },
+      {
+        "avatarName": "Trophy Emerald Warden (Elite)",
+        "resourceName": "Hero_EmeraldWarden.trophy_skin03"
+      }
+    ]
+  },
+  {
+    "hero": "Empath",
+    "avatarInfo": [
+      {
+        "avatarName": "Mage Empath",
+        "resourceName": "Hero_Empath.Alt"
+      },
+      {
+        "avatarName": "Lust",
+        "resourceName": "Hero_Empath.Alt2"
+      },
+      {
+        "avatarName": "Guanyin",
+        "resourceName": "Hero_Empath.Alt3"
+      },
+      {
+        "avatarName": "Gaia",
+        "resourceName": "Hero_Empath.Alt4"
+      },
+      {
+        "avatarName": "Diao Chan",
+        "resourceName": "Hero_Empath.Alt5"
+      },
+      {
+        "avatarName": "Emerald Paragon Empath",
+        "resourceName": "Hero_Empath.Alt7"
+      },
+      {
+        "avatarName": "Overly Attached Empath",
+        "resourceName": "Hero_Empath.Alt8"
+      },
+      {
+        "avatarName": "Nang Tani",
+        "resourceName": "Hero_Empath.Alt9"
+      },
+      {
+        "avatarName": "Beauty Empath",
+        "resourceName": "Hero_Empath.Alt10"
+      },
+      {
+        "avatarName": "Empath Tier ONE",
+        "resourceName": "Hero_Empath.trophy_skin01"
+      },
+      {
+        "avatarName": "Empath Tier TWO",
+        "resourceName": "Hero_Empath.trophy_skin02"
+      },
+      {
+        "avatarName": "Empath Tier THREE",
+        "resourceName": "Hero_Empath.trophy_skin03"
+      }
+    ]
+  },
+  {
+    "hero": "Engineer",
+    "avatarInfo": [
+      {
+        "avatarName": "Rosie Engineer",
+        "resourceName": "Hero_Engineer.Alt"
+      },
+      {
+        "avatarName": "Uncle Sam Engineer",
+        "resourceName": "Hero_Engineer.Alt2"
+      },
+      {
+        "avatarName": "Troika",
+        "resourceName": "Hero_Engineer.Alt3"
+      },
+      {
+        "avatarName": "Tork",
+        "resourceName": "Hero_Engineer.Alt4"
+      },
+      {
+        "avatarName": "Mangler",
+        "resourceName": "Hero_Engineer.Alt5"
+      },
+      {
+        "avatarName": "Soaker Rosie",
+        "resourceName": "Hero_Engineer.Alt6"
+      },
+      {
+        "avatarName": "Songkran Rosie",
+        "resourceName": "Hero_Engineer.Alt7"
+      },
+      {
+        "avatarName": "POG Engineer",
+        "resourceName": "Hero_Engineer.pog_skin"
+      },
+      {
+        "avatarName": "Hunter Engineer",
+        "resourceName": "Hero_Engineer.Alt8"
+      },
+      {
+        "avatarName": "Ol' Briarpatch",
+        "resourceName": "Hero_Engineer.Alt9"
+      }
+    ]
+  },
+  {
+    "hero": "Fayde",
+    "avatarInfo": [
+      {
+        "avatarName": "Gypsy Fayde",
+        "resourceName": "Hero_Fade.Alt"
+      },
+      {
+        "avatarName": "Glorious Fayde",
+        "resourceName": "Hero_Fade.Alt2"
+      },
+      {
+        "avatarName": "Scarecrow Fayde",
+        "resourceName": "Hero_Fade.Alt3"
+      },
+      {
+        "avatarName": "Vanish",
+        "resourceName": "Hero_Fade.Alt4"
+      },
+      {
+        "avatarName": "POG Fayde",
+        "resourceName": "Hero_Fade.pog_skin"
+      },
+      {
+        "avatarName": "Trophy Fayde",
+        "resourceName": "Hero_Fade.trophy_skin"
+      },
+      {
+        "avatarName": "Red Mist",
+        "resourceName": "Hero_Fade.Alt_reskin"
+      },
+      {
+        "avatarName": "Persephone",
+        "resourceName": "Hero_Fade.Alt5"
+      },
+      {
+        "avatarName": "Shadowkiller",
+        "resourceName": "Hero_Fade.Alt6"
+      },
+      {
+        "avatarName": "Ascension Fayde",
+        "resourceName": "Hero_Fade.set_ascension"
+      },
+      {
+        "avatarName": "Reaper",
+        "resourceName": "Hero_Fade.Alt7"
+      },
+      {
+        "avatarName": "Cyber Fayde",
+        "resourceName": "Hero_Fade.Alt8"
+      },
+      {
+        "avatarName": "Contessa Raze",
+        "resourceName": "Hero_Fade.Alt10"
+      },
+      {
+        "avatarName": "Bloodshadow",
+        "resourceName": "Hero_Fade.Alt9"
+      }
+    ]
+  },
+  {
+    "hero": "Flint Beastwood",
+    "avatarInfo": [
+      {
+        "avatarName": "Captain Flint",
+        "resourceName": "Hero_FlintBeastwood.Alt"
+      },
+      {
+        "avatarName": "Flint Boomstick",
+        "resourceName": "Hero_FlintBeastwood.Alt2"
+      },
+      {
+        "avatarName": "The Orc With No Name",
+        "resourceName": "Hero_FlintBeastwood.Alt3"
+      },
+      {
+        "avatarName": "Flint Spellslinger",
+        "resourceName": "Hero_FlintBeastwood.Alt4"
+      },
+      {
+        "avatarName": "Flint Hellwood",
+        "resourceName": "Hero_FlintBeastwood.Alt5"
+      },
+      {
+        "avatarName": "Tommy TwoGun",
+        "resourceName": "Hero_FlintBeastwood.Alt6"
+      },
+      {
+        "avatarName": "Smuggler Flint",
+        "resourceName": "Hero_FlintBeastwood.Alt7"
+      },
+      {
+        "avatarName": "Flinty Widowmaker",
+        "resourceName": "Hero_FlintBeastwood.Alt8"
+      },
+      {
+        "avatarName": "POG Flint Beastwood",
+        "resourceName": "Hero_FlintBeastwood.pog_skin"
+      },
+      {
+        "avatarName": "Rulian Warlord Flint",
+        "resourceName": "Hero_FlintBeastwood.Alt9"
+      },
+      {
+        "avatarName": "Trophy Flint Beastwood",
+        "resourceName": "Hero_FlintBeastwood.Alt10"
+      },
+      {
+        "avatarName": "Redcoat Flint",
+        "resourceName": "Hero_FlintBeastwood.Alt11"
+      },
+      {
+        "avatarName": "Hired Gun Flint",
+        "resourceName": "Hero_FlintBeastwood.Alt12"
+      },
+      {
+        "avatarName": "Flint Who Stole Xmas",
+        "resourceName": "Hero_FlintBeastwood.Alt13"
+      },
+      {
+        "avatarName": "Punk Flint",
+        "resourceName": "Hero_FlintBeastwood.Alt14"
+      },
+      {
+        "avatarName": "F.L.E.X Flint",
+        "resourceName": "Hero_FlintBeastwood.Alt15"
+      },
+      {
+        "avatarName": "Pill Popper Flint",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Flux",
+    "avatarInfo": [
+      {
+        "avatarName": "Steam Flux",
+        "resourceName": "Hero_Flux.Alt"
+      },
+      {
+        "avatarName": "Iron Flux",
+        "resourceName": "Hero_Flux.Alt2"
+      },
+      {
+        "avatarName": "Jupiter",
+        "resourceName": "Hero_Flux.Alt3"
+      },
+      {
+        "avatarName": "Uproar",
+        "resourceName": "Hero_Flux.Alt4"
+      },
+      {
+        "avatarName": "Cyborg",
+        "resourceName": "Hero_Flux.Alt5"
+      },
+      {
+        "avatarName": "Force of Nature",
+        "resourceName": "Hero_Flux.Alt6"
+      }
+    ]
+  },
+  {
+    "hero": "Forsaken Archer",
+    "avatarInfo": [
+      {
+        "avatarName": "Forsaken Strider",
+        "resourceName": "Hero_ForsakenArcher.Alt"
+      },
+      {
+        "avatarName": "Clockwork Archer",
+        "resourceName": "Hero_ForsakenArcher.Alt2"
+      },
+      {
+        "avatarName": "Sabre Tooth Archer",
+        "resourceName": "Hero_ForsakenArcher.Alt3"
+      },
+      {
+        "avatarName": "Pra Ram Archer",
+        "resourceName": "Hero_ForsakenArcher.Alt4"
+      },
+      {
+        "avatarName": "POG Forsaken Archer",
+        "resourceName": "Hero_ForsakenArcher.pog_skin"
+      },
+      {
+        "avatarName": "Sinew",
+        "resourceName": "Hero_ForsakenArcher.Alt5"
+      },
+      {
+        "avatarName": "Forsaken Death Prowler",
+        "resourceName": "Hero_ForsakenArcher.Alt6"
+      },
+      {
+        "avatarName": "Siam Warrior Forsaken Archer",
+        "resourceName": "Hero_ForsakenArcher.Alt7"
+      },
+      {
+        "avatarName": "Songkran Archer",
+        "resourceName": "Hero_ForsakenArcher.Alt8"
+      },
+      {
+        "avatarName": "Forsaken Siren",
+        "resourceName": "Hero_ForsakenArcher.Alt9"
+      },
+      {
+        "avatarName": "Mars",
+        "resourceName": "Hero_ForsakenArcher.Alt10"
+      },
+      {
+        "avatarName": "Yumi",
+        "resourceName": "Hero_ForsakenArcher.Alt11"
+      },
+      {
+        "avatarName": "Santa's Little Archer",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Gauntlet",
+    "avatarInfo": [
+      {
+        "avatarName": "El Guantelete",
+        "resourceName": "Hero_Gauntlet.Alt"
+      },
+      {
+        "avatarName": "O-yoroi Gauntlet",
+        "resourceName": "Hero_Gauntlet.Alt2"
+      },
+      {
+        "avatarName": "Mummy Gauntlet",
+        "resourceName": "Hero_Gauntlet.Alt3"
+      },
+      {
+        "avatarName": "Siege Gauntlet",
+        "resourceName": "Hero_Gauntlet.Alt4"
+      },
+      {
+        "avatarName": "Grendel",
+        "resourceName": "Hero_Gauntlet.Alt5"
+      },
+      {
+        "avatarName": "Ussuri",
+        "resourceName": "Hero_Gauntlet.Alt6"
+      },
+      {
+        "avatarName": "Mr. Marvelous",
+        "resourceName": "Hero_Gauntlet.Alt7"
+      },
+      {
+        "avatarName": "Polyphemus",
+        "resourceName": "Hero_Gauntlet.Alt8"
+      },
+      {
+        "avatarName": "POG Gauntlet",
+        "resourceName": "Hero_Gauntlet.pog_skin"
+      },
+      {
+        "avatarName": "Invader Gauntlet",
+        "resourceName": "Hero_Gauntlet.Alt9"
+      },
+      {
+        "avatarName": "Knockout Gauntlet",
+        "resourceName": "Hero_Gauntlet.Alt10"
+      }
+    ]
+  },
+  {
+    "hero": "Gemini",
+    "avatarInfo": [
+      {
+        "avatarName": "Panthera Gemini",
+        "resourceName": "Hero_Gemini.Alt"
+      },
+      {
+        "avatarName": "Mecha Gemini",
+        "resourceName": "Hero_Gemini.Alt2"
+      },
+      {
+        "avatarName": "Fu Lion Gemini",
+        "resourceName": "Hero_Gemini.Alt3"
+      },
+      {
+        "avatarName": "Cerberus",
+        "resourceName": "Hero_Gemini.Alt4"
+      },
+      {
+        "avatarName": "Lion of Sol",
+        "resourceName": "Hero_Gemini.Alt5"
+      },
+      {
+        "avatarName": "Nuri and Bryce",
+        "resourceName": "Hero_Gemini.Alt6"
+      }
+    ]
+  },
+  {
+    "hero": "Geomancer",
+    "avatarInfo": [
+      {
+        "avatarName": "Centipedalisk",
+        "resourceName": "Hero_Geomancer.Alt"
+      },
+      {
+        "avatarName": "Geojuice",
+        "resourceName": "Hero_Geomancer.Alt2"
+      },
+      {
+        "avatarName": "Caterpillar Geomancer",
+        "resourceName": "Hero_Geomancer.Alt3"
+      },
+      {
+        "avatarName": "Drillex",
+        "resourceName": "Hero_Geomancer.Alt4"
+      },
+      {
+        "avatarName": "Basilisk",
+        "resourceName": "Hero_Geomancer.Alt5"
+      },
+      {
+        "avatarName": "Chameleon Basilisk",
+        "resourceName": "Hero_Geomancer.Alt6"
+      },
+      {
+        "avatarName": "Soccer Geomancer",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Leviathan",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Glacius",
+    "avatarInfo": [
+      {
+        "avatarName": "Female Glacius",
+        "resourceName": "Hero_Frosty.Alt2"
+      },
+      {
+        "avatarName": "Joven Glacius",
+        "resourceName": "Hero_Frosty.Alt3"
+      },
+      {
+        "avatarName": "Frosty the Iceman",
+        "resourceName": "Hero_Frosty.Alt4"
+      },
+      {
+        "avatarName": "Throwback Glacius",
+        "resourceName": "Hero_Frosty.Classic"
+      },
+      {
+        "avatarName": "Nuclear Winter Glacius",
+        "resourceName": "Hero_Frosty.Alt5"
+      },
+      {
+        "avatarName": "Snow Queen Shiva",
+        "resourceName": "Hero_Frosty.Alt6"
+      },
+      {
+        "avatarName": "POG Glacius",
+        "resourceName": "Hero_Frosty.pog_skin"
+      },
+      {
+        "avatarName": "Zircon Paragon Glacius",
+        "resourceName": "Hero_Frosty.Alt7"
+      },
+      {
+        "avatarName": "Aurealis",
+        "resourceName": "Hero_Frosty.Alt8"
+      },
+      {
+        "avatarName": "Wildfire Glacius",
+        "resourceName": "Hero_Frosty.Alt9"
+      },
+      {
+        "avatarName": "Keybreaker",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Goldenveil",
+    "avatarInfo": [
+      {
+        "avatarName": "Lurx",
+        "resourceName": "Hero_Goldenveil.Alt"
+      },
+      {
+        "avatarName": "Copperhead",
+        "resourceName": "Hero_Goldenveil.Alt2"
+      },
+      {
+        "avatarName": "Songkran Goldenveil (EN)",
+        "resourceName": "Hero_Goldenveil.Alt3"
+      },
+      {
+        "avatarName": "Songkran Goldenveil",
+        "resourceName": "Hero_Goldenveil.Alt4"
+      },
+      {
+        "avatarName": "Lurx",
+        "resourceName": "Hero_Goldenveil.Alt5"
+      },
+      {
+        "avatarName": "Copperhead",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Roninveil",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Gravekeeper",
+    "avatarInfo": [
+      {
+        "avatarName": "Shinigami Gravekeeper",
+        "resourceName": "Hero_Taint.Alt"
+      },
+      {
+        "avatarName": "Archlich Gravekeeper",
+        "resourceName": "Hero_Taint.Alt2"
+      },
+      {
+        "avatarName": "Snot Keeper",
+        "resourceName": "Hero_Taint.Alt3"
+      },
+      {
+        "avatarName": "Hestia",
+        "resourceName": "Hero_Taint.Alt4"
+      },
+      {
+        "avatarName": "Wave Queen Hestia",
+        "resourceName": "Hero_Taint.Alt5"
+      },
+      {
+        "avatarName": "Pixelkeeper",
+        "resourceName": "Hero_Taint.Alt6"
+      },
+      {
+        "avatarName": "Holidaykeeper Hestia",
+        "resourceName": "Hero_Taint.Alt7"
+      },
+      {
+        "avatarName": "Songkran Hestia",
+        "resourceName": "Hero_Taint.Alt8"
+      }
+    ]
+  },
+  {
+    "hero": "Grinex",
+    "avatarInfo": [
+      {
+        "avatarName": "Gideon",
+        "resourceName": "Hero_Grinex.Alt"
+      },
+      {
+        "avatarName": "Slickz",
+        "resourceName": "Hero_Grinex.Alt2"
+      },
+      {
+        "avatarName": "SlenderX",
+        "resourceName": "Hero_Grinex.Alt3"
+      },
+      {
+        "avatarName": "Cyber Steel Grinex",
+        "resourceName": "Hero_Grinex.Alt4"
+      },
+      {
+        "avatarName": "Lynn X",
+        "resourceName": "Hero_Grinex.Alt5"
+      },
+      {
+        "avatarName": "Songkran Grinex",
+        "resourceName": "Hero_Grinex.Alt6"
+      },
+      {
+        "avatarName": "Songkran Grinex (EN)",
+        "resourceName": "Hero_Grinex.Alt7"
+      }
+    ]
+  },
+  {
+    "hero": "Gunblade",
+    "avatarInfo": [
+      {
+        "avatarName": "Warmonger Gunblade",
+        "resourceName": "Hero_Gunblade.Alt"
+      },
+      {
+        "avatarName": "Pirate Gunblade",
+        "resourceName": "Hero_Gunblade.Alt2"
+      },
+      {
+        "avatarName": "Hunter Gunblade",
+        "resourceName": "Hero_Gunblade.Alt3"
+      },
+      {
+        "avatarName": "Cossack",
+        "resourceName": "Hero_Gunblade.Alt4"
+      },
+      {
+        "avatarName": "Tyr",
+        "resourceName": "Hero_Gunblade.Alt5"
+      },
+      {
+        "avatarName": "Gunclaw",
+        "resourceName": "Hero_Gunblade.Alt6"
+      },
+      {
+        "avatarName": "LightGunblade",
+        "resourceName": "Hero_Gunblade.Alt7"
+      },
+      {
+        "avatarName": "Cyber Assassin",
+        "resourceName": "Hero_Gunblade.Alt8"
+      },
+      {
+        "avatarName": "Gunmaiden",
+        "resourceName": "Hero_Gunblade.Alt9"
+      }
+    ]
+  },
+  {
+    "hero": "Hammerstorm",
+    "avatarInfo": [
+      {
+        "avatarName": "Helga Hammerstorm",
+        "resourceName": "Hero_Hammerstorm.Alt"
+      },
+      {
+        "avatarName": "Wrath",
+        "resourceName": "Hero_Hammerstorm.Alt2"
+      },
+      {
+        "avatarName": "Bravehurt Hammerstorm",
+        "resourceName": "Hero_Hammerstorm.Alt3"
+      },
+      {
+        "avatarName": "Hammer Lord",
+        "resourceName": "Hero_Hammerstorm.Alt4"
+      },
+      {
+        "avatarName": "Tin Hammerstorm",
+        "resourceName": "Hero_Hammerstorm.Alt5"
+      },
+      {
+        "avatarName": "Hercules",
+        "resourceName": "Hero_Hammerstorm.Alt6"
+      },
+      {
+        "avatarName": "Savior Hammerstorm",
+        "resourceName": "Hero_Hammerstorm.Alt7"
+      },
+      {
+        "avatarName": "Carnystorm",
+        "resourceName": "Hero_Hammerstorm.Alt8"
+      },
+      {
+        "avatarName": "POG Hammerstorm",
+        "resourceName": "Hero_Hammerstorm.pog_skin"
+      },
+      {
+        "avatarName": "Adkarna Hammerguard",
+        "resourceName": "Hero_Hammerstorm.Alt9"
+      },
+      {
+        "avatarName": "Lion of the Gods Hercules",
+        "resourceName": "Hero_Hammerstorm.Alt10"
+      },
+      {
+        "avatarName": "Punk Hammer",
+        "resourceName": "Hero_Hammerstorm.Alt11"
+      },
+      {
+        "avatarName": "Locksmasher",
+        "resourceName": "Hero_Hammerstorm.Alt12"
+      },
+      {
+        "avatarName": "F.L.E.X Hammerstorm",
+        "resourceName": "Hero_Hammerstorm.Alt13"
+      }
+    ]
+  },
+  {
+    "hero": "Hellbringer",
+    "avatarInfo": [
+      {
+        "avatarName": "Overseer Hellbringer",
+        "resourceName": "Hero_Hellbringer.Alt"
+      },
+      {
+        "avatarName": "Priestess Hellbringer",
+        "resourceName": "Hero_Hellbringer.Alt2"
+      },
+      {
+        "avatarName": "Elementbringer",
+        "resourceName": "Hero_Hellbringer.Alt3"
+      },
+      {
+        "avatarName": "Jade Empress",
+        "resourceName": "Hero_Hellbringer.Alt4"
+      },
+      {
+        "avatarName": "Imperial Summoner",
+        "resourceName": "Hero_Hellbringer.Alt5"
+      },
+      {
+        "avatarName": "Arimane the Pit Lord",
+        "resourceName": "Hero_Hellbringer.Alt6"
+      },
+      {
+        "avatarName": "POG Hellbringer",
+        "resourceName": "Hero_Hellbringer.pog_skin"
+      },
+      {
+        "avatarName": "Battlebringer",
+        "resourceName": "Hero_Hellbringer.Alt7"
+      }
+    ]
+  },
+  {
+    "hero": "Ichor",
+    "avatarInfo": [
+      {
+        "avatarName": "Umbra",
+        "resourceName": "Hero_Ichor.Alt"
+      },
+      {
+        "avatarName": "Aegis",
+        "resourceName": "Hero_Ichor.Alt2"
+      }
+    ]
+  },
+  {
+    "hero": "Jeraziah",
+    "avatarInfo": [
+      {
+        "avatarName": "Dark Jeraziah",
+        "resourceName": "Hero_Jereziah.Alt"
+      },
+      {
+        "avatarName": "Pride",
+        "resourceName": "Hero_Jereziah.Alt2"
+      },
+      {
+        "avatarName": "Crusader Jeraziah",
+        "resourceName": "Hero_Jereziah.Alt3"
+      },
+      {
+        "avatarName": "Inti Jeraziah",
+        "resourceName": "Hero_Jereziah.Alt4"
+      },
+      {
+        "avatarName": "Omen",
+        "resourceName": "Hero_Jereziah.Alt5"
+      },
+      {
+        "avatarName": "Liberator",
+        "resourceName": "Hero_Jereziah.Alt6"
+      },
+      {
+        "avatarName": "Pog Jeraziah",
+        "resourceName": "Hero_Jereziah.Alt8"
+      },
+      {
+        "avatarName": "Blade of Sol",
+        "resourceName": "Hero_Jereziah.Alt9"
+      },
+      {
+        "avatarName": "Ceremonial Armor Jeraziah",
+        "resourceName": "Hero_Jereziah.Alt10"
+      },
+      {
+        "avatarName": "The Iron King",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Beast King",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Beast King",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Kane",
+    "avatarInfo": [
+      {
+        "avatarName": "8-Bit Kane",
+        "resourceName": "Alt"
+      },
+      {
+        "avatarName": "Katana",
+        "resourceName": "Alt2"
+      },
+      {
+        "avatarName": "Septar",
+        "resourceName": "Alt3"
+      },
+      {
+        "avatarName": "Invader Kane",
+        "resourceName": "Alt4"
+      },
+      {
+        "avatarName": "Lifeguard Kane",
+        "resourceName": "Alt5"
+      },
+      {
+        "avatarName": "Candy Kane",
+        "resourceName": "Alt6"
+      },
+      {
+        "avatarName": "Siam Warrior Kane",
+        "resourceName": "Alt7"
+      },
+      {
+        "avatarName": "Uschi",
+        "resourceName": "Alt8"
+      },
+      {
+        "avatarName": "Sudden Death Kane",
+        "resourceName": "Alt9"
+      },
+      {
+        "avatarName": "Mutineer Kane",
+        "resourceName": "Alt10"
+      },
+      {
+        "avatarName": "Blade of Spades",
+        "resourceName": "Alt11"
+      }
+    ]
+  },
+  {
+    "hero": "Keeper of the Forest",
+    "avatarInfo": [
+      {
+        "avatarName": "Christmas Keeper",
+        "resourceName": "Hero_Treant.Alt"
+      },
+      {
+        "avatarName": "Mother Nature Keeper",
+        "resourceName": "Hero_Treant.Alt2"
+      },
+      {
+        "avatarName": "Keeper of the Desert",
+        "resourceName": "Hero_Treant.Alt3"
+      },
+      {
+        "avatarName": "Throwback Keeper of the Forest",
+        "resourceName": "Hero_Treant.Classic"
+      },
+      {
+        "avatarName": "Willow Keeper",
+        "resourceName": "Hero_Treant.Alt4"
+      },
+      {
+        "avatarName": "Keeper of the Green",
+        "resourceName": "Hero_Treant.Alt5"
+      },
+      {
+        "avatarName": "POG Keeper of the Forest",
+        "resourceName": "Hero_Treant.pog_skin"
+      },
+      {
+        "avatarName": "Keeper of the Harvest",
+        "resourceName": "Hero_Treant.Alt6"
+      },
+      {
+        "avatarName": "Keeper of the blossoms",
+        "resourceName": "Hero_Treant.Alt7"
+      }
+    ]
+  },
+  {
+    "hero": "Kinesis",
+    "avatarInfo": [
+      {
+        "avatarName": "Zeta Kinesis",
+        "resourceName": "Hero_Kenisis.Alt"
+      },
+      {
+        "avatarName": "Kinesia",
+        "resourceName": "Hero_Kenisis.Alt2"
+      },
+      {
+        "avatarName": "Augur",
+        "resourceName": "Alt3"
+      },
+      {
+        "avatarName": "Necrosis",
+        "resourceName": "Alt4"
+      },
+      {
+        "avatarName": "Nian Guardian Kinesis",
+        "resourceName": "Alt5"
+      },
+      {
+        "avatarName": "Esper",
+        "resourceName": "Alt6"
+      },
+      {
+        "avatarName": "Sakura",
+        "resourceName": "Alt7"
+      }
+    ]
+  },
+  {
+    "hero": "King Klout",
+    "avatarInfo": [
+      {
+        "avatarName": "King Truffle",
+        "resourceName": "Hero_KingKlout.Alt"
+      },
+      {
+        "avatarName": "King Klaus",
+        "resourceName": "Hero_KingKlout.Alt2"
+      },
+      {
+        "avatarName": "Coach Klout",
+        "resourceName": "Hero_KingKlout.Alt3"
+      }
+    ]
+  },
+  {
+    "hero": "Klanx",
+    "avatarInfo": [
+      {
+        "avatarName": "Sky Pirate Klanx",
+        "resourceName": "Hero_Klanx.Alt"
+      },
+      {
+        "avatarName": "Doomsday Klanx",
+        "resourceName": "Hero_Klanx.Alt2"
+      },
+      {
+        "avatarName": "Safari Klanx",
+        "resourceName": "Hero_Klanx.Alt3"
+      },
+      {
+        "avatarName": "Winter Soldier Klanx",
+        "resourceName": "Hero_Klanx.Alt4"
+      },
+      {
+        "avatarName": "Shamrock Klanx",
+        "resourceName": "Hero_Klanx.Alt5"
+      },
+      {
+        "avatarName": "Prince Charming",
+        "resourceName": "Hero_Klanx.Alt6"
+      },
+      {
+        "avatarName": "Firefighter Klanx",
+        "resourceName": "Hero_Klanx.Alt7"
+      }
+    ]
+  },
+  {
+    "hero": "Kraken",
+    "avatarInfo": [
+      {
+        "avatarName": "Crustacean Kraken",
+        "resourceName": "Hero_Kraken.Alt"
+      },
+      {
+        "avatarName": "Submariner Kraken",
+        "resourceName": "Hero_Kraken.Alt2"
+      },
+      {
+        "avatarName": "Gnarwhal",
+        "resourceName": "Hero_Kraken.Alt3"
+      },
+      {
+        "avatarName": "Cancer",
+        "resourceName": "Hero_Kraken.Alt4"
+      },
+      {
+        "avatarName": "POG Kraken",
+        "resourceName": "Hero_Kraken.pog_skin"
+      },
+      {
+        "avatarName": "Killer Kraken",
+        "resourceName": "Hero_Kraken.Alt6"
+      }
+    ]
+  },
+  {
+    "hero": "Legionnaire",
+    "avatarInfo": [
+      {
+        "avatarName": "Logger Legionnaire",
+        "resourceName": "Hero_Legionnaire.Alt"
+      },
+      {
+        "avatarName": "Golden Centurion",
+        "resourceName": "Hero_Legionnaire.Alt2"
+      },
+      {
+        "avatarName": "Executioner Legionnaire",
+        "resourceName": "Hero_Legionnaire.Alt3"
+      },
+      {
+        "avatarName": "Quintan",
+        "resourceName": "Hero_Legionnaire.Alt4"
+      },
+      {
+        "avatarName": "Throwback Legionnaire",
+        "resourceName": "Hero_Legionnaire.Classic"
+      },
+      {
+        "avatarName": "Chip Legionnaire",
+        "resourceName": "Hero_Legionnaire.Alt5"
+      },
+      {
+        "avatarName": "The Kurgan",
+        "resourceName": "Hero_Legionnaire.Alt6"
+      },
+      {
+        "avatarName": "Boudica",
+        "resourceName": "Hero_Legionnaire.Alt7"
+      },
+      {
+        "avatarName": "Savior Legionnaire",
+        "resourceName": "Hero_Legionnaire.Alt8"
+      },
+      {
+        "avatarName": "Trophy Legionnaire",
+        "resourceName": "Hero_Legionnaire.Alt10"
+      },
+      {
+        "avatarName": "POG Legionnaire",
+        "resourceName": "Hero_Legionnaire.pog_skin"
+      },
+      {
+        "avatarName": "Mercenary Legionnaire",
+        "resourceName": "Hero_Legionnaire.Alt11"
+      },
+      {
+        "avatarName": "Siam Warrior Legionnaire",
+        "resourceName": "Hero_Legionnaire.Alt12"
+      },
+      {
+        "avatarName": "Argentus",
+        "resourceName": "Hero_Legionnaire.Alt13"
+      },
+      {
+        "avatarName": "Royal Guardsman",
+        "resourceName": "Hero_Legionnaire.Alt15"
+      },
+      {
+        "avatarName": "Maritime Legionnaire",
+        "resourceName": "Hero_Legionnaire.Alt16"
+      },
+      {
+        "avatarName": "F.L.E.X Legionnaire",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Lodestone",
+    "avatarInfo": [
+      {
+        "avatarName": "Shrapnel",
+        "resourceName": "Hero_Lodestone.Alt"
+      },
+      {
+        "avatarName": "Heap",
+        "resourceName": "Hero_Lodestone.Alt2"
+      },
+      {
+        "avatarName": "Penitent Lodestone",
+        "resourceName": "Hero_Lodestone.Alt3"
+      },
+      {
+        "avatarName": "Straw Man Lodestone",
+        "resourceName": "Hero_Lodestone.Alt4"
+      },
+      {
+        "avatarName": "Goalie Lodestone",
+        "resourceName": "Hero_Lodestone.Alt5"
+      },
+      {
+        "avatarName": "Tumbler",
+        "resourceName": "Hero_Lodestone.Alt6"
+      },
+      {
+        "avatarName": "Tumbler",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Lord Salforis",
+    "avatarInfo": [
+      {
+        "avatarName": "Dreadknight Salforis",
+        "resourceName": "Hero_Dreadknight.Alt"
+      },
+      {
+        "avatarName": "Horseman Death",
+        "resourceName": "Hero_Dreadknight.Alt2"
+      },
+      {
+        "avatarName": "Lord Thanatos",
+        "resourceName": "Hero_Dreadknight.Alt3"
+      },
+      {
+        "avatarName": "Baron of Blackwal",
+        "resourceName": "Hero_Dreadknight.Alt4"
+      },
+      {
+        "avatarName": "Blackwal Salforis",
+        "resourceName": "Hero_Dreadknight.Alt5"
+      },
+      {
+        "avatarName": "Prince Salforis",
+        "resourceName": "Hero_Dreadknight.Alt7"
+      },
+      {
+        "avatarName": "Techromancer",
+        "resourceName": "Hero_Dreadknight.Alt8"
+      },
+      {
+        "avatarName": "Songkran Salforis (EN)",
+        "resourceName": "Hero_Dreadknight.Alt9"
+      },
+      {
+        "avatarName": "Songkran Salforis",
+        "resourceName": "Hero_Dreadknight.Alt10"
+      },
+      {
+        "avatarName": "Lord Samhain",
+        "resourceName": "Hero_Dreadknight.Alt11"
+      }
+    ]
+  },
+  {
+    "hero": "Magebane",
+    "avatarInfo": [
+      {
+        "avatarName": "Magus Bane",
+        "resourceName": "Hero_Javaras.Alt"
+      },
+      {
+        "avatarName": "Rage Bane",
+        "resourceName": "Hero_Javaras.Alt2"
+      },
+      {
+        "avatarName": "Throwback Magebane",
+        "resourceName": "Hero_Javaras.Classic"
+      },
+      {
+        "avatarName": "Shaolin Magebane",
+        "resourceName": "Hero_Javaras.Alt3"
+      },
+      {
+        "avatarName": "Syphon",
+        "resourceName": "Hero_Javaras.Alt4"
+      },
+      {
+        "avatarName": "Aeacus",
+        "resourceName": "Hero_Javaras.Alt5"
+      },
+      {
+        "avatarName": "Acheron of Mana",
+        "resourceName": "Hero_Javaras.Alt6"
+      },
+      {
+        "avatarName": "Dark Mana Mage",
+        "resourceName": "Hero_Javaras.Alt7"
+      },
+      {
+        "avatarName": "Tutankhamun",
+        "resourceName": "Hero_Javaras.Alt8"
+      },
+      {
+        "avatarName": "Sword Dancer Magebane",
+        "resourceName": "Hero_Javaras.Alt9"
+      }
+    ]
+  },
+  {
+    "hero": "Magmus",
+    "avatarInfo": [
+      {
+        "avatarName": "Scorpion Magmus",
+        "resourceName": "Hero_Magmar.Alt2"
+      },
+      {
+        "avatarName": "Magmoose",
+        "resourceName": "Hero_Magmar.Alt3"
+      },
+      {
+        "avatarName": "Svarog",
+        "resourceName": "Hero_Magmar.Alt4"
+      },
+      {
+        "avatarName": "Cryo Magmus",
+        "resourceName": "Hero_Magmar.Alt5"
+      },
+      {
+        "avatarName": "Taurus",
+        "resourceName": "Hero_Magmar.Alt6"
+      },
+      {
+        "avatarName": "Scoria",
+        "resourceName": "Hero_Magmar.Alt7"
+      },
+      {
+        "avatarName": "Tidal Magmus",
+        "resourceName": "Hero_Magmar.Alt8"
+      },
+      {
+        "avatarName": "Trophy Magmus",
+        "resourceName": "Hero_Magmar.Alt9"
+      },
+      {
+        "avatarName": "POG Magmus",
+        "resourceName": "Hero_Magmar.pog_skin"
+      },
+      {
+        "avatarName": "Spectrum Paragon Magmus",
+        "resourceName": "Hero_Magmar.Alt10"
+      },
+      {
+        "avatarName": "Ascension Magmus",
+        "resourceName": "Hero_Magmar.Alt11"
+      },
+      {
+        "avatarName": "Swagmus",
+        "resourceName": "Hero_Magmar.Alt12"
+      },
+      {
+        "avatarName": "Chocolate Magmousse",
+        "resourceName": "Hero_Magmar.Alt13"
+      },
+      {
+        "avatarName": "Fireheart",
+        "resourceName": "Hero_Magmar.Alt14"
+      },
+      {
+        "avatarName": "Saji",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Maliken",
+    "avatarInfo": [
+      {
+        "avatarName": "Mali Klause",
+        "resourceName": "Hero_Maliken.Alt"
+      },
+      {
+        "avatarName": "Horseman Conquest",
+        "resourceName": "Hero_Maliken.Alt2"
+      },
+      {
+        "avatarName": "Young Maliken",
+        "resourceName": "Hero_Maliken.Alt3"
+      },
+      {
+        "avatarName": "Slasher Maliken",
+        "resourceName": "Hero_Maliken.Alt4"
+      },
+      {
+        "avatarName": "Humility",
+        "resourceName": "Hero_Maliken.Alt5"
+      },
+      {
+        "avatarName": "Cao Cao",
+        "resourceName": "Hero_Maliken.Alt6"
+      },
+      {
+        "avatarName": "POG Maliken",
+        "resourceName": "Hero_Maliken.pog_skin"
+      },
+      {
+        "avatarName": "Adkarna King",
+        "resourceName": "Hero_Maliken.Alt7"
+      },
+      {
+        "avatarName": "Fusion Maliken",
+        "resourceName": "Hero_Maliken.Alt8"
+      },
+      {
+        "avatarName": "Volto Maliken",
+        "resourceName": "Hero_Maliken.Alt9"
+      },
+      {
+        "avatarName": "Volto Maliken",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Martyr",
+    "avatarInfo": [
+      {
+        "avatarName": "Sister Martyr",
+        "resourceName": "Hero_Martyr.Alt"
+      },
+      {
+        "avatarName": "Unum",
+        "resourceName": "Hero_Martyr.Alt2"
+      },
+      {
+        "avatarName": "Throwback Martyr",
+        "resourceName": "Hero_Martyr.Classic"
+      },
+      {
+        "avatarName": "Tangseng",
+        "resourceName": "Hero_Martyr.Alt3"
+      },
+      {
+        "avatarName": "Sister Death",
+        "resourceName": "Hero_Martyr.Alt4"
+      },
+      {
+        "avatarName": "Virgo",
+        "resourceName": "Hero_Martyr.Alt5"
+      },
+      {
+        "avatarName": "Grimm's Medic",
+        "resourceName": "Hero_Martyr.Alt6"
+      }
+    ]
+  },
+  {
+    "hero": "Master Of Arms",
+    "avatarInfo": [
+      {
+        "avatarName": "Commander of Arms",
+        "resourceName": "Hero_MasterOfArms.Alt2"
+      },
+      {
+        "avatarName": "Master of Bows",
+        "resourceName": "Hero_MasterOfArms.Alt3"
+      },
+      {
+        "avatarName": "Master of Cybernetics",
+        "resourceName": "Hero_MasterOfArms.Alt4"
+      },
+      {
+        "avatarName": "Master of Songkran",
+        "resourceName": "Hero_MasterOfArms.Alt5"
+      },
+      {
+        "avatarName": "Libra",
+        "resourceName": "Hero_MasterOfArms.Alt6"
+      },
+      {
+        "avatarName": "Mistress of Arms",
+        "resourceName": "Hero_MasterOfArms.Alt7"
+      },
+      {
+        "avatarName": "Waru",
+        "resourceName": "Hero_MasterOfArms.Alt8"
+      },
+      {
+        "avatarName": "Trophy Master of Arms",
+        "resourceName": "Hero_MasterOfArms.Alt9"
+      },
+      {
+        "avatarName": "Master of Hearts",
+        "resourceName": "Hero_MasterOfArms.Alt10"
+      },
+      {
+        "avatarName": "El Maestro",
+        "resourceName": "Hero_MasterOfArms.Alt11"
+      },
+      {
+        "avatarName": "Master of Commandos",
+        "resourceName": "Hero_MasterOfArms.Alt12"
+      },
+      {
+        "avatarName": "Big Bad MoA",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Midas",
+    "avatarInfo": [
+      {
+        "avatarName": "Lord Midas",
+        "resourceName": "Hero_Midas.Alt"
+      },
+      {
+        "avatarName": "Santa Midas",
+        "resourceName": "Hero_Midas.Alt2"
+      },
+      {
+        "avatarName": "Medusa Midas",
+        "resourceName": "Hero_Midas.Alt3"
+      },
+      {
+        "avatarName": "Charity",
+        "resourceName": "Hero_Midas.Alt4"
+      },
+      {
+        "avatarName": "Coral Snake Medusa",
+        "resourceName": "Hero_Midas.Alt5"
+      },
+      {
+        "avatarName": "Sterling Midas",
+        "resourceName": "Hero_Midas.Alt6"
+      },
+      {
+        "avatarName": "Warrior King Midas",
+        "resourceName": "Hero_Midas.Alt7"
+      },
+      {
+        "avatarName": "Circus Bear Goldie",
+        "resourceName": "Hero_Midas.Alt9"
+      }
+    ]
+  },
+  {
+    "hero": "Mimix",
+    "avatarInfo": [
+      {
+        "avatarName": "Unity",
+        "resourceName": "Hero_Mimix.Alt"
+      },
+      {
+        "avatarName": "Severance",
+        "resourceName": "Hero_Mimix.Alt2"
+      }
+    ]
+  },
+  {
+    "hero": "Moira",
+    "avatarInfo": [
+      {
+        "avatarName": "Singularity",
+        "resourceName": "Hero_Moira.Alt"
+      },
+      {
+        "avatarName": "Hecate",
+        "resourceName": "Hero_Moira.Alt2"
+      },
+      {
+        "avatarName": "Arcanium Armor Moira",
+        "resourceName": "Hero_Moira.Alt3"
+      }
+    ]
+  },
+  {
+    "hero": "Monarch",
+    "avatarInfo": [
+      {
+        "avatarName": "Queen Monarch",
+        "resourceName": "Hero_Monarch.Alt"
+      },
+      {
+        "avatarName": "Queen Bee Monarch",
+        "resourceName": "Hero_Monarch.Alt2"
+      },
+      {
+        "avatarName": "Tera Monarch",
+        "resourceName": "Hero_Monarch.Alt3"
+      },
+      {
+        "avatarName": "Cherub",
+        "resourceName": "Hero_Monarch.Alt4"
+      },
+      {
+        "avatarName": "Luna Moth Cherub",
+        "resourceName": "Hero_Monarch.Alt5"
+      },
+      {
+        "avatarName": "Snowflake",
+        "resourceName": "Hero_Monarch.Alt6"
+      },
+      {
+        "avatarName": "EXO Monarch",
+        "resourceName": "Hero_Monarch.Alt7"
+      }
+    ]
+  },
+  {
+    "hero": "Monkey King",
+    "avatarInfo": [
+      {
+        "avatarName": "Jade Warrior",
+        "resourceName": "Hero_MonkeyKing.Alt"
+      },
+      {
+        "avatarName": "PeKing Duck",
+        "resourceName": "Hero_MonkeyKing.Alt2"
+      },
+      {
+        "avatarName": "Queen Of Fools",
+        "resourceName": "Hero_MonkeyKing.Alt3"
+      },
+      {
+        "avatarName": "Harumon Monkey King",
+        "resourceName": "Hero_MonkeyKing.Alt4"
+      },
+      {
+        "avatarName": "Sun Wukong",
+        "resourceName": "Hero_MonkeyKing.Alt5"
+      },
+      {
+        "avatarName": "TDMonkey King",
+        "resourceName": "Hero_MonkeyKing.Alt6"
+      },
+      {
+        "avatarName": "MechaKing",
+        "resourceName": "Hero_MonkeyKing.Alt7"
+      },
+      {
+        "avatarName": "Lu Bu",
+        "resourceName": "Hero_MonkeyKing.Alt8"
+      },
+      {
+        "avatarName": "Mountain Dew Monkey King",
+        "resourceName": "Hero_MonkeyKing.Alt9"
+      },
+      {
+        "avatarName": "Unbound Monkey King",
+        "resourceName": "Hero_MonkeyKing.Alt11"
+      },
+      {
+        "avatarName": "Breakaway Monkey King",
+        "resourceName": "Hero_MonkeyKing.Alt12"
+      },
+      {
+        "avatarName": "Six Eared Macaque",
+        "resourceName": "Hero_MonkeyKing.Alt13"
+      },
+      {
+        "avatarName": "Monkey Singer",
+        "resourceName": "Hero_MonkeyKing.Alt14"
+      },
+      {
+        "avatarName": "Shinobi Monkey King",
+        "resourceName": "Hero_MonkeyKing.Alt15"
+      },
+      {
+        "avatarName": "Prodigy King",
+        "resourceName": "Hero_MonkeyKing.Alt16"
+      },
+      {
+        "avatarName": "Prodigy King",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Throwback Monkey King",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Jade Macaque",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Moon Queen",
+    "avatarInfo": [
+      {
+        "avatarName": "Sexy Moon Queen",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Blood Moon Queen",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Moon Prince",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Throwback Moon Queen",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Eclipse ",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "POG Moon Queen",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Lady Liberty",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Gisele",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Nian Guardian Moon Queen",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Lunari",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Moon",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Moraxus",
+    "avatarInfo": [
+      {
+        "avatarName": "Chainsaw Moraxus",
+        "resourceName": "Hero_Moraxus.Alt"
+      },
+      {
+        "avatarName": "Morockus",
+        "resourceName": "Hero_Moraxus.Alt2"
+      },
+      {
+        "avatarName": "Mortracksus",
+        "resourceName": "Hero_Moraxus.Alt3"
+      },
+      {
+        "avatarName": "Axia",
+        "resourceName": "Hero_Moraxus.Alt4"
+      }
+    ]
+  },
+  {
+    "hero": "Myrmidon",
+    "avatarInfo": [
+      {
+        "avatarName": "Mermaidon",
+        "resourceName": "Hero_Hydromancer.Alt"
+      },
+      {
+        "avatarName": "Shenlong",
+        "resourceName": "Hero_Hydromancer.Alt2"
+      },
+      {
+        "avatarName": "Walradon",
+        "resourceName": "Hero_Hydromancer.Alt3"
+      },
+      {
+        "avatarName": "Sea King Myrmidon",
+        "resourceName": "Hero_Hydromancer.Alt4"
+      },
+      {
+        "avatarName": "ALPHA Myrmidon",
+        "resourceName": "Hero_Hydromancer.Alt5"
+      },
+      {
+        "avatarName": "Mephisto Myrmidon",
+        "resourceName": "Hero_Hydromancer.Alt6"
+      },
+      {
+        "avatarName": "Plushie Myrmidon",
+        "resourceName": "Hero_Hydromancer.Alt7"
+      },
+      {
+        "avatarName": "Misfit Myrmidon",
+        "resourceName": "Hero_Hydromancer.Alt8"
+      },
+      {
+        "avatarName": "Scylla",
+        "resourceName": "Hero_Hydromancer.Alt9"
+      },
+      {
+        "avatarName": "Scylla",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Night Hound",
+    "avatarInfo": [
+      {
+        "avatarName": "Teen Hound",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Night Hunter",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Night Hoodlum",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Throwback Night Hound",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Cowardly Night Hound",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "POG Night Hound",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Rabid Night Bunny",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Leo",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Fright Hound",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Ferocious Leo",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Catnip Night Hound",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Plushie Night Hound",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Misfit Night Hound",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Wildcat",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Nitro",
+    "avatarInfo": [
+      {
+        "avatarName": "Danse Macabre",
+        "resourceName": "Alt"
+      },
+      {
+        "avatarName": "Marauder",
+        "resourceName": "Alt2"
+      },
+      {
+        "avatarName": "Bosozoku Nitro",
+        "resourceName": "Alt3"
+      },
+      {
+        "avatarName": "Tesla Cannon Nitro",
+        "resourceName": "Alt4"
+      }
+    ]
+  },
+  {
+    "hero": "Nomad",
+    "avatarInfo": [
+      {
+        "avatarName": "Nomaddin",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Shaka Nomad",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Red Raja",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Elly Nomad",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Diligence",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Exterminator Nomad",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Eskinomad",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Zhang Fei",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Hang Jebat",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Trophy Nomad",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Bloodstorm",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Punk Nomad",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Songkran Nomad (EN)",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "HoNWorld Nomad",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Songkran Nomad",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Nymphora",
+    "avatarInfo": [
+      {
+        "avatarName": "Spriticus",
+        "resourceName": "Hero_Fairy.Alt"
+      },
+      {
+        "avatarName": "Unseelie Nymphora",
+        "resourceName": "Hero_Fairy.Alt2"
+      },
+      {
+        "avatarName": "Fat Nymphora",
+        "resourceName": "Hero_Fairy.Alt3"
+      },
+      {
+        "avatarName": "Luckphora",
+        "resourceName": "Hero_Fairy.Alt4"
+      },
+      {
+        "avatarName": "POG Nymphora",
+        "resourceName": "Hero_Fairy.pog_skin"
+      },
+      {
+        "avatarName": "Beelzebub",
+        "resourceName": "Hero_Fairy.Alt5"
+      },
+      {
+        "avatarName": "Grace Nymphora",
+        "resourceName": "Hero_Fairy.Alt6"
+      },
+      {
+        "avatarName": "Trophy Nymphora (Basic)",
+        "resourceName": "Hero_Fairy.Alt7"
+      },
+      {
+        "avatarName": "Trophy Nymphora (Advanced)",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Trophy Nymphora (Elite)",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Hummingbird",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Oogie",
+    "avatarInfo": [
+      {
+        "avatarName": "Haka",
+        "resourceName": "Hero_Oogie.Alt"
+      },
+      {
+        "avatarName": "Kurukuru",
+        "resourceName": "Hero_Oogie.Alt2"
+      },
+      {
+        "avatarName": "Mardi Gras Oogie",
+        "resourceName": "Hero_Oogie.Alt3"
+      },
+      {
+        "avatarName": "Boogie Oogie",
+        "resourceName": "Hero_Oogie.Alt4"
+      },
+      {
+        "avatarName": "Ogoh-ogoh",
+        "resourceName": "Hero_Oogie.Alt5"
+      },
+      {
+        "avatarName": "Oogie Tier ONE",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Oogie Tier TWO",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Oogie Tier THREE",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Ophelia",
+    "avatarInfo": [
+      {
+        "avatarName": "Illithiphelia",
+        "resourceName": "Hero_Ophelia.Alt"
+      },
+      {
+        "avatarName": "Antphelia",
+        "resourceName": "Hero_Ophelia.Alt2"
+      },
+      {
+        "avatarName": "Throwback Ophelia",
+        "resourceName": "Hero_Ophelia.Classic"
+      },
+      {
+        "avatarName": "Sylvia",
+        "resourceName": "Hero_Ophelia.Alt3"
+      },
+      {
+        "avatarName": "Capricorn",
+        "resourceName": "Hero_Ophelia.Alt4"
+      },
+      {
+        "avatarName": "POG Ophelia",
+        "resourceName": "Hero_Ophelia.pog_skin"
+      },
+      {
+        "avatarName": "Pan",
+        "resourceName": "Hero_Ophelia.Alt5"
+      },
+      {
+        "avatarName": "Queen of Adkarna",
+        "resourceName": "Hero_Ophelia.Alt6"
+      }
+    ]
+  },
+  {
+    "hero": "Pandamonium",
+    "avatarInfo": [
+      {
+        "avatarName": "Kangamonium",
+        "resourceName": "Hero_Panda.Alt"
+      },
+      {
+        "avatarName": "Polarmonium",
+        "resourceName": "Hero_Panda.Alt2"
+      },
+      {
+        "avatarName": "Muay Tigermonium",
+        "resourceName": "Hero_Panda.Alt3"
+      },
+      {
+        "avatarName": "Jeet Kune Dragon",
+        "resourceName": "Hero_Panda.Alt4"
+      },
+      {
+        "avatarName": "Amanda Panda",
+        "resourceName": "Hero_Panda.Alt5"
+      },
+      {
+        "avatarName": "Hippomonium",
+        "resourceName": "Hero_Panda.Alt6"
+      },
+      {
+        "avatarName": "POG Pandamonium",
+        "resourceName": "Hero_Panda.pog_skin"
+      },
+      {
+        "avatarName": "Green Wood Ram",
+        "resourceName": "Hero_Panda.Alt7"
+      },
+      {
+        "avatarName": "Nian Guardian Pandamonium",
+        "resourceName": "Hero_Panda.Alt8"
+      },
+      {
+        "avatarName": "Plushie Panda",
+        "resourceName": "Hero_Panda.Alt9"
+      },
+      {
+        "avatarName": "Misfit Panda",
+        "resourceName": "Hero_Panda.Alt10"
+      }
+    ]
+  },
+  {
+    "hero": "Parallax",
+    "avatarInfo": [
+      {
+        "avatarName": "Thai Warrior",
+        "resourceName": "Hero_Parallax.Alt"
+      },
+      {
+        "avatarName": "High Priestess",
+        "resourceName": "Hero_Parallax.Alt2"
+      },
+      {
+        "avatarName": "Ascension Parallax",
+        "resourceName": "Hero_Parallax.Alt3"
+      },
+      {
+        "avatarName": "Ion",
+        "resourceName": "Hero_Parallax.Alt4"
+      },
+      {
+        "avatarName": "Cruxlord",
+        "resourceName": "Hero_Parallax.Alt6"
+      }
+    ]
+  },
+  {
+    "hero": "Parasite",
+    "avatarInfo": [
+      {
+        "avatarName": "Mutant Parasite",
+        "resourceName": "Hero_Parasite.Alt"
+      },
+      {
+        "avatarName": "Envy",
+        "resourceName": "Hero_Parasite.Alt2"
+      },
+      {
+        "avatarName": "Facehugger",
+        "resourceName": "Hero_Parasite.Alt3"
+      },
+      {
+        "avatarName": "NanoParasite",
+        "resourceName": "Hero_Parasite.Alt4"
+      },
+      {
+        "avatarName": "Ellie Envy",
+        "resourceName": "Hero_Parasite.Alt5"
+      },
+      {
+        "avatarName": "Amethyst Paragon Parasite",
+        "resourceName": "Hero_Parasite.Alt6"
+      },
+      {
+        "avatarName": "Trophy Parasite",
+        "resourceName": "Hero_Parasite.Alt8"
+      },
+      {
+        "avatarName": "Ascension Parasite",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Nuclear Parasite",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Pearl",
+    "avatarInfo": [
+      {
+        "avatarName": "Brann ",
+        "resourceName": "Hero_Pearl.Alt"
+      },
+      {
+        "avatarName": "Shadian",
+        "resourceName": "Hero_Pearl.Alt2"
+      },
+      {
+        "avatarName": "Ruby",
+        "resourceName": "Hero_Pearl.Alt3"
+      },
+      {
+        "avatarName": "Good Witch Pearl",
+        "resourceName": "Hero_Pearl.Alt4"
+      },
+      {
+        "avatarName": "Malice",
+        "resourceName": "Hero_Pearl.Alt5"
+      },
+      {
+        "avatarName": "Aries",
+        "resourceName": "Hero_Pearl.Alt6"
+      },
+      {
+        "avatarName": "Snowglobe",
+        "resourceName": "Hero_Pearl.Alt7"
+      },
+      {
+        "avatarName": "Xiao Qiao",
+        "resourceName": "Hero_Pearl.Alt8"
+      },
+      {
+        "avatarName": "Popcorn",
+        "resourceName": "Hero_Pearl.Alt9"
+      },
+      {
+        "avatarName": "Pumpkin Party Pearl",
+        "resourceName": "Hero_Pearl.Alt10"
+      }
+    ]
+  },
+  {
+    "hero": "Pebbles",
+    "avatarInfo": [
+      {
+        "avatarName": "Golden Pebbles",
+        "resourceName": "Hero_Rocky.Alt"
+      },
+      {
+        "avatarName": "Jade Giant Pebbles",
+        "resourceName": "Hero_Rocky.Alt2"
+      },
+      {
+        "avatarName": "Frankie Pebbles",
+        "resourceName": "Hero_Rocky.Alt3"
+      },
+      {
+        "avatarName": "Throwback Pebbles",
+        "resourceName": "Hero_Rocky.Classic"
+      },
+      {
+        "avatarName": "Earthroc Pebbles",
+        "resourceName": "Hero_Rocky.Alt4"
+      },
+      {
+        "avatarName": "Savior Pebbles",
+        "resourceName": "Hero_Rocky.Alt5"
+      },
+      {
+        "avatarName": "Rocky",
+        "resourceName": "Hero_Rocky.Alt6"
+      },
+      {
+        "avatarName": "Boulderdash",
+        "resourceName": "Hero_Rocky.Alt7"
+      },
+      {
+        "avatarName": "Siege Golem Pebbles",
+        "resourceName": "Hero_Rocky.Alt8"
+      },
+      {
+        "avatarName": "Easter Island Pebbles",
+        "resourceName": "Hero_Rocky.Alt9"
+      },
+      {
+        "avatarName": "Stonewall Pebbles",
+        "resourceName": "Hero_Rocky.Alt10"
+      },
+      {
+        "avatarName": "Chuck Pebbles",
+        "resourceName": "Hero_Rocky.Alt11"
+      },
+      {
+        "avatarName": "Pebbles Tier ONE",
+        "resourceName": "Hero_Rocky.Alt12"
+      },
+      {
+        "avatarName": "Pebbles Tier TWO",
+        "resourceName": "Hero_Rocky.Alt13"
+      },
+      {
+        "avatarName": "Pebbles Tier THREE",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "P-800",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Diamante",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Pestilence",
+    "avatarInfo": [
+      {
+        "avatarName": "Ladybug Pestilence",
+        "resourceName": "Hero_Pestilence.Alt"
+      },
+      {
+        "avatarName": "Horseman Pestilence",
+        "resourceName": "Hero_Pestilence.Alt2"
+      },
+      {
+        "avatarName": "Queen Serecta",
+        "resourceName": "Hero_Pestilence.Alt3"
+      },
+      {
+        "avatarName": "Swarm Pestilence",
+        "resourceName": "Hero_Pestilence.Alt4"
+      },
+      {
+        "avatarName": "Invader Pestilence",
+        "resourceName": "Hero_Pestilence.Alt5"
+      },
+      {
+        "avatarName": "Carrion Beetle",
+        "resourceName": "Hero_Pestilence.Alt6"
+      },
+      {
+        "avatarName": "Lord Pestilence",
+        "resourceName": "Hero_Pestilence.Alt7"
+      },
+      {
+        "avatarName": "Soccer Pestilence",
+        "resourceName": "Hero_Pestilence.Alt8"
+      },
+      {
+        "avatarName": "Scourge Trooper",
+        "resourceName": "Hero_Pestilence.Alt9"
+      },
+      {
+        "avatarName": "Plushie Pesti",
+        "resourceName": "Hero_Pestilence.Alt10"
+      },
+      {
+        "avatarName": "Misfit Pesti",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Pharaoh",
+    "avatarInfo": [
+      {
+        "avatarName": "Cleopatra Pharaoh",
+        "resourceName": "Hero_Mumra.Alt"
+      },
+      {
+        "avatarName": "Golden Emperor",
+        "resourceName": "Hero_Mumra.Alt2"
+      },
+      {
+        "avatarName": "Anubis Pharaoh",
+        "resourceName": "Hero_Mumra.Alt3"
+      },
+      {
+        "avatarName": "Throwback Pharaoh",
+        "resourceName": "Hero_Mumra.Classic"
+      },
+      {
+        "avatarName": "POG Pharaoh",
+        "resourceName": "Hero_Mumra.pog_skin"
+      },
+      {
+        "avatarName": "Festive Pharaoh",
+        "resourceName": "Hero_Mumra.Alt4"
+      },
+      {
+        "avatarName": "Steam Knight Pharaoh",
+        "resourceName": "Hero_Mumra.Alt5"
+      },
+      {
+        "avatarName": "Ascension Pharaoh",
+        "resourceName": "Hero_Mumra.Alt6"
+      },
+      {
+        "avatarName": "Cyberian Husky",
+        "resourceName": "Hero_Mumra.Alt7"
+      },
+      {
+        "avatarName": "Songkran Pharaoh (EN)",
+        "resourceName": "Hero_Mumra.Alt8"
+      },
+      {
+        "avatarName": "Songkran Pharaoh",
+        "resourceName": "Hero_Mumra.Alt9"
+      },
+      {
+        "avatarName": "Doge Anubis",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Plague Rider",
+    "avatarInfo": [
+      {
+        "avatarName": "Frost Rider",
+        "resourceName": "Hero_DiseasedRider.Alt"
+      },
+      {
+        "avatarName": "Leper",
+        "resourceName": "Hero_DiseasedRider.Alt2"
+      },
+      {
+        "avatarName": "Candy Rider",
+        "resourceName": "Hero_DiseasedRider.Alt3"
+      },
+      {
+        "avatarName": "Pegasus",
+        "resourceName": "Hero_DiseasedRider.Alt4"
+      },
+      {
+        "avatarName": "Battle Armor Pegasus",
+        "resourceName": "Hero_DiseasedRider.Alt5"
+      },
+      {
+        "avatarName": "Olympic Pegasus",
+        "resourceName": "Hero_DiseasedRider.Alt6"
+      },
+      {
+        "avatarName": "Eagle Rider",
+        "resourceName": "Hero_DiseasedRider.Alt7"
+      },
+      {
+        "avatarName": "POG Plague Rider",
+        "resourceName": "Hero_DiseasedRider.pog_skin"
+      },
+      {
+        "avatarName": "Plume Rider",
+        "resourceName": "Hero_DiseasedRider.Alt8"
+      }
+    ]
+  },
+  {
+    "hero": "Pollywog Priest",
+    "avatarInfo": [
+      {
+        "avatarName": "Pollywog Chieftain",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Classic Pollywog Priest",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Holly Polly",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Penguin Priest",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Axolotl Pollywog",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "POG Pollywog Priest",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Prince Polly",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Punk Pollywog",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Predator",
+    "avatarInfo": [
+      {
+        "avatarName": "Bunny Predator",
+        "resourceName": "Hero_Predator.Alt"
+      },
+      {
+        "avatarName": "Xeno Predator",
+        "resourceName": "Hero_Predator.Alt2"
+      },
+      {
+        "avatarName": "Creature Predator",
+        "resourceName": "Hero_Predator.Alt3"
+      },
+      {
+        "avatarName": "Rift Predator",
+        "resourceName": "Hero_Predator.Alt4"
+      },
+      {
+        "avatarName": "Nightmare Predator",
+        "resourceName": "Hero_Predator.Alt5"
+      },
+      {
+        "avatarName": "Russian Battlebear",
+        "resourceName": "Hero_Predator.Alt6"
+      },
+      {
+        "avatarName": "Preda Tori",
+        "resourceName": "Hero_Predator.Alt7"
+      },
+      {
+        "avatarName": "Baal",
+        "resourceName": "Hero_Predator.Alt8"
+      },
+      {
+        "avatarName": "POG Predator",
+        "resourceName": "Hero_Predator.pog_skin"
+      },
+      {
+        "avatarName": "Savior Predator",
+        "resourceName": "Hero_Predator.Alt9"
+      },
+      {
+        "avatarName": "Khon Kean Predator",
+        "resourceName": "Hero_Predator.Alt10"
+      },
+      {
+        "avatarName": "ALPHA Predator",
+        "resourceName": "Hero_Predator.Alt11"
+      },
+      {
+        "avatarName": "Hack",
+        "resourceName": "Hero_Predator.Alt12"
+      },
+      {
+        "avatarName": "Beast Predator",
+        "resourceName": "Hero_Predator.Alt13"
+      },
+      {
+        "avatarName": "Birthday Basher",
+        "resourceName": "Hero_Predator.Alt14"
+      }
+    ]
+  },
+  {
+    "hero": "Prisoner 945",
+    "avatarInfo": [
+      {
+        "avatarName": "Baaracko",
+        "resourceName": "Hero_Prisoner.Alt"
+      },
+      {
+        "avatarName": "Brutavious",
+        "resourceName": "Hero_Prisoner.Alt2"
+      },
+      {
+        "avatarName": "Bajie",
+        "resourceName": "Hero_Prisoner.Alt3"
+      },
+      {
+        "avatarName": "Temperance",
+        "resourceName": "Hero_Prisoner.Alt4"
+      },
+      {
+        "avatarName": "Dark Angel",
+        "resourceName": "Hero_Prisoner.Alt5"
+      },
+      {
+        "avatarName": "Rune Breaker",
+        "resourceName": "Hero_Prisoner.Alt6"
+      },
+      {
+        "avatarName": "Angel Style Prisoner",
+        "resourceName": "Hero_Prisoner.Alt7"
+      }
+    ]
+  },
+  {
+    "hero": "Prophet",
+    "avatarInfo": [
+      {
+        "avatarName": "Serpent Prophet",
+        "resourceName": "Hero_Prophet.Alt"
+      },
+      {
+        "avatarName": "Bone Prophet",
+        "resourceName": "Hero_Prophet.Alt2"
+      },
+      {
+        "avatarName": "Lord Garuda",
+        "resourceName": "Hero_Prophet.Alt3"
+      },
+      {
+        "avatarName": "The Blind Prophet",
+        "resourceName": "Hero_Prophet.Alt4"
+      },
+      {
+        "avatarName": "Dynasty",
+        "resourceName": "Hero_Prophet.Alt5"
+      },
+      {
+        "avatarName": "Amadea",
+        "resourceName": "Hero_Prophet.Alt6"
+      },
+      {
+        "avatarName": "Trickster Prophet",
+        "resourceName": "Hero_Prophet.Alt7"
+      },
+      {
+        "avatarName": "Prophet Prince",
+        "resourceName": "Hero_Prophet.Alt8"
+      },
+      {
+        "avatarName": "Vermilion Bird",
+        "resourceName": "Hero_Prophet.Alt9"
+      }
+    ]
+  },
+  {
+    "hero": "Puppet Master",
+    "avatarInfo": [
+      {
+        "avatarName": "Doll Master",
+        "resourceName": "Hero_PuppetMaster.Alt"
+      },
+      {
+        "avatarName": "Karabas Barabas",
+        "resourceName": "Hero_PuppetMaster.Alt2"
+      },
+      {
+        "avatarName": "Arcsara Puppetmaster",
+        "resourceName": "Hero_PuppetMaster.Alt3"
+      },
+      {
+        "avatarName": "Throwback Puppet Master",
+        "resourceName": "Hero_PuppetMaster.Classic"
+      },
+      {
+        "avatarName": "Effigy",
+        "resourceName": "Hero_PuppetMaster.Alt4"
+      },
+      {
+        "avatarName": "Minos",
+        "resourceName": "Hero_PuppetMaster.Alt5"
+      },
+      {
+        "avatarName": "King Minos",
+        "resourceName": "Hero_PuppetMaster.Alt6"
+      },
+      {
+        "avatarName": "Game Master",
+        "resourceName": "Hero_PuppetMaster.Alt7"
+      },
+      {
+        "avatarName": "Freakshow",
+        "resourceName": "Hero_PuppetMaster.Alt8"
+      },
+      {
+        "avatarName": "Dalang",
+        "resourceName": "Hero_PuppetMaster.Alt9"
+      },
+      {
+        "avatarName": "POG Puppet Master",
+        "resourceName": "Hero_PuppetMaster.pog_skin"
+      },
+      {
+        "avatarName": "Topaz Paragon Puppet Master",
+        "resourceName": "Hero_PuppetMaster.Alt10"
+      },
+      {
+        "avatarName": "Mo-Phi",
+        "resourceName": "Hero_PuppetMaster.Alt11"
+      },
+      {
+        "avatarName": "The Sculptor",
+        "resourceName": "Hero_PuppetMaster.Alt12"
+      }
+    ]
+  },
+  {
+    "hero": "Pyromancer",
+    "avatarInfo": [
+      {
+        "avatarName": "Female Pyromancer",
+        "resourceName": "Hero_Pyromancer.Alt2"
+      },
+      {
+        "avatarName": "Scorcher",
+        "resourceName": "Hero_Pyromancer.Alt3"
+      },
+      {
+        "avatarName": "Headless Horseman Pyromancer",
+        "resourceName": "Hero_Pyromancer.Alt4"
+      },
+      {
+        "avatarName": "Steampunk Pyromancer",
+        "resourceName": "Hero_Pyromancer.Alt5"
+      },
+      {
+        "avatarName": "Brimstone",
+        "resourceName": "Hero_Pyromancer.Alt6"
+      },
+      {
+        "avatarName": "Blaze",
+        "resourceName": "Hero_Pyromancer.Alt7"
+      },
+      {
+        "avatarName": "Trophy Pyromancer",
+        "resourceName": "Hero_Pyromancer.Alt8"
+      },
+      {
+        "avatarName": "Arsin Pyromancer",
+        "resourceName": "Hero_Pyromancer.Alt9"
+      },
+      {
+        "avatarName": "Punk Pyro",
+        "resourceName": "Hero_Pyromancer.Alt10"
+      },
+      {
+        "avatarName": "Kojin",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Burn Club Pyro",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Rally",
+    "avatarInfo": [
+      {
+        "avatarName": "Warlord Rally",
+        "resourceName": "Hero_Rally.Alt"
+      },
+      {
+        "avatarName": "Joan D'Rally",
+        "resourceName": "Hero_Rally.Alt2"
+      },
+      {
+        "avatarName": "Tyrant",
+        "resourceName": "Hero_Rally.Alt3"
+      },
+      {
+        "avatarName": "Hunter Rally",
+        "resourceName": "Hero_Rally.Alt4"
+      },
+      {
+        "avatarName": "Bogatyr",
+        "resourceName": "Hero_Rally.Alt5"
+      },
+      {
+        "avatarName": "Yeniceri",
+        "resourceName": "Hero_Rally.Alt6"
+      },
+      {
+        "avatarName": "Savior Rally",
+        "resourceName": "Hero_Rally.Alt7"
+      },
+      {
+        "avatarName": "Blightstalker Rally",
+        "resourceName": "Hero_Rally.Alt8"
+      },
+      {
+        "avatarName": "General",
+        "resourceName": "Hero_Rally.Alt9"
+      },
+      {
+        "avatarName": "Kyugo",
+        "resourceName": "Hero_Rally.Alt11"
+      }
+    ]
+  },
+  {
+    "hero": "Rampage",
+    "avatarInfo": [
+      {
+        "avatarName": "Unicorn Rampage",
+        "resourceName": "Hero_Rampage.Alt"
+      },
+      {
+        "avatarName": "Rainbow Rampage",
+        "resourceName": "Hero_Rampage.Alt2"
+      },
+      {
+        "avatarName": "Rhino Rampage",
+        "resourceName": "Hero_Rampage.Alt3"
+      },
+      {
+        "avatarName": "Primal Rampage",
+        "resourceName": "Hero_Rampage.Alt4"
+      },
+      {
+        "avatarName": "Rudy Rampage",
+        "resourceName": "Hero_Rampage.Alt5"
+      },
+      {
+        "avatarName": "Hunter Rampage",
+        "resourceName": "Hero_Rampage.Alt6"
+      },
+      {
+        "avatarName": "Wyvern Rampage",
+        "resourceName": "Hero_Rampage.Alt7"
+      },
+      {
+        "avatarName": "Songkran Rampage",
+        "resourceName": "Hero_Rampage.Alt8"
+      },
+      {
+        "avatarName": "Road Rage Rampage",
+        "resourceName": "Hero_Rampage.Alt9"
+      },
+      {
+        "avatarName": "White Orc",
+        "resourceName": "Hero_Rampage.Alt10"
+      },
+      {
+        "avatarName": "Siam Warrior Rampage",
+        "resourceName": "Hero_Rampage.Alt11"
+      },
+      {
+        "avatarName": "Gory Vanguard",
+        "resourceName": "Hero_Rampage.Alt13"
+      },
+      {
+        "avatarName": "Punk Rampage",
+        "resourceName": "Hero_Rampage.Alt14"
+      }
+    ]
+  },
+  {
+    "hero": "Ravenor",
+    "avatarInfo": [
+      {
+        "avatarName": "Dominus Ravenor",
+        "resourceName": "Hero_Ravenor.Alt"
+      },
+      {
+        "avatarName": "Storm Demon Ravenor",
+        "resourceName": "Hero_Ravenor.Alt2"
+      },
+      {
+        "avatarName": "Zeus",
+        "resourceName": "Hero_Ravenor.Alt3"
+      },
+      {
+        "avatarName": "Rift Ravenor",
+        "resourceName": "Hero_Ravenor.Alt4"
+      },
+      {
+        "avatarName": "El Diablo",
+        "resourceName": "Hero_Ravenor.Alt5"
+      },
+      {
+        "avatarName": "Invader Ravenor",
+        "resourceName": "Hero_Ravenor.Alt6"
+      },
+      {
+        "avatarName": "Ravenna",
+        "resourceName": "Hero_Ravenor.Alt7"
+      },
+      {
+        "avatarName": "Punk Ravenor",
+        "resourceName": "Hero_Ravenor.Alt8"
+      },
+      {
+        "avatarName": "Cyber Ravenor",
+        "resourceName": "Hero_Ravenor.Alt9"
+      }
+    ]
+  },
+  {
+    "hero": "Revenant",
+    "avatarInfo": [
+      {
+        "avatarName": "Wraith Revenant",
+        "resourceName": "Hero_Revenant.Alt"
+      },
+      {
+        "avatarName": "Savage Revenant",
+        "resourceName": "Hero_Revenant.Alt2"
+      },
+      {
+        "avatarName": "Ruin Revenant",
+        "resourceName": "Hero_Revenant.Alt3"
+      },
+      {
+        "avatarName": "Azurite",
+        "resourceName": "Hero_Revenant.Alt4"
+      },
+      {
+        "avatarName": "Wendigo",
+        "resourceName": "Hero_Revenant.Alt5"
+      }
+    ]
+  },
+  {
+    "hero": "Rhapsody",
+    "avatarInfo": [
+      {
+        "avatarName": "Death Metal Rhapsody",
+        "resourceName": "Hero_Rhapsody.Alt"
+      },
+      {
+        "avatarName": "DJ Rap City",
+        "resourceName": "Hero_Rhapsody.Alt2"
+      },
+      {
+        "avatarName": "Rhapscallion",
+        "resourceName": "Hero_Rhapsody.Alt3"
+      },
+      {
+        "avatarName": "Thriller Rhapsody",
+        "resourceName": "Hero_Rhapsody.Alt4"
+      },
+      {
+        "avatarName": "DDRhapsody",
+        "resourceName": "Hero_Rhapsody.Alt5"
+      },
+      {
+        "avatarName": "Luau Rhapsody",
+        "resourceName": "Hero_Rhapsody.Alt6"
+      },
+      {
+        "avatarName": "Tourmaline Paragon Rhapsody",
+        "resourceName": "Hero_Rhapsody.Alt7"
+      },
+      {
+        "avatarName": "Christmas Carol",
+        "resourceName": "Hero_Rhapsody.Alt8"
+      },
+      {
+        "avatarName": "Zhaojun",
+        "resourceName": "Hero_Rhapsody.Alt9"
+      },
+      {
+        "avatarName": "Rhapsody Hatsune Miku Ver",
+        "resourceName": "Hero_Rhapsody.Alt10"
+      }
+    ]
+  },
+  {
+    "hero": "Riftwalker",
+    "avatarInfo": [
+      {
+        "avatarName": "Elder Riftwalker",
+        "resourceName": "Hero_Riftmage.Alt"
+      },
+      {
+        "avatarName": "Queen Riftwalker",
+        "resourceName": "Hero_Riftmage.Alt2"
+      },
+      {
+        "avatarName": "Possessed Riftwalker",
+        "resourceName": "Hero_Riftmage.Alt3"
+      },
+      {
+        "avatarName": "Opal Paragon Riftwalker",
+        "resourceName": "Hero_Riftmage.Alt4"
+      },
+      {
+        "avatarName": "Pandora Riftwalker",
+        "resourceName": "Hero_Riftmage.Alt5"
+      }
+    ]
+  },
+  {
+    "hero": "Riptide",
+    "avatarInfo": [
+      {
+        "avatarName": "Toxin",
+        "resourceName": "Alt"
+      },
+      {
+        "avatarName": "Pisces",
+        "resourceName": "Alt2"
+      },
+      {
+        "avatarName": "War Blossom",
+        "resourceName": "Alt3"
+      },
+      {
+        "avatarName": "Chalawan",
+        "resourceName": "Hero_Riptide.Alt4"
+      },
+      {
+        "avatarName": "Yuletide",
+        "resourceName": "Hero_Riptide.Alt5"
+      },
+      {
+        "avatarName": "Deep Sea Riptide",
+        "resourceName": "Hero_Riptide.Alt6"
+      },
+      {
+        "avatarName": "Mecha Mermaid",
+        "resourceName": "Hero_Riptide.Alt7"
+      }
+    ]
+  },
+  {
+    "hero": "Salomon",
+    "avatarInfo": [
+      {
+        "avatarName": "Tengshe",
+        "resourceName": "Hero_Salomon.Alt"
+      },
+      {
+        "avatarName": "Sharac",
+        "resourceName": "Hero_Salomon.Alt2"
+      },
+      {
+        "avatarName": "Djinn Salomon",
+        "resourceName": "Hero_Salomon.Alt3"
+      },
+      {
+        "avatarName": "Wicked Wish",
+        "resourceName": "Hero_Salomon.Alt4"
+      },
+      {
+        "avatarName": "Ascension Salomon",
+        "resourceName": "Hero_Salomon.Alt5"
+      },
+      {
+        "avatarName": "Shaytan",
+        "resourceName": "Hero_Salomon.Alt6"
+      },
+      {
+        "avatarName": "Yokai Salomon",
+        "resourceName": "Hero_Salomon.Alt7"
+      },
+      {
+        "avatarName": "Sha Wujing",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Sand Wraith",
+    "avatarInfo": [
+      {
+        "avatarName": "Horseman Famine",
+        "resourceName": "Hero_SandWraith.Alt"
+      },
+      {
+        "avatarName": "Shadow Wraith",
+        "resourceName": "Hero_SandWraith.Alt2"
+      },
+      {
+        "avatarName": "Throwback Sand Wraith",
+        "resourceName": "Hero_SandWraith.Classic"
+      },
+      {
+        "avatarName": "Hang Tuah",
+        "resourceName": "Hero_SandWraith.Alt3"
+      },
+      {
+        "avatarName": "Blight Wraith",
+        "resourceName": "Hero_SandWraith.Alt4"
+      },
+      {
+        "avatarName": "POG Sand Wraith",
+        "resourceName": "Hero_SandWraith.pog_skin"
+      },
+      {
+        "avatarName": "Surf Wraith",
+        "resourceName": "Hero_SandWraith.Alt5"
+      },
+      {
+        "avatarName": "Khamsin",
+        "resourceName": "Hero_SandWraith.Alt6"
+      },
+      {
+        "avatarName": "Storm Daughters",
+        "resourceName": "Hero_SandWraith.Alt7"
+      },
+      {
+        "avatarName": "Wraith of Diamonds",
+        "resourceName": "Hero_SandWraith.Alt8"
+      }
+    ]
+  },
+  {
+    "hero": "Sapphire",
+    "avatarInfo": [
+      {
+        "avatarName": "Picaroon Sapphire",
+        "resourceName": "Hero_Sapphire.Alt"
+      },
+      {
+        "avatarName": "Kinetic Sapphire",
+        "resourceName": "Hero_Sapphire.Alt2"
+      },
+      {
+        "avatarName": "Azure Dragon",
+        "resourceName": "Hero_Sapphire.Alt3"
+      },
+      {
+        "avatarName": "Geosynch Sapphire",
+        "resourceName": "Hero_Sapphire.Alt4"
+      }
+    ]
+  },
+  {
+    "hero": "Scout",
+    "avatarInfo": [
+      {
+        "avatarName": "Mist Runner Scout",
+        "resourceName": "Hero_Scout.Alt"
+      },
+      {
+        "avatarName": "Sniper Scout",
+        "resourceName": "Hero_Scout.Alt2"
+      },
+      {
+        "avatarName": "RXR9 the Cyber Scout",
+        "resourceName": "Hero_Scout.Alt3"
+      },
+      {
+        "avatarName": "Tetra",
+        "resourceName": "Hero_Scout.Alt4"
+      },
+      {
+        "avatarName": "Throwback Scout",
+        "resourceName": "Hero_Scout.Classic"
+      },
+      {
+        "avatarName": "Hermes",
+        "resourceName": "Hero_Scout.Alt5"
+      },
+      {
+        "avatarName": "Scoutzo the Clown",
+        "resourceName": "Hero_Scout.Alt6"
+      },
+      {
+        "avatarName": "POG Scout",
+        "resourceName": "Hero_Scout.pog_skin"
+      },
+      {
+        "avatarName": "Halfling Warrior",
+        "resourceName": "Hero_Scout.Alt7"
+      },
+      {
+        "avatarName": "Continental Rebel",
+        "resourceName": "Hero_Scout.Alt8"
+      },
+      {
+        "avatarName": "The Vanishing Woman",
+        "resourceName": "Hero_Scout.Alt9"
+      },
+      {
+        "avatarName": "Adkarna Assassin",
+        "resourceName": "Hero_Scout.Alt10"
+      },
+      {
+        "avatarName": "Velocity",
+        "resourceName": "Hero_Scout.Alt11"
+      },
+      {
+        "avatarName": "Vardik Scout",
+        "resourceName": "Hero_Scout.Alt12"
+      },
+      {
+        "avatarName": "Deranger",
+        "resourceName": "Hero_Scout.Alt13"
+      }
+    ]
+  },
+  {
+    "hero": "Shadowblade",
+    "avatarInfo": [
+      {
+        "avatarName": "Corporeal Shadowblade",
+        "resourceName": "Hero_ShadowBlade.Alt"
+      },
+      {
+        "avatarName": "Shadowbeast",
+        "resourceName": "Hero_ShadowBlade.Alt2"
+      },
+      {
+        "avatarName": "Husher",
+        "resourceName": "Hero_ShadowBlade.Alt3"
+      },
+      {
+        "avatarName": "Ghosts of Christmas",
+        "resourceName": "Hero_ShadowBlade.Alt4"
+      },
+      {
+        "avatarName": "Dominion Shadowblade",
+        "resourceName": "Hero_ShadowBlade.Alt5"
+      },
+      {
+        "avatarName": "Angel of Death",
+        "resourceName": "Hero_ShadowBlade.Alt6"
+      },
+      {
+        "avatarName": "Gamerblade",
+        "resourceName": "Hero_ShadowBlade.Alt7"
+      },
+      {
+        "avatarName": "Gamerblade",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Shellshock",
+    "avatarInfo": [
+      {
+        "avatarName": "Ol' Packsnail",
+        "resourceName": "Hero_Shellshock.Alt"
+      },
+      {
+        "avatarName": "Crochetshock",
+        "resourceName": "Hero_Shellshock.Alt2"
+      },
+      {
+        "avatarName": "Songkran Shellshock",
+        "resourceName": "Hero_Shellshock.Alt3"
+      },
+      {
+        "avatarName": "Songkran Shellshock (EN)",
+        "resourceName": "Hero_Shellshock.Alt4"
+      }
+    ]
+  },
+  {
+    "hero": "Silhouette",
+    "avatarInfo": [
+      {
+        "avatarName": "White Lotus Silhouette",
+        "resourceName": "Hero_Silhouette.Alt"
+      },
+      {
+        "avatarName": "Master Assassin Sil",
+        "resourceName": "Hero_Silhouette.Alt2"
+      },
+      {
+        "avatarName": "Sileena",
+        "resourceName": "Hero_Silhouette.Alt3"
+      },
+      {
+        "avatarName": "Arbinger",
+        "resourceName": "Alt4"
+      },
+      {
+        "avatarName": "Minerva",
+        "resourceName": "Alt5"
+      },
+      {
+        "avatarName": "Hexa",
+        "resourceName": "Alt6"
+      },
+      {
+        "avatarName": "Lady Nak",
+        "resourceName": "Alt7"
+      },
+      {
+        "avatarName": "Mae Nak",
+        "resourceName": "Alt8"
+      },
+      {
+        "avatarName": "Cirque du Silhouette",
+        "resourceName": "Alt9"
+      },
+      {
+        "avatarName": "Hunter Silhouette",
+        "resourceName": "Alt10"
+      },
+      {
+        "avatarName": "Venus",
+        "resourceName": "Alt11"
+      },
+      {
+        "avatarName": "F.L.E.X Silhouette",
+        "resourceName": "Alt12"
+      }
+    ]
+  },
+  {
+    "hero": "Sir Benzington",
+    "avatarInfo": [
+      {
+        "avatarName": "Sir Terrowin",
+        "resourceName": "Hero_SirBenzington.Alt"
+      },
+      {
+        "avatarName": "Sir Benzalot",
+        "resourceName": "Hero_SirBenzington.Alt2"
+      },
+      {
+        "avatarName": "Sir Lancelot",
+        "resourceName": "Hero_SirBenzington.Alt3"
+      },
+      {
+        "avatarName": "Drop Bearzington",
+        "resourceName": "Hero_SirBenzington.Alt4"
+      },
+      {
+        "avatarName": "End Bringer Lancelot",
+        "resourceName": "Hero_SirBenzington.Alt5"
+      },
+      {
+        "avatarName": "Grizzington",
+        "resourceName": "Hero_SirBenzington.Alt6"
+      },
+      {
+        "avatarName": "Zhao Yun",
+        "resourceName": "Hero_SirBenzington.Alt7"
+      },
+      {
+        "avatarName": "Zhao Yun (EN)",
+        "resourceName": "Hero_SirBenzington.Alt8"
+      },
+      {
+        "avatarName": "Big Top Benzi",
+        "resourceName": "Hero_SirBenzington.Alt9"
+      },
+      {
+        "avatarName": "Bajutsu Benzi",
+        "resourceName": "Hero_SirBenzington.Alt10"
+      },
+      {
+        "avatarName": "Songkran Benzi (EN)",
+        "resourceName": "Hero_SirBenzington.Alt11"
+      },
+      {
+        "avatarName": "Songkran Benzi",
+        "resourceName": "Hero_SirBenzington.Alt12"
+      }
+    ]
+  },
+  {
+    "hero": "Skrap",
+    "avatarInfo": [
+      {
+        "avatarName": "Bone Collector",
+        "resourceName": "Alt"
+      },
+      {
+        "avatarName": "Warlock",
+        "resourceName": "Alt2"
+      },
+      {
+        "avatarName": "Siam Warrior Skrap",
+        "resourceName": "Alt3"
+      }
+    ]
+  },
+  {
+    "hero": "Slither",
+    "avatarInfo": [
+      {
+        "avatarName": "MSIvy Slither",
+        "resourceName": "Hero_Ebulus.Alt"
+      },
+      {
+        "avatarName": "Infected Slither",
+        "resourceName": "Hero_Ebulus.Alt2"
+      },
+      {
+        "avatarName": "Throwback Slither",
+        "resourceName": "Hero_Ebulus.Classic"
+      },
+      {
+        "avatarName": "Rift Slither",
+        "resourceName": "Hero_Ebulus.Alt3"
+      },
+      {
+        "avatarName": "Sally Slither",
+        "resourceName": "Hero_Ebulus.Alt4"
+      },
+      {
+        "avatarName": "Scorpio",
+        "resourceName": "Hero_Ebulus.Alt5"
+      },
+      {
+        "avatarName": "POG Slither",
+        "resourceName": "Hero_Ebulus.pog_skin"
+      },
+      {
+        "avatarName": "Red Scorpio Slither",
+        "resourceName": "Hero_Ebulus.Alt6"
+      },
+      {
+        "avatarName": "Deep Poison Slither",
+        "resourceName": "Hero_Ebulus.Alt7"
+      },
+      {
+        "avatarName": "Cake Snake",
+        "resourceName": "Hero_Ebulus.Alt8"
+      }
+    ]
+  },
+  {
+    "hero": "Solstice",
+    "avatarInfo": [
+      {
+        "avatarName": "Mr. Tickles",
+        "resourceName": "Hero_Solstice.Alt"
+      },
+      {
+        "avatarName": "Duel",
+        "resourceName": "Hero_Solstice.Alt2"
+      },
+      {
+        "avatarName": "King Animus",
+        "resourceName": "Hero_Solstice.Alt3"
+      },
+      {
+        "avatarName": "Guan Yu",
+        "resourceName": "Hero_Solstice.Alt4"
+      },
+      {
+        "avatarName": "Winter Solstice",
+        "resourceName": "Hero_Solstice.Alt5"
+      },
+      {
+        "avatarName": "Savior Solstice",
+        "resourceName": "Hero_Solstice.Alt6"
+      },
+      {
+        "avatarName": "The Twins",
+        "resourceName": "Hero_Solstice.Alt7"
+      },
+      {
+        "avatarName": "Trophy Solstice",
+        "resourceName": "Hero_Solstice.Alt8"
+      },
+      {
+        "avatarName": "Spring Break Solstice",
+        "resourceName": "Hero_Solstice.Alt9"
+      },
+      {
+        "avatarName": "Yin and Yang",
+        "resourceName": "Hero_Solstice.Alt10"
+      },
+      {
+        "avatarName": "Christmas Solstice",
+        "resourceName": "Hero_Solstice.Alt11"
+      },
+      {
+        "avatarName": "Deuces",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Soul Reaper",
+    "avatarInfo": [
+      {
+        "avatarName": "Grim Reaper",
+        "resourceName": "Hero_HellDemon.Alt"
+      },
+      {
+        "avatarName": "Charon ",
+        "resourceName": "Hero_HellDemon.Alt2"
+      },
+      {
+        "avatarName": "Yanluo Wang",
+        "resourceName": "Hero_HellDemon.Alt3"
+      },
+      {
+        "avatarName": "RoboReaper",
+        "resourceName": "Alt4"
+      },
+      {
+        "avatarName": "POG Soulreaper",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Soulstealer",
+    "avatarInfo": [
+      {
+        "avatarName": "Raven Soulstealer",
+        "resourceName": "Hero_Soulstealer.Alt"
+      },
+      {
+        "avatarName": "Greed",
+        "resourceName": "Hero_Soulstealer.Alt2"
+      },
+      {
+        "avatarName": "Throwback Soulstealer",
+        "resourceName": "Hero_Soulstealer.Classic"
+      },
+      {
+        "avatarName": "Hades",
+        "resourceName": "Hero_Soulstealer.Alt3"
+      },
+      {
+        "avatarName": "Redeemed Hades",
+        "resourceName": "Hero_Soulstealer.Alt4"
+      },
+      {
+        "avatarName": "POG Soulstealer",
+        "resourceName": "Hero_Soulstealer.pog_skin"
+      },
+      {
+        "avatarName": "Ascension Soulstealer",
+        "resourceName": "Hero_Soulstealer.Alt5"
+      },
+      {
+        "avatarName": "Xmas Spirit Hades",
+        "resourceName": "Hero_Soulstealer.Alt6"
+      },
+      {
+        "avatarName": "EXO Soulstealer",
+        "resourceName": "Hero_Soulstealer.Alt7"
+      },
+      {
+        "avatarName": "Soulchiller",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Succubus",
+    "avatarInfo": [
+      {
+        "avatarName": "Angelic Succubus",
+        "resourceName": "Hero_Succubis.Alt2"
+      },
+      {
+        "avatarName": "Naughty Succubus",
+        "resourceName": "Hero_Succubis.Alt3"
+      },
+      {
+        "avatarName": "Cupid",
+        "resourceName": "Hero_Succubis.Alt4"
+      },
+      {
+        "avatarName": "Dark Succubus",
+        "resourceName": "Hero_Succubis.Alt5"
+      },
+      {
+        "avatarName": "Throwback Succubus",
+        "resourceName": "Hero_Succubis.Classic"
+      },
+      {
+        "avatarName": "Chastity",
+        "resourceName": "Hero_Succubis.Alt6"
+      },
+      {
+        "avatarName": "POG Succubus",
+        "resourceName": "Hero_Succubis.pog_skin"
+      },
+      {
+        "avatarName": "Mistletoe Succubus",
+        "resourceName": "Hero_Succubis.Alt7"
+      },
+      {
+        "avatarName": "Headmistress",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "High School Sweetheart",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Incubus",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Swiftblade",
+    "avatarInfo": [
+      {
+        "avatarName": "Sachi Swiftblade",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Ronin Swiftblade",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Bushi Swiftblade",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Zenifir the Dark Elf ",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Throwback Swiftblade",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Hunter Swiftblade",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Halion",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Cyber Samurai",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "POG Swiftblade",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Kissaki",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Trophy Swiftblade",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Siam Warrior Swiftblade",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Captain of the Royal Guard",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Punk Swifty",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Deathbloom",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Suzaku Swiftblade",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Suzaku Swiftblade",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Tarot",
+    "avatarInfo": [
+      {
+        "avatarName": "Icosa",
+        "resourceName": "Hero_Tarot.Alt"
+      },
+      {
+        "avatarName": "Tyche",
+        "resourceName": "Hero_Tarot.Alt2"
+      },
+      {
+        "avatarName": "Roulette",
+        "resourceName": "Hero_Tarot.Alt3"
+      },
+      {
+        "avatarName": "Death Dealer",
+        "resourceName": "Hero_Tarot.Alt4"
+      },
+      {
+        "avatarName": "Beach Volleyball Tarot",
+        "resourceName": "Hero_Tarot.Alt5"
+      },
+      {
+        "avatarName": "Trick or Treat Tarot",
+        "resourceName": "Hero_Tarot.Alt6"
+      },
+      {
+        "avatarName": "Hunter Tarot",
+        "resourceName": "Hero_Tarot.Alt7"
+      },
+      {
+        "avatarName": "Trophy Tarot",
+        "resourceName": "Hero_Tarot.Alt8"
+      },
+      {
+        "avatarName": "Harlequin Tarot",
+        "resourceName": "Hero_Tarot.Alt9"
+      },
+      {
+        "avatarName": "Onmyoji",
+        "resourceName": "Hero_Tarot.Alt10"
+      },
+      {
+        "avatarName": "Carhop Tarot",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Throwback Tarot",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Tempest",
+    "avatarInfo": [
+      {
+        "avatarName": "Mystic Tempest",
+        "resourceName": "Alt"
+      },
+      {
+        "avatarName": "Phantom Tempest",
+        "resourceName": "Alt2"
+      },
+      {
+        "avatarName": "Deconstructor",
+        "resourceName": "Alt3"
+      },
+      {
+        "avatarName": "Throwback Tempest",
+        "resourceName": "Classic"
+      },
+      {
+        "avatarName": "Poseidon",
+        "resourceName": "Alt4"
+      },
+      {
+        "avatarName": "Shark Hunter Poseidon",
+        "resourceName": "Alt5"
+      },
+      {
+        "avatarName": "Golden Poseidon",
+        "resourceName": "Alt7"
+      },
+      {
+        "avatarName": "POG Tempest",
+        "resourceName": "Hero_Tempest.pog_skin"
+      },
+      {
+        "avatarName": "Easter Elemental",
+        "resourceName": "Alt8"
+      },
+      {
+        "avatarName": "Elder Rift Tempest",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "The Chipper",
+    "avatarInfo": [
+      {
+        "avatarName": "Mr. Chipper",
+        "resourceName": "Hero_Chipper.Alt"
+      },
+      {
+        "avatarName": "Chiprel Strike Squad",
+        "resourceName": "Hero_Chipper.Alt2"
+      },
+      {
+        "avatarName": "POG Chipper",
+        "resourceName": "Hero_Chipper.pog_skin"
+      },
+      {
+        "avatarName": "Arctic Harrier",
+        "resourceName": "Hero_Chipper.Alt3"
+      },
+      {
+        "avatarName": "Dredger",
+        "resourceName": "Hero_Chipper.Alt4"
+      },
+      {
+        "avatarName": "Trophy Chipper Tier ONE",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Trophy Chipper Tier TWO",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Trophy Chipper Tier THREE",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "The Dark Lady",
+    "avatarInfo": [
+      {
+        "avatarName": "Dark Zealot",
+        "resourceName": "Hero_Vanya.Alt"
+      },
+      {
+        "avatarName": "Hachina",
+        "resourceName": "Hero_Vanya.Alt_reskin"
+      },
+      {
+        "avatarName": "Glorious Dark Lady",
+        "resourceName": "Hero_Vanya.Alt_reskin2"
+      },
+      {
+        "avatarName": "Throwback Dark Lady",
+        "resourceName": "Hero_Vanya.Classic"
+      },
+      {
+        "avatarName": "Set",
+        "resourceName": "Hero_Vanya.Alt2"
+      },
+      {
+        "avatarName": "POG The Dark Lady",
+        "resourceName": "Hero_Vanya.pog_skin"
+      },
+      {
+        "avatarName": "Ascension Dark Lady",
+        "resourceName": "Hero_Vanya.Alt3"
+      },
+      {
+        "avatarName": "The Dark Consort",
+        "resourceName": "Hero_Vanya.Alt4"
+      },
+      {
+        "avatarName": "Cyber Vanya",
+        "resourceName": "Hero_Vanya.Alt5"
+      },
+      {
+        "avatarName": "Vice",
+        "resourceName": "Hero_Vanya.Alt6"
+      },
+      {
+        "avatarName": "White Tiger",
+        "resourceName": "Hero_Vanya.Alt7"
+      }
+    ]
+  },
+  {
+    "hero": "The Gladiator",
+    "avatarInfo": [
+      {
+        "avatarName": "Adventure Gladiator",
+        "resourceName": "Hero_Gladiator.Alt"
+      },
+      {
+        "avatarName": "Gladius Beardicus",
+        "resourceName": "Hero_Gladiator.Alt2"
+      },
+      {
+        "avatarName": "Musketeer Gladiator",
+        "resourceName": "Hero_Gladiator.Alt3"
+      },
+      {
+        "avatarName": "Matador Gladiator",
+        "resourceName": "Hero_Gladiator.Alt4"
+      },
+      {
+        "avatarName": "Halcyon Judicator",
+        "resourceName": "Hero_Gladiator.Alt5"
+      },
+      {
+        "avatarName": "Riftshards Gladiator",
+        "resourceName": "Hero_Gladiator.Alt6"
+      },
+      {
+        "avatarName": "Arctos",
+        "resourceName": "Hero_Gladiator.Alt7"
+      },
+      {
+        "avatarName": "POG Gladiator",
+        "resourceName": "Hero_Gladiator.pog_skin"
+      },
+      {
+        "avatarName": "Vanquish",
+        "resourceName": "Hero_Gladiator.Alt8"
+      },
+      {
+        "avatarName": "Gladiclaus",
+        "resourceName": "Hero_Gladiator.Alt9"
+      },
+      {
+        "avatarName": "All Hells Angel",
+        "resourceName": "Hero_Gladiator.Alt11"
+      },
+      {
+        "avatarName": "Kusanagi Gladiator",
+        "resourceName": "Hero_Gladiator.Alt12"
+      }
+    ]
+  },
+  {
+    "hero": "The Madman",
+    "avatarInfo": [
+      {
+        "avatarName": "Nightmare Madman",
+        "resourceName": "Hero_Scar.Alt2"
+      },
+      {
+        "avatarName": "Hook Madman",
+        "resourceName": "Hero_Scar.Alt3"
+      },
+      {
+        "avatarName": "Throwback Madman",
+        "resourceName": "Hero_Scar.Classic"
+      },
+      {
+        "avatarName": "Chupacabra",
+        "resourceName": "Hero_Scar.Alt4"
+      },
+      {
+        "avatarName": "Raving Madman",
+        "resourceName": "Hero_Scar.Alt5"
+      },
+      {
+        "avatarName": "POG Madman",
+        "resourceName": "Hero_Scar.pog_skin"
+      },
+      {
+        "avatarName": "MadCat Madman",
+        "resourceName": "Hero_Scar.Alt6"
+      },
+      {
+        "avatarName": "The Playmaker",
+        "resourceName": "Hero_Scar.Alt7"
+      }
+    ]
+  },
+  {
+    "hero": "Thunderbringer",
+    "avatarInfo": [
+      {
+        "avatarName": "Thor Thunderbringer",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Lightningbringer",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Syrrus the Lightning Caller",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Asgard Thor",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Fluffybringer",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "POG Thunderbringer",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "The Five Thunder Emperors",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "ALPHA Thunderbringer",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Dark Lightninglord",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Raijin",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Torturer",
+    "avatarInfo": [
+      {
+        "avatarName": "Dominatrix Torturer",
+        "resourceName": "Hero_Xalynx.Alt"
+      },
+      {
+        "avatarName": "Cenobite Torturer",
+        "resourceName": "Hero_Xalynx.Alt2"
+      },
+      {
+        "avatarName": "Celsius",
+        "resourceName": "Hero_Xalynx.Alt3"
+      },
+      {
+        "avatarName": "Throwback Torturer",
+        "resourceName": "Hero_Xalynx.Classic"
+      },
+      {
+        "avatarName": "Kindness",
+        "resourceName": "Hero_Xalynx.Alt4"
+      },
+      {
+        "avatarName": "POG Torturer",
+        "resourceName": "Hero_Xalynx.pog_skin"
+      },
+      {
+        "avatarName": "Mermaid Torturer",
+        "resourceName": "Hero_Xalynx.Alt5"
+      },
+      {
+        "avatarName": "Bloodstone Paragon Torturer",
+        "resourceName": "Hero_Xalynx.Alt6"
+      },
+      {
+        "avatarName": "Misery",
+        "resourceName": "Hero_Xalynx.Alt7"
+      }
+    ]
+  },
+  {
+    "hero": "Tremble",
+    "avatarInfo": [
+      {
+        "avatarName": "Quadropod Tremble",
+        "resourceName": "Hero_Tremble.Alt"
+      },
+      {
+        "avatarName": "Iron Tremble",
+        "resourceName": "Hero_Tremble.Alt2"
+      },
+      {
+        "avatarName": "Groundhog Tremble",
+        "resourceName": "Hero_Tremble.Alt3"
+      },
+      {
+        "avatarName": "King Crab Tremble",
+        "resourceName": "Hero_Tremble.Alt4"
+      }
+    ]
+  },
+  {
+    "hero": "Tundra",
+    "avatarInfo": [
+      {
+        "avatarName": "Mountain Tundra",
+        "resourceName": "Hero_Tundra.Alt"
+      },
+      {
+        "avatarName": "Tribal Tundra",
+        "resourceName": "Hero_Tundra.Alt2"
+      },
+      {
+        "avatarName": "Odin",
+        "resourceName": "Hero_Tundra.Alt3"
+      },
+      {
+        "avatarName": "Allfather Odin",
+        "resourceName": "Hero_Tundra.Alt4"
+      },
+      {
+        "avatarName": "ALPHA Tundra",
+        "resourceName": "Hero_Tundra.Alt5"
+      }
+    ]
+  },
+  {
+    "hero": "Valkyrie",
+    "avatarInfo": [
+      {
+        "avatarName": "Legendary Valkyrie",
+        "resourceName": "Hero_Valkyrie.Alt"
+      },
+      {
+        "avatarName": "Fallen Valkyrie",
+        "resourceName": "Hero_Valkyrie.Alt2"
+      },
+      {
+        "avatarName": "Cyber Valk",
+        "resourceName": "Hero_Valkyrie.Alt3"
+      },
+      {
+        "avatarName": "Headhunter Valkyrie",
+        "resourceName": "Hero_Valkyrie.Alt4"
+      },
+      {
+        "avatarName": "Throwback Valkyrie",
+        "resourceName": "Hero_Valkyrie.Classic"
+      },
+      {
+        "avatarName": "Impaler Valk",
+        "resourceName": "Hero_Valkyrie.Alt5"
+      },
+      {
+        "avatarName": "Skiver",
+        "resourceName": "Hero_Valkyrie.Alt6"
+      },
+      {
+        "avatarName": "Brunhild",
+        "resourceName": "Hero_Valkyrie.Alt7"
+      },
+      {
+        "avatarName": "Phuket Valkyrie",
+        "resourceName": "Hero_Valkyrie.Alt8"
+      },
+      {
+        "avatarName": "Beach Babe Valk",
+        "resourceName": "Hero_Valkyrie.Alt9"
+      },
+      {
+        "avatarName": "Trophy Valkyrie",
+        "resourceName": "Hero_Valkyrie.Alt10"
+      },
+      {
+        "avatarName": "Svana",
+        "resourceName": "Hero_Valkyrie.Alt11"
+      },
+      {
+        "avatarName": "Adkarna Valkyrie",
+        "resourceName": "Hero_Valkyrie.Alt12"
+      },
+      {
+        "avatarName": "POG Valkyrie",
+        "resourceName": "Hero_Valkyrie.pog_skin"
+      },
+      {
+        "avatarName": "Punk Valk",
+        "resourceName": "Hero_Valkyrie.Alt13"
+      },
+      {
+        "avatarName": "Azrael",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Vindicator",
+    "avatarInfo": [
+      {
+        "avatarName": "Vigilante Vindicator",
+        "resourceName": "Hero_Vindicator.Alt"
+      },
+      {
+        "avatarName": "Judge Vindicator",
+        "resourceName": "Hero_Vindicator.Alt2"
+      },
+      {
+        "avatarName": "Merlin",
+        "resourceName": "Hero_Vindicator.Alt3"
+      },
+      {
+        "avatarName": "Sexy Librarian",
+        "resourceName": "Hero_Vindicator.Alt4"
+      },
+      {
+        "avatarName": "Space Wizard Merlin",
+        "resourceName": "Hero_Vindicator.Alt5"
+      },
+      {
+        "avatarName": "Vindi the Gray",
+        "resourceName": "Hero_Vindicator.Alt6"
+      },
+      {
+        "avatarName": "Necronomicon Vindicator",
+        "resourceName": "Hero_Vindicator.Alt7"
+      },
+      {
+        "avatarName": "Si Ma Yi",
+        "resourceName": "Hero_Vindicator.Alt9"
+      },
+      {
+        "avatarName": "Si Ma Yi (EN)",
+        "resourceName": "Hero_Vindicator.Alt10"
+      },
+      {
+        "avatarName": "HoNWorld Vindicator",
+        "resourceName": "Hero_Vindicator.Alt11"
+      }
+    ]
+  },
+  {
+    "hero": "Voodoo Jester",
+    "avatarInfo": [
+      {
+        "avatarName": "Voodoo Raptor",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Voodoo Doctor",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Hel",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Ragnarok Hel",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "POG Voodoo",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Siam Warrior Voodoo Jester",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Hunter Voodoo Jester",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Painkiller",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "War Beast",
+    "avatarInfo": [
+      {
+        "avatarName": "Horseman War",
+        "resourceName": "Hero_WolfMan.Alt"
+      },
+      {
+        "avatarName": "Den Mother",
+        "resourceName": "Hero_WolfMan.Alt2"
+      },
+      {
+        "avatarName": "Throwback War Beast",
+        "resourceName": "Hero_WolfMan.Classic"
+      },
+      {
+        "avatarName": "Shock Troop War",
+        "resourceName": "Hero_WolfMan.Alt3"
+      },
+      {
+        "avatarName": "Skullcrusher",
+        "resourceName": "Hero_WolfMan.Alt4"
+      },
+      {
+        "avatarName": "POG War Beast",
+        "resourceName": "Hero_WolfMan.pog_skin"
+      }
+    ]
+  },
+  {
+    "hero": "Warchief",
+    "avatarInfo": [
+      {
+        "avatarName": "Hex",
+        "resourceName": "Hero_Warchief.Alt"
+      },
+      {
+        "avatarName": "Purgatory",
+        "resourceName": "Hero_Warchief.Alt2"
+      }
+    ]
+  },
+  {
+    "hero": "Wildsoul",
+    "avatarInfo": [
+      {
+        "avatarName": "Arctic Wild Soul",
+        "resourceName": "Hero_Yogi.Alt"
+      },
+      {
+        "avatarName": "Dr. Beebo and Loofy",
+        "resourceName": "Hero_Yogi.Alt2"
+      },
+      {
+        "avatarName": "Throwback Wildsoul",
+        "resourceName": "Hero_Yogi.Classic"
+      },
+      {
+        "avatarName": "Pandasoul",
+        "resourceName": "Hero_Yogi.Alt3"
+      },
+      {
+        "avatarName": "Northman Werebear",
+        "resourceName": "Hero_Yogi.Alt4"
+      },
+      {
+        "avatarName": "POG Wildsoul",
+        "resourceName": "Hero_Yogi.pog_skin"
+      },
+      {
+        "avatarName": "Tigersoul",
+        "resourceName": "Hero_Yogi.Alt5"
+      },
+      {
+        "avatarName": "Lion Tamer Wildsoul",
+        "resourceName": "Hero_Yogi.Alt6"
+      },
+      {
+        "avatarName": "Wild Sbornaya",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Witch Slayer",
+    "avatarInfo": [
+      {
+        "avatarName": "Pimp Slayer",
+        "resourceName": "Hero_WitchSlayer.Alt2"
+      },
+      {
+        "avatarName": "Witch Hunter",
+        "resourceName": "Hero_WitchSlayer.Alt3"
+      },
+      {
+        "avatarName": "Hope",
+        "resourceName": "Hero_WitchSlayer.Alt4"
+      },
+      {
+        "avatarName": "Hunter Witch Slayer",
+        "resourceName": "Hero_WitchSlayer.Alt5"
+      },
+      {
+        "avatarName": "Partisan Slayer",
+        "resourceName": "Hero_WitchSlayer.Alt6"
+      },
+      {
+        "avatarName": "POG Witch Slayer",
+        "resourceName": "Hero_WitchSlayer.pog_skin"
+      },
+      {
+        "avatarName": "Sacrilege",
+        "resourceName": "Hero_WitchSlayer.Alt7"
+      },
+      {
+        "avatarName": "Bangkok Slayer",
+        "resourceName": "Hero_WitchSlayer.Alt8"
+      },
+      {
+        "avatarName": "Lapis Lazuli Paragon Witch Slaye",
+        "resourceName": "Hero_WitchSlayer.Alt9"
+      },
+      {
+        "avatarName": "Trophy Witch Slayer",
+        "resourceName": "Hero_WitchSlayer.Alt10"
+      },
+      {
+        "avatarName": "Songkran Slayer (EN)",
+        "resourceName": "Hero_WitchSlayer.Alt11"
+      },
+      {
+        "avatarName": "Songkran Slayer",
+        "resourceName": ""
+      },
+      {
+        "avatarName": "Sin Slayer",
+        "resourceName": ""
+      }
+    ]
+  },
+  {
+    "hero": "Wretched Hag",
+    "avatarInfo": [
+      {
+        "avatarName": "Wretched Hottie",
+        "resourceName": "Hero_BabaYaga.Alt"
+      },
+      {
+        "avatarName": "Hocus Pocus",
+        "resourceName": "Hero_BabaYaga.Alt2"
+      },
+      {
+        "avatarName": "Wicked Hag of the West",
+        "resourceName": "Hero_BabaYaga.Alt3"
+      },
+      {
+        "avatarName": "Baba Yaga",
+        "resourceName": "Hero_BabaYaga.Alt4"
+      },
+      {
+        "avatarName": "POG Wretched Hag",
+        "resourceName": "Hero_BabaYaga.pog_skin"
+      },
+      {
+        "avatarName": "Treasure Hunter Hag",
+        "resourceName": "Hero_BabaYaga.Alt5"
+      },
+      {
+        "avatarName": "Lady Sita",
+        "resourceName": "Hero_BabaYaga.Alt6"
+      },
+      {
+        "avatarName": "Ramayana Sita",
+        "resourceName": "Hero_BabaYaga.Alt7"
+      },
+      {
+        "avatarName": "Alexandrite Paragon Wretched Hag",
+        "resourceName": "Hero_BabaYaga.Alt8"
+      },
+      {
+        "avatarName": "Mercury",
+        "resourceName": "Hero_BabaYaga.Alt9"
+      }
+    ]
+  },
+  {
+    "hero": "Zephyr",
+    "avatarInfo": [
+      {
+        "avatarName": "Snow Zephyr",
+        "resourceName": "Hero_Zephyr.Alt"
+      },
+      {
+        "avatarName": "Turkey Zephyr",
+        "resourceName": "Hero_Zephyr.Alt2"
+      },
+      {
+        "avatarName": "Twista",
+        "resourceName": "Hero_Zephyr.Alt3"
+      },
+      {
+        "avatarName": "Quetzalcoatl",
+        "resourceName": "Hero_Zephyr.Alt4"
+      },
+      {
+        "avatarName": "Party Zephyr",
+        "resourceName": "Hero_Zephyr.Alt5"
+      },
+      {
+        "avatarName": "Horus",
+        "resourceName": "Hero_Zephyr.Alt6"
+      },
+      {
+        "avatarName": "Parrot",
+        "resourceName": "Hero_Zephyr.Alt7"
+      },
+      {
+        "avatarName": "POG Zephyr",
+        "resourceName": "Hero_Zephyr.pog_skin"
+      },
+      {
+        "avatarName": "Winger Zephyr",
+        "resourceName": "Hero_Zephyr.Alt8"
+      },
+      {
+        "avatarName": "Firestorm",
+        "resourceName": "Hero_Zephyr.Alt9"
+      }
+    ]
+  }
+]

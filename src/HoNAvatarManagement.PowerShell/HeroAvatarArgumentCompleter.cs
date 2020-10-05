@@ -28,7 +28,7 @@ namespace HoNAvatarManager.PowerShell
 
             return avatarManager.GetHeroAvatars(hero)
                 .Where(avatar => avatar.StartsWith(wordToComplete, StringComparison.InvariantCultureIgnoreCase))
-                .Select(avatar => new CompletionResult($"\"{avatar}\""));
+                .Select(avatar => new CompletionResult($"\"{avatarManager.GetHeroAvatarFriendlyName(hero, avatar)}\""));
         }
     }
 }
