@@ -3,12 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
-using System.Xml;
-using System.Xml.Linq;
+using System.Text.RegularExpressions;
 using AngleSharp.Dom;
 using AngleSharp.Xml;
-using AngleSharp.Xml.Dom;
-using AngleSharp.Xml.Parser;
 
 namespace HoNAvatarManager.Core
 {
@@ -17,6 +14,7 @@ namespace HoNAvatarManager.Core
         private readonly ConfigurationManager _configurationManager;
         private readonly AppConfiguration _appConfiguration;
         private readonly ResourcesManager _resourcesManager;
+        private readonly XmlManager _xmlManager;
 
         public AvatarManager()
         {
@@ -29,6 +27,7 @@ namespace HoNAvatarManager.Core
             }
 
             _resourcesManager = new ResourcesManager(_appConfiguration);
+            _xmlManager = new XmlManager();
         }
 
         public void SetHeroAvatar(string hero, string avatar)
@@ -39,35 +38,44 @@ namespace HoNAvatarManager.Core
             try
             {
                 var heroResourcesName = GetHeroResourcesName(hero);
-                var extractedHeroResourcesDirectory = _resourcesManager.ExtractHeroResources(extractionDirectory, heroResourcesName);
-                var extractedHeroEntityPath = Path.Combine(extractedHeroResourcesDirectory, "heroes", heroResourcesName, "hero.entity");
+                var rootResourcesDirectory = _resourcesManager.ExtractHeroResources(extractionDirectory, heroResourcesName);
+                var heroResourcesDirectory = Path.Combine(rootResourcesDirectory, "heroes");
+                var heroDirectoryPath = Path.Combine(heroResourcesDirectory, heroResourcesName);
+                var heroEntityPath = Path.Combine(heroDirectoryPath, "hero.entity");
 
-                var heroXml = GetHeroXml(extractedHeroEntityPath);
+                var heroXml = _xmlManager.GetXmlDocument(heroEntityPath);
 
                 var heroNode = heroXml.QuerySelector("hero");
-
-                var avatarNodes = heroNode.QuerySelectorAll("altavatar");
+                var avatarElements = heroNode.QuerySelectorAll("altavatar");
                 var avatarResourceName = GetHeroAvatarResourceName(hero, avatar);
-                var avatarNode = avatarNodes.FirstOrDefault(a => string.Equals(a.GetAttribute("key"), avatarResourceName, StringComparison.InvariantCultureIgnoreCase));
+                var avatarElement = avatarElements.FirstOrDefault(a => string.Equals(a.GetAttribute("key"), avatarResourceName, StringComparison.InvariantCultureIgnoreCase));
 
-                if (avatarNode == null)
+                if (avatarElement == null)
                 {
                     throw new Exception($"Avatar {avatar} not found for hero {hero}.");
                 }
 
-                SetAvatarAttributes(heroNode, avatarNode);
-                SetAvatarModifiers(heroNode, avatarNode);
-                SetAvatarEvents(heroNode, avatarNode);
+                var avatarDirectoryPath = GetAvatarDirectory(rootResourcesDirectory, heroResourcesName, avatarElement);
 
-                SaveHeroXml(extractedHeroEntityPath, heroXml.ToXml());
+                SetAvatarHeroAttributes(heroNode, avatarElement);
+                SetAvatarHeroModifiers(heroNode, avatarElement);
+                SetAvatarHeroEvents(heroNode, avatarElement);
+
+                SetAvatarAbilityFiles(heroDirectoryPath, avatarDirectoryPath);
+                SetAvatarAbilityXmls(heroDirectoryPath, avatarResourceName);
+
+                _xmlManager.SaveXml(heroEntityPath, heroXml.ToXml());
 
                 var heroResourcesS2ZFileName = $"resources_{hero.Replace(" ", string.Empty)}.s2z";
-                var heroResourcesS2ZFilePath = Path.Combine(extractedHeroResourcesDirectory, heroResourcesS2ZFileName);
-                var heroResourcesDirectory = Path.Combine(extractedHeroResourcesDirectory, "heroes");
+                var heroResourcesS2ZFilePath = Path.Combine(rootResourcesDirectory, heroResourcesS2ZFileName);
 
                 _resourcesManager.PackHeroResources(heroResourcesDirectory, heroResourcesS2ZFilePath);
 
                 File.Copy(heroResourcesS2ZFilePath, Path.Combine(_appConfiguration.HoNPath, "game", heroResourcesS2ZFileName), true);
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                throw new UnauthorizedAccessException("Please run PowerShell Core as Administrator.", ex);
             }
             catch
             {
@@ -101,7 +109,7 @@ namespace HoNAvatarManager.Core
                 var heroEntityPath = Path.GetTempFileName();
                 heroZipXml.ExtractToFile(heroEntityPath, true);
 
-                var heroXml = GetHeroXml(heroEntityPath);
+                var heroXml = _xmlManager.GetXmlDocument(heroEntityPath);
                 var heroNode = heroXml.QuerySelector("hero");
                 var avatarNodes = heroNode.QuerySelectorAll("altavatar");
 
@@ -123,43 +131,17 @@ namespace HoNAvatarManager.Core
                 .ResourceName ?? avatarFriendlyName;
         }
 
-        private void SaveHeroXml(string path, string heroXml)
+        private void SetAvatarHeroAttributes(IElement rootElement, IElement avatarElement)
         {
-            var element = XElement.Parse(heroXml);
-
-            var settings = new XmlWriterSettings
-            {
-                OmitXmlDeclaration = false,
-                Indent = true,
-                NewLineOnAttributes = true
-            };
-
-            using (var xmlWriter = XmlWriter.Create(path, settings))
-            {
-                element.Save(xmlWriter);
-            }
-        }
-
-        private IXmlDocument GetHeroXml(string path)
-        {
-            using (var stream = new FileStream(path, FileMode.Open, FileAccess.Read))
-            {
-                var parser = new XmlParser();
-                return parser.ParseDocument(stream);
-            }
-        }
-
-        private void SetAvatarAttributes(IElement heroNode, IElement avatarNode)
-        {
-            var avatarAttributes = avatarNode.Attributes.Where(a => a.Name != "key");
+            var avatarAttributes = avatarElement.Attributes.Where(a => a.Name != "key");
 
             foreach (var avatarAttribute in avatarAttributes)
             {
-                heroNode.SetAttribute(avatarAttribute.Name, avatarAttribute.Value);
+                rootElement.SetAttribute(avatarAttribute.Name, avatarAttribute.Value);
             }
         }
 
-        private void SetAvatarModifiers(IElement heroElement, IElement avatarElement)
+        private void SetAvatarHeroModifiers(IElement heroElement, IElement avatarElement)
         {
             var avatarModifiers = avatarElement.ChildNodes.Where(n => n.NodeName == "modifier").OfType<IElement>().ToList();
             var heroModifiers = heroElement.ChildNodes.Where(n => n.NodeName == "modifier").OfType<IElement>().ToList();
@@ -178,26 +160,83 @@ namespace HoNAvatarManager.Core
             }
         }
 
-        private void SetAvatarEvents(IElement heroElement, IElement avatarElement)
+        private void SetAvatarHeroEvents(IElement heroElement, IElement avatarElement)
         {
             var avatarEventNodes = avatarElement.ChildNodes.Where(n => n.NodeName.StartsWith("on", StringComparison.InvariantCultureIgnoreCase)).ToList();
 
             foreach (var avatarEventNode in avatarEventNodes)
             {
-                SetHeroNode(heroElement, avatarEventNode);
+                _xmlManager.CopyNodeToRoot(heroElement, avatarEventNode);
             }
         }
 
-        private void SetHeroNode(IElement heroElement, INode node)
+        private void SetAvatarAbilityFiles(string heroDirectoryPath, string avatarDirectoryPath)
         {
-            var heroNode = heroElement.ChildNodes.FirstOrDefault(n => n.NodeName == node.NodeName);
+            var heroAbilityDirectories = Directory.EnumerateDirectories(heroDirectoryPath, "ability_*").Select(d => new DirectoryInfo(d));
+            var avatarAbilityDirectories = Directory.EnumerateDirectories(avatarDirectoryPath, "ability_*").Select(d => new DirectoryInfo(d));
 
-            if (heroNode != null)
+            foreach (var avatarAbilityDirectory in avatarAbilityDirectories)
             {
-                heroElement.RemoveChild(heroNode);
-            }
+                var heroAbilityDirectory = heroAbilityDirectories.Single(d => d.Name == avatarAbilityDirectory.Name);
+                var avatarAbilityFiles = avatarAbilityDirectory.EnumerateFiles("*", SearchOption.AllDirectories);
 
-            heroElement.AppendChild(node);
+                foreach (var avatarAbilityFile in avatarAbilityFiles)
+                {
+                    var avatarAbilityFileRelativePath = avatarAbilityFile.FullName.Replace(avatarDirectoryPath, string.Empty);
+                    var newAvatarAbilityFilePath = new FileInfo(Path.Join(heroDirectoryPath, avatarAbilityFileRelativePath));
+
+                    Directory.CreateDirectory(newAvatarAbilityFilePath.DirectoryName);
+
+                    avatarAbilityFile.CopyTo(newAvatarAbilityFilePath.FullName, true);
+                }
+            }
+        }
+
+        private void SetAvatarAbilityXmls(string heroDirectoryPath, string avatarResourceName)
+        {
+            var heroAbilityDirectories = Directory.EnumerateDirectories(heroDirectoryPath, "ability_*");
+
+            foreach (var heroAbilityDirectory in heroAbilityDirectories)
+            {
+                var heroAbilityEntityFile = Path.Combine(heroAbilityDirectory, "ability.entity");
+
+                var abilityXml = _xmlManager.GetXmlDocument(heroAbilityEntityFile);
+
+                var abilityElement = abilityXml.QuerySelector("ability");
+                var abilityAvatarElements = abilityElement.QuerySelectorAll("altavatar");
+                var abilityAvatarElement = abilityAvatarElements.FirstOrDefault(a => string.Equals(GetAvatarAbilityKey(a), avatarResourceName, StringComparison.InvariantCultureIgnoreCase));
+
+                if (abilityAvatarElement == null)
+                {
+                    continue;
+                }
+
+                SetAvatarHeroAttributes(abilityElement, abilityAvatarElement);
+
+                foreach (var abilityAvatarElementChildNode in abilityAvatarElement.ChildNodes)
+                {
+                    _xmlManager.CopyNodeToRoot(abilityElement, abilityAvatarElementChildNode);
+                }
+
+                _xmlManager.SaveXml(heroAbilityEntityFile, abilityXml.ToXml());
+            }
+        }
+
+        private string GetAvatarAbilityKey(IElement avatarAbilityElement)
+        {
+            var key = avatarAbilityElement.GetAttribute("key");
+            var keyRegex = new Regex(@"Hero_[a-zA-Z]+\.(?<key>.+)");
+            var match = keyRegex.Match(key);
+
+            return match.Success ? match.Groups["key"].Value : key;
+        }
+
+        private string GetAvatarDirectory(string extractedHeroResourcesDirectory, string heroResourcesName, IElement avatarElement)
+        {
+            var avatarDirectoryName = avatarElement.Attributes["model"].Value.Split('/')[0];
+            var avatarDirectoryPath = Path.Combine(extractedHeroResourcesDirectory, "heroes", heroResourcesName, avatarDirectoryName);
+
+            return avatarDirectoryPath;
         }
 
         private string GetHeroResourcesName(string hero)
