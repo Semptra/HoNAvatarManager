@@ -159,6 +159,24 @@ namespace HoNAvatarManager.Tools
         static async Task Main(string[] args)
         {
             var avatarManager = new AvatarManager();
+
+            foreach (var hero in HeroNames)
+            {
+                Console.WriteLine($"- [ ] {hero}");
+                File.AppendAllText(@"C:\Projects\HoNAvatarManager\src\HoNAvatarManager.Tools\data.txt", $"- [ ] {hero}{Environment.NewLine}");
+
+                var avatars = avatarManager.GetHeroAvatars(hero);
+                foreach (var avatar in avatars)
+                {
+                    Console.WriteLine($"    - [ ] {avatarManager.GetHeroAvatarFriendlyName(hero, avatar)}");
+                    File.AppendAllText(@"C:\Projects\HoNAvatarManager\src\HoNAvatarManager.Tools\data.txt", $"    - [ ] {avatarManager.GetHeroAvatarFriendlyName(hero, avatar)}{Environment.NewLine}");
+                }
+            }
+        }
+
+        static async Task GetAvatarsMapping()
+        {
+            var avatarManager = new AvatarManager();
             var map = JsonConvert.DeserializeObject<List<AvatarMapping>>(File.ReadAllText(@"C:\Projects\HoNAvatarManager\src\HoNAvatarManager.Core\map.json"));
 
             foreach (var hero in HeroNames)
@@ -198,7 +216,7 @@ namespace HoNAvatarManager.Tools
                     Console.WriteLine();
 
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     var currentColor = Console.ForegroundColor;
                     Console.ForegroundColor = ConsoleColor.Red;
