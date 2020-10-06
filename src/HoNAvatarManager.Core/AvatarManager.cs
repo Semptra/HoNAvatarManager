@@ -41,7 +41,7 @@ namespace HoNAvatarManager.Core
                 var rootResourcesDirectory = _resourcesManager.ExtractHeroResources(extractionDirectory, heroResourcesName);
                 var heroResourcesDirectory = Path.Combine(rootResourcesDirectory, "heroes");
                 var heroDirectoryPath = Path.Combine(heroResourcesDirectory, heroResourcesName);
-                var heroEntityPath = Path.Combine(heroDirectoryPath, "hero.entity");
+                var heroEntityPath = GetHeroEntityPath(heroDirectoryPath, heroResourcesName);
 
                 var heroXml = _xmlManager.GetXmlDocument(heroEntityPath);
 
@@ -104,7 +104,7 @@ namespace HoNAvatarManager.Core
             using (var heroResourcesZip = _resourcesManager.GetHeroResourcesZip(heroResourcesName))
             {
                 var heroEntryPrefix = $"heroes/{heroResourcesName}/";
-                var heroZipXml = heroResourcesZip.Entries.FirstOrDefault(e => e.FullName.StartsWith(heroEntryPrefix) && e.Name == "hero.entity");
+                var heroZipXml = heroResourcesZip.Entries.FirstOrDefault(e => e.FullName.StartsWith(heroEntryPrefix) && (e.Name == "hero.entity" || e.Name == $"{heroResourcesName}.entity"));
 
                 var heroEntityPath = Path.GetTempFileName();
                 heroZipXml.ExtractToFile(heroEntityPath, true);
@@ -122,6 +122,23 @@ namespace HoNAvatarManager.Core
             return GlobalResources.HeroAvatarMapping.SingleOrDefault(x => string.Equals(x.Hero, hero, StringComparison.InvariantCultureIgnoreCase))?
                 .AvatarInfo.SingleOrDefault(x => string.Equals(x.ResourceName, avatarResourceName, StringComparison.InvariantCultureIgnoreCase))?
                 .AvatarName ?? avatarResourceName;
+        }
+
+        private string GetHeroEntityPath(string heroDirectoryPath, string heroResourcesName)
+        {
+            var heroEntityPath = Path.Combine(heroDirectoryPath, "hero.entity");
+            if (File.Exists(heroEntityPath))
+            {
+                return heroEntityPath;
+            }
+
+            heroEntityPath = Path.Combine(heroDirectoryPath, $"{heroResourcesName}.entity");
+            if (File.Exists(heroEntityPath))
+            {
+                return heroEntityPath;
+            }
+
+            throw new FileNotFoundException("Cannot find hero.entity file.", heroEntityPath);
         }
 
         private string GetHeroAvatarResourceName(string hero, string avatarFriendlyName)
