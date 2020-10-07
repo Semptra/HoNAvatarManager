@@ -3646,15 +3646,15 @@
       },
       {
         "avatarName": "Trophy Parasite",
-        "resourceName": "Hero_Parasite.Alt8"
+        "resourceName": "Hero_Parasite.trophy_skin"
       },
       {
         "avatarName": "Ascension Parasite",
-        "resourceName": ""
+        "resourceName": "Hero_Parasite.set_ascension"
       },
       {
         "avatarName": "Nuclear Parasite",
-        "resourceName": ""
+        "resourceName": "Hero_Parasite.Alt8"
       }
     ]
   },

@@ -18,34 +18,5 @@ namespace HoNAvatarManager.Core
                 return parser.ParseDocument(stream);
             }
         }
-
-        public void SaveXml(string path, string xml)
-        {
-            var element = XElement.Parse(xml);
-
-            var settings = new XmlWriterSettings
-            {
-                OmitXmlDeclaration = false,
-                Indent = true,
-                NewLineOnAttributes = true
-            };
-
-            using (var xmlWriter = XmlWriter.Create(path, settings))
-            {
-                element.Save(xmlWriter);
-            }
-        }
-
-        public void CopyNodeToRoot(IElement rootElement, INode node)
-        {
-            var rootElementNode = rootElement.ChildNodes.FirstOrDefault(n => n.NodeName == node.NodeName);
-
-            if (rootElementNode != null)
-            {
-                rootElement.RemoveChild(rootElementNode);
-            }
-
-            rootElement.AppendChild(node);
-        }
     }
 }
