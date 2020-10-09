@@ -14,12 +14,12 @@ namespace HoNAvatarManager.Core.Parsers.Hero
 
         public override void SetEntity(string heroDirectoryPath, string avatarKey)
         {
-            SetEntityInternal(heroDirectoryPath, avatarKey, "hero", "hero");
+            SetEntityInternal(heroDirectoryPath, avatarKey, "hero");
         }
 
-        protected void SetEntityInternal(string heroDirectoryPath, string avatarKey, string entityName, string entityFileName)
+        protected void SetEntityInternal(string heroDirectoryPath, string avatarKey, string entityName)
         {
-            var entityFilePath = Path.Combine(heroDirectoryPath, $"{entityFileName}.entity");
+            var entityFilePath = Path.Combine(heroDirectoryPath, $"{entityName}.entity");
 
             if (!File.Exists(entityFilePath))
             {
