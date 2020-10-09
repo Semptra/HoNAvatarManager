@@ -54,8 +54,6 @@ namespace HoNAvatarManager.Core
                     throw new Exception($"Avatar {avatar} not found for hero {hero}.");
                 }
 
-                var avatarDirectoryPath = GetAvatarDirectory(rootResourcesDirectory, heroResourcesName, avatarElement);
-
                 foreach(var parser in EntityParser.GetRegisteredEntityParsers(_xmlManager))
                 {
                     parser.SetEntity(heroDirectoryPath, avatarKey);
@@ -141,14 +139,6 @@ namespace HoNAvatarManager.Core
             return GlobalResources.HeroAvatarMapping.SingleOrDefault(x => string.Equals(x.Hero, hero, StringComparison.InvariantCultureIgnoreCase))?
                 .AvatarInfo.SingleOrDefault(x => string.Equals(x.AvatarName, avatarFriendlyName, StringComparison.InvariantCultureIgnoreCase))?
                 .ResourceName ?? avatarFriendlyName;
-        }
-
-        private string GetAvatarDirectory(string extractedHeroResourcesDirectory, string heroResourcesName, IElement avatarElement)
-        {
-            var avatarDirectoryName = avatarElement.Attributes["model"].Value.Split('/')[0];
-            var avatarDirectoryPath = Path.Combine(extractedHeroResourcesDirectory, "heroes", heroResourcesName, avatarDirectoryName);
-
-            return avatarDirectoryPath;
         }
 
         private string GetHeroResourcesName(string hero)

@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.Linq;
 using HoNAvatarManager.Core.Extensions;
 
@@ -14,6 +13,11 @@ namespace HoNAvatarManager.Core.Parsers.Ability
 
         protected void SetEntityInternal(string heroDirectoryPath, string avatarKey, string entityName)
         {
+            if (avatarKey.IsClassicAvatar())
+            {
+                return;
+            }
+
             var heroAbilityDirectories = Directory.EnumerateDirectories(heroDirectoryPath, "ability_*");
 
             foreach (var heroAbilityDirectory in heroAbilityDirectories)
