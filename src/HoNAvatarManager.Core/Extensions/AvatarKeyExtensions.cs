@@ -11,5 +11,11 @@ namespace HoNAvatarManager.Core.Extensions
 
             return match.Success ? match.Groups["key"].Value : avatarKey;
         }
+
+        public static bool IsClassicAvatar(this string avatarKey)
+        {
+            var classicRegex = new Regex(@".*\.?[Cc]lassic");
+            return classicRegex.IsMatch(avatarKey);
+        }
     }
 }

@@ -14,6 +14,11 @@ namespace HoNAvatarManager.Core.Parsers.Ability
 
         public override void SetEntity(string heroDirectoryPath, string avatarKey)
         {
+            if (avatarKey.IsClassicAvatar())
+            {
+                return;
+            }
+
             var avatarDirectoryPath = GetAvatarDirectory(heroDirectoryPath, avatarKey);
             var heroAbilityDirectories = Directory.EnumerateDirectories(heroDirectoryPath, "ability_*").Select(d => new DirectoryInfo(d));
             var avatarAbilityDirectories = Directory.EnumerateDirectories(avatarDirectoryPath, "ability_*").Select(d => new DirectoryInfo(d));
