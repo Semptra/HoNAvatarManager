@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
-using AngleSharp.Dom;
 using HoNAvatarManager.Core.Parsers;
 
 namespace HoNAvatarManager.Core
@@ -17,6 +16,13 @@ namespace HoNAvatarManager.Core
 
         public AvatarManager()
         {
+#if Windows
+            if (!PlatformSpecific.Windows.Utilities.IsAdministrator())
+            {
+                throw new UnauthorizedAccessException("Please run HoN Avatar Manager as Administrator.");
+            }
+#endif
+
             _configurationManager = new ConfigurationManager("appsettings.json");
             _appConfiguration = _configurationManager.GetAppConfiguration();
 
@@ -54,7 +60,7 @@ namespace HoNAvatarManager.Core
                     throw new Exception($"Avatar {avatar} not found for hero {hero}.");
                 }
 
-                foreach(var parser in EntityParser.GetRegisteredEntityParsers(_xmlManager))
+                foreach (var parser in EntityParser.GetRegisteredEntityParsers(_xmlManager))
                 {
                     parser.SetEntity(heroDirectoryPath, avatarKey);
                 }
@@ -65,14 +71,6 @@ namespace HoNAvatarManager.Core
                 _resourcesManager.PackHeroResources(heroResourcesDirectory, heroResourcesS2ZFilePath);
 
                 File.Copy(heroResourcesS2ZFilePath, Path.Combine(_appConfiguration.HoNPath, "game", heroResourcesS2ZFileName), true);
-            }
-            catch (UnauthorizedAccessException ex)
-            {
-                throw new UnauthorizedAccessException("Please run PowerShell Core as Administrator.", ex);
-            }
-            catch
-            {
-                throw;
             }
             finally
             {
