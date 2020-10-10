@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
@@ -157,6 +158,90 @@ namespace HoNAvatarManager.Tools
         };
 
         static async Task Main(string[] args)
+        {
+            await ExtractAvatarIcons();
+
+            var dirs = Directory.EnumerateDirectories(@"C:\HoNMods\ExtractTest\AvatarIcons").Select(d => new DirectoryInfo(d));
+            
+            foreach(var name in HeroNames)
+            {
+                if (!dirs.Any(d => d.Name == name))
+                {
+                    Console.WriteLine($"{name} missing");
+                }
+            }
+        }
+
+        static async Task ExtractAvatarIcons()
+        {
+            var httpClient = new HttpClient();
+
+            foreach(var i in new int[] { 192 })
+            {
+                try
+                {
+                    var context = BrowsingContext.New(Configuration.Default.WithDefaultLoader());
+                    var heroDocument = await context.OpenAsync($"https://www.heroesofnewerth.com/heroes/view/{i}");
+
+                    var heroTitle = heroDocument.QuerySelector("title").InnerHtml;
+
+                    if (string.IsNullOrEmpty(heroTitle))
+                    {
+                        continue;
+                    }
+
+                    var heroName = heroTitle.Split(" ").Last().Trim().Trim('\t');
+                    Console.WriteLine(heroName);
+
+                    var failCount = 0;
+                    for (int j = 0; j < 20; j++)
+                    {
+                        string avatarUrl;
+                        if (j == 0)
+                        {
+                            avatarUrl = $"https://www.heroesofnewerth.com/images/heroes/{i}/icon_128.jpg";
+                        }
+                        else if (j == 1)
+                        {
+                            avatarUrl = $"https://www.heroesofnewerth.com/images/heroes/{i}/icon_128_alt.jpg";
+                        }
+                        else
+                        {
+                            avatarUrl = $"https://www.heroesofnewerth.com/images/heroes/{i}/icon_128_alt{j}.jpg";
+                        }
+
+                        var avatarImage = await httpClient.GetAsync(avatarUrl);
+
+                        if (!avatarImage.IsSuccessStatusCode)
+                        {
+                            failCount++;
+                            continue;
+                        }
+
+                        if (failCount > 2)
+                        {
+                            break;
+                        }
+
+                        var avatarImageContent = await avatarImage.Content.ReadAsByteArrayAsync();
+
+                        var savePath = new FileInfo(Path.Combine(@"C:\HoNMods\ExtractTest\AvatarIcons", heroName, $"{heroName}_Avatar_{j}.jpg"));
+                        Directory.CreateDirectory(savePath.DirectoryName);
+
+                        await File.WriteAllBytesAsync(savePath.FullName, avatarImageContent);
+
+                        Console.WriteLine($"    * Avatar {j}");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Cannot get hero {i}: {ex}");
+                }
+
+            }
+        }
+
+        static void GetAllHeroAvatars()
         {
             var avatarManager = new AvatarManager();
 
