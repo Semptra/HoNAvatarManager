@@ -4,8 +4,8 @@ using HoNAvatarManager.PowerShell.Completers;
 
 namespace HoNAvatarManager.PowerShell
 {
-    [Cmdlet(VerbsCommon.Set, "HeroAvatar")]
-    public class SetHeroAvatar : BaseCmdlet
+    [Cmdlet(VerbsCommon.Set, "HeroAvatarUnpacked")]
+    public class SetHeroAvatarUnpacked : BaseCmdlet
     {
         [Parameter(Mandatory = true)]
         [ArgumentCompleter(typeof(HeroNameArgumentCompleter))]
@@ -19,7 +19,7 @@ namespace HoNAvatarManager.PowerShell
         {
             var avatarManager = new AvatarManager();
 
-            avatarManager.SetHeroAvatar(Hero, Avatar);
+            avatarManager.SetHeroAvatarUnpacked(Hero, Avatar);
         }
     }
 }

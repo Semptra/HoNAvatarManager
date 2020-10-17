@@ -5,30 +5,30 @@ online version:
 schema: 2.0.0
 ---
 
-# Set-HeroAvatar
+# Set-HeroAvatarUnpacked
 
 ## SYNOPSIS
-Sets the default hero avatar to the selected one. Avatar resources are packed into a s2z file and put /game directory.
+Sets the default hero avatar to the selected one. Avatar resources are put directly into the /game/heroes directory.
 
 ## SYNTAX
 
 ```
-Set-HeroAvatar -Hero <String> -Avatar <String> [<CommonParameters>]
+Set-HeroAvatarUnpacked -Hero <String> -Avatar <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Sets the default hero avatar to the selected one. Avatar resources are packed into a s2z file and put /game directory.
+Sets the default hero avatar to the selected one. Avatar resources are put directly into the /game/heroes directory.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> Set-HeroAvatar -Hero "Behemoth" -Avatar "alt5"
+PS C:\> Set-HeroAvatarUnpacked -Hero "Behemoth" -Avatar "alt5"
 ```
 
 ### Example 2
 ```powershell
-PS C:\> Set-HeroAvatar -Hero "Devourer" -Avatar "alt9"
+PS C:\> Set-HeroAvatarUnpacked -Hero "Devourer" -Avatar "alt9"
 ```
 
 ## PARAMETERS
