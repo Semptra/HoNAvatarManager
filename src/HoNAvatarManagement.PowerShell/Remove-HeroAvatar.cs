@@ -1,10 +1,11 @@
 ﻿using System.Management.Automation;
 using HoNAvatarManager.Core;
+using HoNAvatarManager.PowerShell.Completers;
 
 namespace HoNAvatarManager.PowerShell
 {
     [Cmdlet(VerbsCommon.Remove, "HeroAvatar")]
-    public class RemoveHeroAvatar : PSCmdlet
+    public class RemoveHeroAvatar : BaseCmdlet
     {
         [Parameter(Mandatory = true, ParameterSetName = "Single")]
         [ArgumentCompleter(typeof(HeroNameArgumentCompleter))]

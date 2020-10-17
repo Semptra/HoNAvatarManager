@@ -6,7 +6,7 @@ using System.Management.Automation;
 using System.Management.Automation.Language;
 using HoNAvatarManager.Core;
 
-namespace HoNAvatarManager.PowerShell
+namespace HoNAvatarManager.PowerShell.Completers
 {
     public class HeroAvatarArgumentCompleter : IArgumentCompleter
     {

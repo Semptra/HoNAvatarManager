@@ -72,8 +72,9 @@ Description = 'Hero avatar manager for Heroes of Newerth'
 FunctionsToExport = @()
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
-CmdletsToExport = 'Remove-HeroAvatar', 
-                  'Set-HeroAvatar', 
+CmdletsToExport = 'Remove-HeroAvatar',
+                  'Set-HeroAvatar',
+                  'Set-HeroAvatarUnpacked',
                   'Set-HoNPath'
 
 # Variables to export from this module

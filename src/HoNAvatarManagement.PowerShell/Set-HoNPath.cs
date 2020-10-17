@@ -5,7 +5,7 @@ using HoNAvatarManager.Core;
 namespace HoNAvatarManager.PowerShell
 {
     [Cmdlet(VerbsCommon.Set, "HoNPath")]
-    public class SetHoNPath : PSCmdlet
+    public class SetHoNPath : BaseCmdlet
     {
         [Parameter(Mandatory = true)]
         public string Path { get; set; }

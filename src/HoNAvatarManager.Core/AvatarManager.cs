@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
+using HoNAvatarManager.Core.Logging;
 using HoNAvatarManager.Core.Parsers;
 
 namespace HoNAvatarManager.Core
@@ -71,6 +72,58 @@ namespace HoNAvatarManager.Core
                 _resourcesManager.PackHeroResources(heroResourcesDirectory, heroResourcesS2ZFilePath);
 
                 File.Copy(heroResourcesS2ZFilePath, Path.Combine(_appConfiguration.HoNPath, "game", heroResourcesS2ZFileName), true);
+            }
+            finally
+            {
+                Directory.Delete(extractionDirectory, true);
+            }
+        }
+
+        public void SetHeroAvatarUnpacked(string hero, string avatar)
+        {
+            Logger.Log.Verbose("verbose test");
+
+            var extractionDirectory = Path.Combine(Path.GetTempPath(), Path.GetRandomFileName());
+            Directory.CreateDirectory(extractionDirectory);
+
+            try
+            {
+                var heroResourcesName = GetHeroResourcesName(hero);
+                var rootResourcesDirectory = _resourcesManager.ExtractHeroResources(extractionDirectory, heroResourcesName);
+                var heroResourcesDirectory = Path.Combine(rootResourcesDirectory, "heroes");
+                var heroDirectoryPath = Path.Combine(heroResourcesDirectory, heroResourcesName);
+                var heroEntityPath = GetHeroEntityPath(heroDirectoryPath, heroResourcesName);
+
+                var heroXml = _xmlManager.GetXmlDocument(heroEntityPath);
+
+                var heroNode = heroXml.QuerySelector("hero");
+                var avatarElements = heroNode.QuerySelectorAll("altavatar");
+                var avatarKey = GetHeroAvatarKey(hero, avatar);
+                var avatarElement = avatarElements.FirstOrDefault(a => string.Equals(a.GetAttribute("key"), avatarKey, StringComparison.InvariantCultureIgnoreCase));
+
+                if (avatarElement == null)
+                {
+                    throw new Exception($"Avatar {avatar} not found for hero {hero}.");
+                }
+
+                foreach (var parser in EntityParser.GetRegisteredEntityParsers(_xmlManager))
+                {
+                    parser.SetEntity(heroDirectoryPath, avatarKey);
+                }
+
+                var destinationHeroDirectory = Path.Combine(_appConfiguration.HoNPath, "game", "heroes");
+
+                Directory.CreateDirectory(destinationHeroDirectory);
+
+                foreach (string dirPath in Directory.GetDirectories(heroResourcesDirectory, "*", SearchOption.AllDirectories))
+                {
+                    Directory.CreateDirectory(dirPath.Replace(heroResourcesDirectory, destinationHeroDirectory));
+                }
+
+                foreach (string newPath in Directory.GetFiles(heroResourcesDirectory, "*.*", SearchOption.AllDirectories))
+                {
+                    File.Copy(newPath, newPath.Replace(heroResourcesDirectory, destinationHeroDirectory), true);
+                }
             }
             finally
             {
