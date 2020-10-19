@@ -25,7 +25,6 @@ namespace HoNAvatarManager.Core.Parsers.Ability
 
             foreach (var avatarAbilityDirectory in avatarAbilityDirectories)
             {
-                var heroAbilityDirectory = heroAbilityDirectories.Single(d => d.Name == avatarAbilityDirectory.Name);
                 var avatarAbilityFiles = avatarAbilityDirectory.EnumerateFiles("*", SearchOption.AllDirectories);
 
                 foreach (var avatarAbilityFile in avatarAbilityFiles)
