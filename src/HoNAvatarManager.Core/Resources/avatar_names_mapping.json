@@ -1797,31 +1797,31 @@
       },
       {
         "avatarName": "Trophy Flint Beastwood",
-        "resourceName": "Hero_FlintBeastwood.Alt10"
+        "resourceName": "Hero_FlintBeastwood.trophy_skin"
       },
       {
         "avatarName": "Redcoat Flint",
-        "resourceName": "Hero_FlintBeastwood.Alt11"
+        "resourceName": "Hero_FlintBeastwood.Alt10"
       },
       {
         "avatarName": "Hired Gun Flint",
-        "resourceName": "Hero_FlintBeastwood.Alt12"
+        "resourceName": "Hero_FlintBeastwood.Alt11"
       },
       {
         "avatarName": "Flint Who Stole Xmas",
-        "resourceName": "Hero_FlintBeastwood.Alt13"
+        "resourceName": "Hero_FlintBeastwood.Alt12"
       },
       {
         "avatarName": "Punk Flint",
-        "resourceName": "Hero_FlintBeastwood.Alt14"
+        "resourceName": "Hero_FlintBeastwood.Alt13"
       },
       {
         "avatarName": "F.L.E.X Flint",
-        "resourceName": "Hero_FlintBeastwood.Alt15"
+        "resourceName": "Hero_FlintBeastwood.Alt14"
       },
       {
         "avatarName": "Pill Popper Flint",
-        "resourceName": ""
+        "resourceName": "Hero_FlintBeastwood.Alt15"
       }
     ]
   },

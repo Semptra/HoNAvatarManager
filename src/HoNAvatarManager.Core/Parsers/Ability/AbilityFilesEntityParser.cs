@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using HoNAvatarManager.Core.Extensions;
+using HoNAvatarManager.Core.Helpers;
 
 namespace HoNAvatarManager.Core.Parsers.Ability
 {
@@ -72,7 +73,7 @@ namespace HoNAvatarManager.Core.Parsers.Ability
                 return avatarDirectoryPath;
             }
 
-            throw new DirectoryNotFoundException($"Directory not found for avatar {avatarKey}.");
+            throw ThrowHelper.DirectoryNotFoundException($"Directory not found for avatar {avatarKey}.");
         }
 
         protected string GetHeroEntityPath(string heroDirectoryPath)
@@ -92,7 +93,7 @@ namespace HoNAvatarManager.Core.Parsers.Ability
                 return heroNameEntityFilePath;
             }
 
-            throw new FileNotFoundException("Hero entity file not found.", heroNameEntityFilePath);
+            throw ThrowHelper.FileNotFoundException("Hero entity file not found.", heroNameEntityFilePath);
         }
     }
 }

@@ -20,7 +20,7 @@ namespace HoNAvatarManager.PowerShell.Completers
             return GlobalResources.HeroNames
                 .Where(name => name.StartsWith(wordToComplete.Trim('"'), StringComparison.InvariantCultureIgnoreCase))
                 .OrderBy(name => name)
-                .Select(name => new CompletionResult($"\"{name}\""));
+                .Select(name => new CompletionResult($"\"{name}\"", name, CompletionResultType.ParameterValue, name));
         }
     }
 }

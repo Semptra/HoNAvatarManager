@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System.Linq;
 using HoNAvatarManager.Core.Extensions;
+using HoNAvatarManager.Core.Helpers;
 
 namespace HoNAvatarManager.Core.Parsers.Hero
 {
@@ -35,7 +36,7 @@ namespace HoNAvatarManager.Core.Parsers.Hero
                 return;
             }
 
-            throw new FileNotFoundException("Hero entity file not found.", heroNameEntityFilePath);
+            throw ThrowHelper.FileNotFoundException("Hero entity file not found.", heroNameEntityFilePath);
         }
 
         protected void SetHeroEntity(string entityFilePath, string avatarKey, string entityName)
@@ -51,7 +52,7 @@ namespace HoNAvatarManager.Core.Parsers.Hero
                 return;
             }
 
-            entityElement.SetElementAttributes(entityAvatarElement).SetElementChilds(entityAvatarElement);
+            entityElement.SetElementAttributes(entityAvatarElement, "announcersound").SetElementChilds(entityAvatarElement);
 
             entityXml.SaveXml(entityFilePath);
         }
