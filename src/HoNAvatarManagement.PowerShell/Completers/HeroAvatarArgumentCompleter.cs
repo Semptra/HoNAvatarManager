@@ -28,7 +28,6 @@ namespace HoNAvatarManager.PowerShell.Completers
 
             return heroAvatars?.AvatarInfo
                 .Where(avatar => avatar.AvatarName.StartsWith(wordToComplete, StringComparison.InvariantCultureIgnoreCase))
-                .OrderBy(avatar => avatar.AvatarName)
                 .Select(avatar => new CompletionResult($"\"{avatar.AvatarName}\""));
         }
     }
