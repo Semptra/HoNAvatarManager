@@ -3163,47 +3163,47 @@
     "avatarInfo": [
       {
         "avatarName": "Sexy Moon Queen",
-        "resourceName": ""
+        "resourceName": "Hero_Krixi.Sexy"
       },
       {
         "avatarName": "Blood Moon Queen",
-        "resourceName": ""
+        "resourceName": "Hero_Krixi.main_reskin"
       },
       {
         "avatarName": "Moon Prince",
-        "resourceName": ""
+        "resourceName": "Hero_Krixi.Alt2"
       },
       {
         "avatarName": "Throwback Moon Queen",
-        "resourceName": ""
+        "resourceName": "Hero_Krixi.Classic"
       },
       {
-        "avatarName": "Eclipse ",
-        "resourceName": ""
+        "avatarName": "Eclipse",
+        "resourceName": "Hero_Krixi.Alt3"
       },
       {
         "avatarName": "POG Moon Queen",
-        "resourceName": ""
+        "resourceName": "Hero_Krixi.pog_skin"
       },
       {
         "avatarName": "Lady Liberty",
-        "resourceName": ""
+        "resourceName": "Hero_Krixi.Alt4"
       },
       {
         "avatarName": "Gisele",
-        "resourceName": ""
+        "resourceName": "Hero_Krixi.Alt5"
       },
       {
         "avatarName": "Nian Guardian Moon Queen",
-        "resourceName": ""
+        "resourceName": "Hero_Krixi.Alt7"
       },
       {
         "avatarName": "Lunari",
-        "resourceName": ""
+        "resourceName": "Hero_Krixi.Alt8"
       },
       {
         "avatarName": "Moon",
-        "resourceName": ""
+        "resourceName": "Hero_Krixi.Alt9"
       }
     ]
   },

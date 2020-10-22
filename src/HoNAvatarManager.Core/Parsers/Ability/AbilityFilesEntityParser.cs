@@ -57,7 +57,42 @@ namespace HoNAvatarManager.Core.Parsers.Ability
                 return avatarDirectory.FullName;
             }
 
+            var entityFilePath = GetHeroEntityPath(heroDirectoryPath);
+            var entityXml = _xmlManager.GetXmlDocument(entityFilePath);
+
+            var entityElement = entityXml.QuerySelector("hero");
+            var entityAvatarElements = entityElement.QuerySelectorAll("altavatar");
+            var entityAvatarElement = entityAvatarElements.FirstOrDefault(a => a.HasKey(avatarKey));
+
+            var modelDirectory = entityAvatarElement.GetAttribute("model").Split("/").First();
+            var avatarDirectoryPath = Path.Combine(heroDirectoryPath, modelDirectory);
+
+            if (Directory.Exists(avatarDirectoryPath))
+            {
+                return avatarDirectoryPath;
+            }
+
             throw new DirectoryNotFoundException($"Directory not found for avatar {avatarKey}.");
+        }
+
+        protected string GetHeroEntityPath(string heroDirectoryPath)
+        {
+            var heroEntityFilePath = Path.Combine(heroDirectoryPath, $"hero.entity");
+
+            if (File.Exists(heroEntityFilePath))
+            {
+                return heroEntityFilePath;
+            }
+
+            var heroDirectoryPathInfo = new DirectoryInfo(heroDirectoryPath);
+            var heroNameEntityFilePath = Path.Combine(heroDirectoryPath, $"{heroDirectoryPathInfo.Name}.entity");
+
+            if (File.Exists(heroNameEntityFilePath))
+            {
+                return heroNameEntityFilePath;
+            }
+
+            throw new FileNotFoundException("Hero entity file not found.", heroNameEntityFilePath);
         }
     }
 }
