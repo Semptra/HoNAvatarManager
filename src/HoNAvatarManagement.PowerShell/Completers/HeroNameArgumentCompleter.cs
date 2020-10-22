@@ -18,8 +18,9 @@ namespace HoNAvatarManager.PowerShell.Completers
             IDictionary fakeBoundParameters)
         {
             return GlobalResources.HeroNames
-                .Where(name => name.StartsWith(wordToComplete, StringComparison.InvariantCultureIgnoreCase))
-                .Select(name => new CompletionResult($"\"{name}\""));
+                .Where(name => name.StartsWith(wordToComplete.Trim('"'), StringComparison.InvariantCultureIgnoreCase))
+                .OrderBy(name => name)
+                .Select(name => new CompletionResult($"\"{name}\"", name, CompletionResultType.ParameterValue, name));
         }
     }
 }

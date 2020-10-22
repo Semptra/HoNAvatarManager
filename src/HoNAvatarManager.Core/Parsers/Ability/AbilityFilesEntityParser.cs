@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.Linq;
 using HoNAvatarManager.Core.Extensions;
 
@@ -25,7 +24,6 @@ namespace HoNAvatarManager.Core.Parsers.Ability
 
             foreach (var avatarAbilityDirectory in avatarAbilityDirectories)
             {
-                var heroAbilityDirectory = heroAbilityDirectories.Single(d => d.Name == avatarAbilityDirectory.Name);
                 var avatarAbilityFiles = avatarAbilityDirectory.EnumerateFiles("*", SearchOption.AllDirectories);
 
                 foreach (var avatarAbilityFile in avatarAbilityFiles)
@@ -38,27 +36,6 @@ namespace HoNAvatarManager.Core.Parsers.Ability
                     avatarAbilityFile.CopyTo(newAvatarAbilityFilePath.FullName, true);
                 }
             }
-        }
-
-        private string GetAvatarDirectory(string heroDirectoryPath, string avatarKey)
-        {
-            var heroDirectories = Directory.EnumerateDirectories(heroDirectoryPath).Select(d => new DirectoryInfo(d));
-            var avatarDirectory = heroDirectories.FirstOrDefault(d => string.Equals(d.Name, avatarKey, StringComparison.InvariantCultureIgnoreCase));
-
-            if (avatarDirectory != null)
-            {
-                return avatarDirectory.FullName;
-            }
-
-            var parsedAvatarKey = avatarKey.ParseAvatarKey();
-            avatarDirectory = heroDirectories.FirstOrDefault(d => string.Equals(d.Name, parsedAvatarKey, StringComparison.InvariantCultureIgnoreCase));
-
-            if (avatarDirectory != null)
-            {
-                return avatarDirectory.FullName;
-            }
-
-            throw new DirectoryNotFoundException($"Directory not found for avatar {avatarKey}.");
         }
     }
 }

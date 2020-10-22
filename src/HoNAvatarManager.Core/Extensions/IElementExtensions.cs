@@ -18,11 +18,11 @@ namespace HoNAvatarManager.Core.Extensions
             return string.Equals(elementKey.ParseAvatarKey(), key, StringComparison.InvariantCultureIgnoreCase);
         }
 
-        public static IElement SetElementAttributes(this IElement thisElement, IElement otherElement)
+        public static IElement SetElementAttributes(this IElement thisElement, IElement otherElement, params string[] skipAttributes)
         {
             var otherElementAttributes = otherElement.Attributes.Where(a => a.Name != "key");
 
-            foreach (var attribute in otherElementAttributes)
+            foreach (var attribute in otherElementAttributes.Where(attribute => !skipAttributes.Contains(attribute.Name)))
             {
                 thisElement.SetAttribute(attribute.Name, attribute.Value);
             }

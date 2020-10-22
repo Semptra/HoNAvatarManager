@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using HoNAvatarManager.Core.Helpers;
+using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
@@ -50,6 +51,8 @@ namespace HoNAvatarManager.Core
 
         private int GetHeroResourcesIndex(string hero)
         {
+            var resourceIndex = -1;
+
             for (int i = 0; i <= 3; i++)
             {
                 var heroes = GetResourcesHeroes(i);
@@ -58,11 +61,17 @@ namespace HoNAvatarManager.Core
 
                 if (!string.IsNullOrEmpty(heroResources))
                 {
-                    return i;
+                    resourceIndex = i;
+                    break;
                 }
             }
 
-            throw new FileNotFoundException($"Resources file for hero {hero} not found.");
+            if (resourceIndex < 0)
+            {
+                throw ThrowHelper.FileNotFoundException($"Resources file for hero {hero} not found.");
+            }
+
+            return resourceIndex;
         }
 
         private IEnumerable<string> GetResourcesHeroes(int resourcesIndex)
@@ -71,7 +80,7 @@ namespace HoNAvatarManager.Core
 
             if (!File.Exists(resourcesPath))
             {
-                throw new FileNotFoundException("Resources file not found", resourcesPath);
+                throw ThrowHelper.FileNotFoundException("Resources file not found.", resourcesPath);
             }
 
             using (var resourcesZip = ZipFile.Open(resourcesPath, ZipArchiveMode.Read))

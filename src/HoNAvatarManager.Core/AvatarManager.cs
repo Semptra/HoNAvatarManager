@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
+using HoNAvatarManager.Core.Exceptions;
+using HoNAvatarManager.Core.Helpers;
 using HoNAvatarManager.Core.Logging;
 using HoNAvatarManager.Core.Parsers;
 
@@ -29,7 +31,7 @@ namespace HoNAvatarManager.Core
 
             if (!Directory.Exists(_appConfiguration.HoNPath))
             {
-                throw new DirectoryNotFoundException($"HoN directory not found at {_appConfiguration.HoNPath}.");
+                throw ThrowHelper.DirectoryNotFoundException($"HoN directory not found at {_appConfiguration.HoNPath}.");
             }
 
             _resourcesManager = new ResourcesManager(_appConfiguration);
@@ -58,7 +60,7 @@ namespace HoNAvatarManager.Core
 
                 if (avatarElement == null)
                 {
-                    throw new Exception($"Avatar {avatar} not found for hero {hero}.");
+                    throw ThrowHelper.AvatarNotFound($"Avatar {avatar} not found for hero {hero}.", avatar);
                 }
 
                 foreach (var parser in EntityParser.GetRegisteredEntityParsers(_xmlManager))
@@ -103,7 +105,7 @@ namespace HoNAvatarManager.Core
 
                 if (avatarElement == null)
                 {
-                    throw new Exception($"Avatar {avatar} not found for hero {hero}.");
+                    throw ThrowHelper.AvatarNotFound($"Avatar {avatar} not found for hero {hero}.", avatar);
                 }
 
                 foreach (var parser in EntityParser.GetRegisteredEntityParsers(_xmlManager))
@@ -182,7 +184,7 @@ namespace HoNAvatarManager.Core
                 return heroEntityPath;
             }
 
-            throw new FileNotFoundException("Cannot find hero.entity file.", heroEntityPath);
+            throw ThrowHelper.FileNotFoundException("Cannot find hero.entity file.", heroEntityPath);
         }
 
         private string GetHeroAvatarKey(string hero, string avatarFriendlyName)
@@ -198,7 +200,7 @@ namespace HoNAvatarManager.Core
 
             if (key == null)
             {
-                throw new KeyNotFoundException($"Hero {hero} not found.");
+                throw ThrowHelper.KeyNotFoundException($"Hero {hero} not found.");
             }
 
             return GlobalResources.HeroResourcesMapping[key];

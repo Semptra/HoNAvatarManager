@@ -24,11 +24,11 @@ namespace HoNAvatarManager.PowerShell.Completers
 
             var hero = (string)fakeBoundParameters["Hero"];
 
-            var avatarManager = new AvatarManager();
+            var heroAvatars = GlobalResources.HeroAvatarMapping.FirstOrDefault(x => x.Hero.Equals(hero, StringComparison.InvariantCultureIgnoreCase));
 
-            return avatarManager.GetHeroAvatars(hero)
-                .Where(avatar => avatar.StartsWith(wordToComplete, StringComparison.InvariantCultureIgnoreCase))
-                .Select(avatar => new CompletionResult($"\"{avatarManager.GetHeroAvatarFriendlyName(hero, avatar)}\""));
+            return heroAvatars?.AvatarInfo
+                .Where(avatar => avatar.AvatarName.StartsWith(wordToComplete.Trim('"'), StringComparison.InvariantCultureIgnoreCase))
+                .Select(avatar => new CompletionResult($"\"{avatar.AvatarName}\"", avatar.AvatarName, CompletionResultType.ParameterValue, avatar.AvatarName));
         }
     }
 }

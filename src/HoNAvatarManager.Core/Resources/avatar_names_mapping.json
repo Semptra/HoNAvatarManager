@@ -1797,31 +1797,31 @@
       },
       {
         "avatarName": "Trophy Flint Beastwood",
-        "resourceName": "Hero_FlintBeastwood.Alt10"
+        "resourceName": "Hero_FlintBeastwood.trophy_skin"
       },
       {
         "avatarName": "Redcoat Flint",
-        "resourceName": "Hero_FlintBeastwood.Alt11"
+        "resourceName": "Hero_FlintBeastwood.Alt10"
       },
       {
         "avatarName": "Hired Gun Flint",
-        "resourceName": "Hero_FlintBeastwood.Alt12"
+        "resourceName": "Hero_FlintBeastwood.Alt11"
       },
       {
         "avatarName": "Flint Who Stole Xmas",
-        "resourceName": "Hero_FlintBeastwood.Alt13"
+        "resourceName": "Hero_FlintBeastwood.Alt12"
       },
       {
         "avatarName": "Punk Flint",
-        "resourceName": "Hero_FlintBeastwood.Alt14"
+        "resourceName": "Hero_FlintBeastwood.Alt13"
       },
       {
         "avatarName": "F.L.E.X Flint",
-        "resourceName": "Hero_FlintBeastwood.Alt15"
+        "resourceName": "Hero_FlintBeastwood.Alt14"
       },
       {
         "avatarName": "Pill Popper Flint",
-        "resourceName": ""
+        "resourceName": "Hero_FlintBeastwood.Alt15"
       }
     ]
   },
@@ -3163,47 +3163,47 @@
     "avatarInfo": [
       {
         "avatarName": "Sexy Moon Queen",
-        "resourceName": ""
+        "resourceName": "Hero_Krixi.Sexy"
       },
       {
         "avatarName": "Blood Moon Queen",
-        "resourceName": ""
+        "resourceName": "Hero_Krixi.main_reskin"
       },
       {
         "avatarName": "Moon Prince",
-        "resourceName": ""
+        "resourceName": "Hero_Krixi.Alt2"
       },
       {
         "avatarName": "Throwback Moon Queen",
-        "resourceName": ""
+        "resourceName": "Hero_Krixi.Classic"
       },
       {
-        "avatarName": "Eclipse ",
-        "resourceName": ""
+        "avatarName": "Eclipse",
+        "resourceName": "Hero_Krixi.Alt3"
       },
       {
         "avatarName": "POG Moon Queen",
-        "resourceName": ""
+        "resourceName": "Hero_Krixi.pog_skin"
       },
       {
         "avatarName": "Lady Liberty",
-        "resourceName": ""
+        "resourceName": "Hero_Krixi.Alt4"
       },
       {
         "avatarName": "Gisele",
-        "resourceName": ""
+        "resourceName": "Hero_Krixi.Alt5"
       },
       {
         "avatarName": "Nian Guardian Moon Queen",
-        "resourceName": ""
+        "resourceName": "Hero_Krixi.Alt7"
       },
       {
         "avatarName": "Lunari",
-        "resourceName": ""
+        "resourceName": "Hero_Krixi.Alt8"
       },
       {
         "avatarName": "Moon",
-        "resourceName": ""
+        "resourceName": "Hero_Krixi.Alt9"
       }
     ]
   },
@@ -3278,59 +3278,59 @@
     "avatarInfo": [
       {
         "avatarName": "Teen Hound",
-        "resourceName": ""
+        "resourceName": "Hero_Hantumon.Alt"
       },
       {
         "avatarName": "Night Hunter",
-        "resourceName": ""
+        "resourceName": "Hero_Hantumon.Alt2"
       },
       {
         "avatarName": "Night Hoodlum",
-        "resourceName": ""
+        "resourceName": "Hero_Hantumon.Alt3"
       },
       {
         "avatarName": "Throwback Night Hound",
-        "resourceName": ""
+        "resourceName": "Hero_Hantumon.Classic"
       },
       {
         "avatarName": "Cowardly Night Hound",
-        "resourceName": ""
+        "resourceName": "Hero_Hantumon.Alt4"
       },
       {
         "avatarName": "POG Night Hound",
-        "resourceName": ""
+        "resourceName": "Hero_Hantumon.pog_skin"
       },
       {
         "avatarName": "Rabid Night Bunny",
-        "resourceName": ""
+        "resourceName": "Hero_Hantumon.Alt5"
       },
       {
         "avatarName": "Leo",
-        "resourceName": ""
+        "resourceName": "Hero_Hantumon.Alt6"
       },
       {
         "avatarName": "Fright Hound",
-        "resourceName": ""
+        "resourceName": "Hero_Hantumon.Alt7"
       },
       {
         "avatarName": "Ferocious Leo",
-        "resourceName": ""
+        "resourceName": "Hero_Hantumon.Alt9"
       },
       {
         "avatarName": "Catnip Night Hound",
-        "resourceName": ""
+        "resourceName": "Hero_Hantumon.Alt10"
       },
       {
         "avatarName": "Plushie Night Hound",
-        "resourceName": ""
+        "resourceName": "Hero_Hantumon.Alt11"
       },
       {
         "avatarName": "Misfit Night Hound",
-        "resourceName": ""
+        "resourceName": "Hero_Hantumon.Alt12"
       },
       {
         "avatarName": "Wildcat",
-        "resourceName": ""
+        "resourceName": "Hero_Hantumon.Alt13"
       }
     ]
   },
@@ -3638,11 +3638,11 @@
       },
       {
         "avatarName": "Ellie Envy",
-        "resourceName": "Hero_Parasite.Alt5"
+        "resourceName": "Hero_Parasite.Alt6"
       },
       {
         "avatarName": "Amethyst Paragon Parasite",
-        "resourceName": "Hero_Parasite.Alt6"
+        "resourceName": "Hero_Parasite.Alt5"
       },
       {
         "avatarName": "Trophy Parasite",
@@ -3924,35 +3924,35 @@
     "avatarInfo": [
       {
         "avatarName": "Pollywog Chieftain",
-        "resourceName": ""
+        "resourceName": "Hero_PollywogPriest.Chieftain"
       },
       {
         "avatarName": "Classic Pollywog Priest",
-        "resourceName": ""
+        "resourceName": "Hero_PollywogPriest.Alt2"
       },
       {
         "avatarName": "Holly Polly",
-        "resourceName": ""
+        "resourceName": "Hero_PollywogPriest.Alt3"
       },
       {
         "avatarName": "Penguin Priest",
-        "resourceName": ""
+        "resourceName": "Hero_PollywogPriest.Alt4"
       },
       {
         "avatarName": "Axolotl Pollywog",
-        "resourceName": ""
+        "resourceName": "Hero_PollywogPriest.Alt5"
       },
       {
         "avatarName": "POG Pollywog Priest",
-        "resourceName": ""
+        "resourceName": "Hero_PollywogPriest.pog_skin"
       },
       {
         "avatarName": "Prince Polly",
-        "resourceName": ""
+        "resourceName": "Hero_PollywogPriest.Alt6"
       },
       {
         "avatarName": "Punk Pollywog",
-        "resourceName": ""
+        "resourceName": "Hero_PollywogPriest.Alt7"
       }
     ]
   },
@@ -5047,71 +5047,67 @@
     "avatarInfo": [
       {
         "avatarName": "Sachi Swiftblade",
-        "resourceName": ""
+        "resourceName": "Hero_Hiro.Alt"
       },
       {
         "avatarName": "Ronin Swiftblade",
-        "resourceName": ""
+        "resourceName": "Hero_Hiro.Alt2"
       },
       {
         "avatarName": "Bushi Swiftblade",
-        "resourceName": ""
+        "resourceName": "Hero_Hiro.Alt3"
       },
       {
-        "avatarName": "Zenifir the Dark Elf ",
-        "resourceName": ""
+        "avatarName": "Zenifir the Dark Elf",
+        "resourceName": "Hero_Hiro.Alt4"
       },
       {
         "avatarName": "Throwback Swiftblade",
-        "resourceName": ""
+        "resourceName": "Hero_Hiro.Classic"
       },
       {
         "avatarName": "Hunter Swiftblade",
-        "resourceName": ""
+        "resourceName": "Hero_Hiro.Alt5"
       },
       {
         "avatarName": "Halion",
-        "resourceName": ""
+        "resourceName": "Hero_Hiro.Alt6"
       },
       {
         "avatarName": "Cyber Samurai",
-        "resourceName": ""
+        "resourceName": "Hero_Hiro.Alt7"
       },
       {
         "avatarName": "POG Swiftblade",
-        "resourceName": ""
+        "resourceName": "Hero_Hiro.pog_skin"
       },
       {
         "avatarName": "Kissaki",
-        "resourceName": ""
+        "resourceName": "Hero_Hiro.Alt8"
       },
       {
         "avatarName": "Trophy Swiftblade",
-        "resourceName": ""
+        "resourceName": "Hero_Hiro.trophy_skin"
       },
       {
         "avatarName": "Siam Warrior Swiftblade",
-        "resourceName": ""
+        "resourceName": "Hero_Hiro.Alt10"
       },
       {
         "avatarName": "Captain of the Royal Guard",
-        "resourceName": ""
+        "resourceName": "Hero_Hiro.Alt9"
       },
       {
         "avatarName": "Punk Swifty",
-        "resourceName": ""
+        "resourceName": "Hero_Hiro.Alt12"
       },
       {
         "avatarName": "Deathbloom",
-        "resourceName": ""
+        "resourceName": "Hero_Hiro.Alt13"
       },
       {
         "avatarName": "Suzaku Swiftblade",
-        "resourceName": ""
-      },
-      {
-        "avatarName": "Suzaku Swiftblade",
-        "resourceName": ""
+        "resourceName": "Hero_Hiro.Alt14"
       }
     ]
   },
@@ -5394,43 +5390,43 @@
     "avatarInfo": [
       {
         "avatarName": "Thor Thunderbringer",
-        "resourceName": ""
-      },
-      {
-        "avatarName": "Lightningbringer",
-        "resourceName": ""
+        "resourceName": "Hero_Kunas.Alt"
       },
       {
         "avatarName": "Syrrus the Lightning Caller",
-        "resourceName": ""
+        "resourceName": "Hero_Kunas.Alt2"
+      },
+      {
+        "avatarName": "Lightningbringer",
+        "resourceName": "Hero_Kunas.Alt3"
       },
       {
         "avatarName": "Asgard Thor",
-        "resourceName": ""
+        "resourceName": "Hero_Kunas.Alt6"
       },
       {
         "avatarName": "Fluffybringer",
-        "resourceName": ""
+        "resourceName": "Hero_Kunas.Alt7"
       },
       {
         "avatarName": "POG Thunderbringer",
-        "resourceName": ""
+        "resourceName": "Hero_Kunas.pog_skin"
       },
       {
         "avatarName": "The Five Thunder Emperors",
-        "resourceName": ""
+        "resourceName": "Hero_Kunas.Alt8"
       },
       {
         "avatarName": "ALPHA Thunderbringer",
-        "resourceName": ""
+        "resourceName": "Hero_Kunas.Alt9"
       },
       {
         "avatarName": "Dark Lightninglord",
-        "resourceName": ""
+        "resourceName": "Hero_Kunas.Alt10"
       },
       {
         "avatarName": "Raijin",
-        "resourceName": ""
+        "resourceName": "Hero_Kunas.Alt11"
       }
     ]
   },
@@ -5640,35 +5636,35 @@
     "avatarInfo": [
       {
         "avatarName": "Voodoo Raptor",
-        "resourceName": ""
+        "resourceName": "Hero_Voodoo.Alt"
       },
       {
         "avatarName": "Voodoo Doctor",
-        "resourceName": ""
+        "resourceName": "Hero_Voodoo.Alt2"
       },
       {
         "avatarName": "Hel",
-        "resourceName": ""
+        "resourceName": "Hero_Voodoo.Alt3"
       },
       {
         "avatarName": "Ragnarok Hel",
-        "resourceName": ""
+        "resourceName": "Hero_Voodoo.Alt4"
       },
       {
         "avatarName": "POG Voodoo",
-        "resourceName": ""
+        "resourceName": "Hero_Voodoo.pog_skin"
       },
       {
         "avatarName": "Siam Warrior Voodoo Jester",
-        "resourceName": ""
+        "resourceName": "Hero_Voodoo.Alt5"
       },
       {
         "avatarName": "Hunter Voodoo Jester",
-        "resourceName": ""
+        "resourceName": "Hero_Voodoo.Alt6"
       },
       {
         "avatarName": "Painkiller",
-        "resourceName": ""
+        "resourceName": "Hero_Voodoo.Alt8"
       }
     ]
   },
