@@ -29,9 +29,9 @@ namespace HoNAvatarManager.Core
             _configurationManager = new ConfigurationManager("appsettings.json");
             _appConfiguration = _configurationManager.GetAppConfiguration();
 
-            if (!Directory.Exists(_appConfiguration.HoNPath))
+            if (!Directory.Exists(_appConfiguration.GetHoNPath()))
             {
-                throw ThrowHelper.DirectoryNotFoundException($"HoN directory not found at {_appConfiguration.HoNPath}.");
+                throw ThrowHelper.DirectoryNotFoundException($"HoN directory not found at {_appConfiguration.HoNPath32} or {_appConfiguration.HoNPath64}.");
             }
 
             _resourcesManager = new ResourcesManager(_appConfiguration);
@@ -60,7 +60,7 @@ namespace HoNAvatarManager.Core
 
                 if (avatarElement == null)
                 {
-                    throw ThrowHelper.AvatarNotFound($"Avatar {avatar} not found for hero {hero}.", avatar);
+                    throw ThrowHelper.AvatarNotFoundException($"Avatar {avatar} not found for hero {hero}.", avatar);
                 }
 
                 foreach (var parser in EntityParser.GetRegisteredEntityParsers(_xmlManager))
@@ -73,7 +73,7 @@ namespace HoNAvatarManager.Core
 
                 _resourcesManager.PackHeroResources(heroResourcesDirectory, heroResourcesS2ZFilePath);
 
-                File.Copy(heroResourcesS2ZFilePath, Path.Combine(_appConfiguration.HoNPath, "game", heroResourcesS2ZFileName), true);
+                File.Copy(heroResourcesS2ZFilePath, Path.Combine(_appConfiguration.GetHoNPath(), "game", heroResourcesS2ZFileName), true);
             }
             finally
             {
@@ -105,7 +105,7 @@ namespace HoNAvatarManager.Core
 
                 if (avatarElement == null)
                 {
-                    throw ThrowHelper.AvatarNotFound($"Avatar {avatar} not found for hero {hero}.", avatar);
+                    throw ThrowHelper.AvatarNotFoundException($"Avatar {avatar} not found for hero {hero}.", avatar);
                 }
 
                 foreach (var parser in EntityParser.GetRegisteredEntityParsers(_xmlManager))
@@ -113,7 +113,7 @@ namespace HoNAvatarManager.Core
                     parser.SetEntity(heroDirectoryPath, avatarKey);
                 }
 
-                var destinationHeroDirectory = Path.Combine(_appConfiguration.HoNPath, "game", "heroes");
+                var destinationHeroDirectory = Path.Combine(_appConfiguration.GetHoNPath(), "game", "heroes");
 
                 Directory.CreateDirectory(destinationHeroDirectory);
 
@@ -135,7 +135,7 @@ namespace HoNAvatarManager.Core
 
         public void RemoveHeroAvatar(string hero)
         {
-            var heroResourcesPath = Path.Combine(_appConfiguration.HoNPath, "game", $"resources_{hero.Replace(" ", string.Empty)}.s2z");
+            var heroResourcesPath = Path.Combine(_appConfiguration.GetHoNPath(), "game", $"resources_{hero.Replace(" ", string.Empty)}.s2z");
 
             if (File.Exists(heroResourcesPath))
             {

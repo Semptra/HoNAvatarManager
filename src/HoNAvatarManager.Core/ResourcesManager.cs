@@ -98,7 +98,7 @@ namespace HoNAvatarManager.Core
 
         private string GetResourcesPath(int resourcesIndex)
         {
-            return Path.Combine(_appConfiguration.HoNPath, "game", $"resources{resourcesIndex}.s2z");
+            return Path.Combine(_appConfiguration.GetHoNPath(), "game", $"resources{resourcesIndex}.s2z");
         }
     }
 }

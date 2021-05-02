@@ -1,5 +1,7 @@
 ﻿using AngleSharp;
 using AngleSharp.Dom;
+using AngleSharp.Xml.Dom;
+using AngleSharp.Xml.Parser;
 using HoNAvatarManager.Core;
 using Newtonsoft.Json;
 using System;
@@ -159,16 +161,31 @@ namespace HoNAvatarManager.Tools
 
         static async Task Main(string[] args)
         {
-            await ExtractAvatarIcons();
+            var heroModelMdf = GetXmlDocument(@"C:\Program Files (x86)\Heroes of Newerth\game\heroes\solstice\model.mdf");
+            var avatarModelMdf = GetXmlDocument(@"C:\Program Files (x86)\Heroes of Newerth\game\heroes\solstice\alt\model.mdf");
 
-            var dirs = Directory.EnumerateDirectories(@"C:\HoNMods\ExtractTest\AvatarIcons").Select(d => new DirectoryInfo(d));
-            
-            foreach(var name in HeroNames)
+            var heroModelAnimations = heroModelMdf.QuerySelector("model").QuerySelectorAll("anim");
+            var avatarModelAnimations = avatarModelMdf.QuerySelector("model").QuerySelectorAll("anim");
+
+            Console.WriteLine($"Hero animations: {heroModelAnimations.Count()}");
+            foreach(var heroModelAnimation in heroModelAnimations)
             {
-                if (!dirs.Any(d => d.Name == name))
-                {
-                    Console.WriteLine($"{name} missing");
-                }
+                Console.WriteLine($" - Animation: {heroModelAnimation.GetAttribute("name")}");
+            }
+
+            Console.WriteLine($"\nAvatar animations: {avatarModelAnimations.Count()}");
+            foreach (var avatarModelAnimation in avatarModelAnimations)
+            {
+                Console.WriteLine($" - Animation: {avatarModelAnimation.GetAttribute("name")}");
+            }
+        }
+
+        static IXmlDocument GetXmlDocument(string path)
+        {
+            using (var stream = new FileStream(path, FileMode.Open, FileAccess.Read))
+            {
+                var parser = new XmlParser();
+                return parser.ParseDocument(stream);
             }
         }
 

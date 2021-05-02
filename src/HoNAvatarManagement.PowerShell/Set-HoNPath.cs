@@ -10,6 +10,9 @@ namespace HoNAvatarManager.PowerShell
         [Parameter(Mandatory = true)]
         public string Path { get; set; }
 
+        [Parameter(Mandatory = false)]
+        public SwitchParameter x64 { get; set; } = true;
+
         protected override void ProcessRecord()
         {
             if (!Directory.Exists(Path))
@@ -19,7 +22,14 @@ namespace HoNAvatarManager.PowerShell
 
             var configurationManager = new ConfigurationManager("appsettings.json");
 
-            configurationManager.SetAppConfiguration(new AppConfiguration { HoNPath = Path });
+            if (x64.ToBool())
+            {
+                configurationManager.SetAppConfiguration(new AppConfiguration { HoNPath64 = Path });
+            }
+            else
+            {
+                configurationManager.SetAppConfiguration(new AppConfiguration { HoNPath32 = Path });
+            }
         }
     }
 }

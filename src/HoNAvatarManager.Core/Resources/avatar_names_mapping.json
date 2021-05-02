@@ -4903,23 +4903,23 @@
       },
       {
         "avatarName": "Trophy Solstice",
-        "resourceName": "Hero_Solstice.Alt8"
+        "resourceName": "Hero_Solstice.trophy_skin"
       },
       {
         "avatarName": "Spring Break Solstice",
-        "resourceName": "Hero_Solstice.Alt9"
+        "resourceName": "Hero_Solstice.Alt8"
       },
       {
         "avatarName": "Yin and Yang",
-        "resourceName": "Hero_Solstice.Alt10"
+        "resourceName": "Hero_Solstice.Alt9"
       },
       {
         "avatarName": "Christmas Solstice",
-        "resourceName": "Hero_Solstice.Alt11"
+        "resourceName": "Hero_Solstice.Alt10"
       },
       {
         "avatarName": "Deuces",
-        "resourceName": ""
+        "resourceName": "Hero_Solstice.Alt11"
       }
     ]
   },

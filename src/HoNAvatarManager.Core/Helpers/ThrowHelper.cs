@@ -1,8 +1,6 @@
-﻿using HoNAvatarManager.Core.Exceptions;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Text;
+using HoNAvatarManager.Core.Exceptions;
 
 namespace HoNAvatarManager.Core.Helpers
 {
@@ -13,7 +11,12 @@ namespace HoNAvatarManager.Core.Helpers
             return new DirectoryNotFoundException(AppendSubmitIssue(message));
         }
 
-        public static AvatarNotFoundException AvatarNotFound(string message, string avatar)
+        public static AnimationNotFoundException AnimationNotFoundException(string message, string animation)
+        {
+            return new AnimationNotFoundException(AppendSubmitIssue(message), animation);
+        }
+
+        public static AvatarNotFoundException AvatarNotFoundException(string message, string avatar)
         {
             return new AvatarNotFoundException(AppendSubmitIssue(message), avatar);
         }
