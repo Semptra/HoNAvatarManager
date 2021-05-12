@@ -13,7 +13,7 @@ namespace HoNAvatarManager.Core.Exceptions
             Avatar = avatar;
         }
 
-        public AvatarNotFoundException(string message, string avatar, System.Exception inner) : base(message, inner) 
+        public AvatarNotFoundException(string message, string avatar, Exception inner) : base(message, inner) 
         {
             Avatar = avatar;
         }

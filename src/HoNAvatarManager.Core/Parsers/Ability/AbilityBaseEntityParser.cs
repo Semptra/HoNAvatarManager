@@ -24,11 +24,17 @@ namespace HoNAvatarManager.Core.Parsers.Ability
             {
                 var entityFiles = Directory.EnumerateFiles(heroAbilityDirectory, $"{entityName}*.entity");
 
-                foreach(var entityFile in entityFiles)
+                foreach (var entityFile in entityFiles)
                 {
                     var entityXml = _xmlManager.GetXmlDocument(entityFile);
 
                     var entityElement = entityXml.QuerySelector(entityName);
+
+                    if (entityElement == null)
+                    {
+                        continue;
+                    }
+
                     var entityAvatarElements = entityElement.QuerySelectorAll("altavatar");
                     var entityAvatarElement = entityAvatarElements.FirstOrDefault(a => a.HasKey(avatarKey));
 

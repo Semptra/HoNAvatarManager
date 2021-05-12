@@ -32,24 +32,34 @@ namespace HoNAvatarManager.Core.Extensions
 
         public static IElement SetElementChilds(this IElement thisElement, IElement otherElement)
         {
-            foreach (var childNode in otherElement.ChildNodes.ToList())
+            foreach (var childElement in otherElement.ChildNodes.OfType<IElement>().ToList())
             {
-                thisElement.CopyNodeToRoot(childNode);
+                thisElement.CopyNodeToRoot(childElement);
             }
 
             return thisElement;
         }
 
-        public static IElement CopyNodeToRoot(this IElement thisElement, INode node)
+        public static IElement CopyNodeToRoot(this IElement thisElement, IElement otherElement)
         {
-            var rootElementNode = thisElement.ChildNodes.FirstOrDefault(n => n.NodeName == node.NodeName);
+            INode rootElementNode;
+
+            if (otherElement.HasAttribute("key"))
+            {
+                var otherElementKey = otherElement.GetAttribute("key");
+                rootElementNode = thisElement.ChildNodes.OfType<IElement>().FirstOrDefault(e => e.NodeName == otherElement.NodeName && e.GetAttribute("key") == otherElementKey);
+            }
+            else
+            {
+                rootElementNode = thisElement.ChildNodes.FirstOrDefault(n => n.NodeName == otherElement.NodeName);
+            }
 
             if (rootElementNode != null)
             {
                 thisElement.RemoveChild(rootElementNode);
             }
 
-            thisElement.AppendChild(node);
+            thisElement.AppendChild(otherElement);
 
             return thisElement;
         }
