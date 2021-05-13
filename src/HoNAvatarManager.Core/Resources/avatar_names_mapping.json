@@ -82,11 +82,11 @@
       },
       {
         "avatarName": "Steampunk Aluna",
-        "resourceName": "Hero_Aluna.Alt2"
+        "resourceName": "Hero_Aluna.Alt3"
       },
       {
         "avatarName": "Conquistador Aluna",
-        "resourceName": "Hero_Aluna.Alt3"
+        "resourceName": "Hero_Aluna.Alt2"
       },
       {
         "avatarName": "Santa Baby Aluna",
@@ -98,15 +98,15 @@
       },
       {
         "avatarName": "The Emerald Princess",
-        "resourceName": "Hero_Aluna.Alt6"
-      },
-      {
-        "avatarName": "Aluna Red Riding Hood",
         "resourceName": "Hero_Aluna.Alt7"
       },
       {
-        "avatarName": "Aluna (CN)",
+        "avatarName": "Aluna Red Riding Hood",
         "resourceName": "Hero_Aluna.Alt8"
+      },
+      {
+        "avatarName": "Aluna (CN)",
+        "resourceName": "Hero_Aluna.Alt9"
       }
     ]
   },
@@ -2786,35 +2786,35 @@
     "avatarInfo": [
       {
         "avatarName": "Scorpion Magmus",
-        "resourceName": "Hero_Magmar.Alt2"
+        "resourceName": "Hero_Magmar.Scorpion"
       },
       {
         "avatarName": "Magmoose",
-        "resourceName": "Hero_Magmar.Alt3"
+        "resourceName": "Hero_Magmar.Alt2"
       },
       {
         "avatarName": "Svarog",
-        "resourceName": "Hero_Magmar.Alt4"
+        "resourceName": "Hero_Magmar.Alt3"
       },
       {
         "avatarName": "Cryo Magmus",
-        "resourceName": "Hero_Magmar.Alt5"
+        "resourceName": "Hero_Magmar.Alt4"
       },
       {
         "avatarName": "Taurus",
-        "resourceName": "Hero_Magmar.Alt6"
+        "resourceName": "Hero_Magmar.Alt5"
       },
       {
         "avatarName": "Scoria",
-        "resourceName": "Hero_Magmar.Alt7"
+        "resourceName": "Hero_Magmar.Alt6"
       },
       {
         "avatarName": "Tidal Magmus",
-        "resourceName": "Hero_Magmar.Alt8"
+        "resourceName": "Hero_Magmar.Alt7"
       },
       {
         "avatarName": "Trophy Magmus",
-        "resourceName": "Hero_Magmar.Alt9"
+        "resourceName": "Hero_Magmar.trophy_skin"
       },
       {
         "avatarName": "POG Magmus",
@@ -2822,27 +2822,23 @@
       },
       {
         "avatarName": "Spectrum Paragon Magmus",
-        "resourceName": "Hero_Magmar.Alt10"
+        "resourceName": "Hero_Magmar.Alt9"
       },
       {
         "avatarName": "Ascension Magmus",
-        "resourceName": "Hero_Magmar.Alt11"
-      },
-      {
-        "avatarName": "Swagmus",
-        "resourceName": "Hero_Magmar.Alt12"
+        "resourceName": "Hero_Magmar.set_ascension"
       },
       {
         "avatarName": "Chocolate Magmousse",
-        "resourceName": "Hero_Magmar.Alt13"
+        "resourceName": "Hero_Magmar.Alt11"
       },
       {
         "avatarName": "Fireheart",
-        "resourceName": "Hero_Magmar.Alt14"
+        "resourceName": "Hero_Magmar.Alt12"
       },
       {
         "avatarName": "Saji",
-        "resourceName": ""
+        "resourceName": "Hero_Magmar.Alt13"
       }
     ]
   },
