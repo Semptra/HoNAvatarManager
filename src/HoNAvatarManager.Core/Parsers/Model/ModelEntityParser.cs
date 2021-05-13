@@ -26,6 +26,13 @@ namespace HoNAvatarManager.Core.Parsers.Model
         protected void SetAvatarModel(string heroModelFilePath, string avatarModelFilePath)
         {
             var heroModelXml = _xmlManager.GetXmlDocument(heroModelFilePath);
+
+            if (!File.Exists(avatarModelFilePath))
+            {
+                Logging.Logger.Log.Warning("Model file not found for avatar.");
+                return;
+            }
+
             var avatarModelXml = _xmlManager.GetXmlDocument(avatarModelFilePath);
 
             var heroModel = heroModelXml.QuerySelector("model");

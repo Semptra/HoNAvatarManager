@@ -3094,63 +3094,59 @@
       },
       {
         "avatarName": "Harumon Monkey King",
-        "resourceName": "Hero_MonkeyKing.Alt4"
+        "resourceName": "Hero_MonkeyKing.main_reskin"
       },
       {
         "avatarName": "Sun Wukong",
-        "resourceName": "Hero_MonkeyKing.Alt5"
+        "resourceName": "Hero_MonkeyKing.Alt4"
       },
       {
         "avatarName": "TDMonkey King",
-        "resourceName": "Hero_MonkeyKing.Alt6"
+        "resourceName": "Hero_MonkeyKing.Alt5"
       },
       {
         "avatarName": "MechaKing",
-        "resourceName": "Hero_MonkeyKing.Alt7"
+        "resourceName": "Hero_MonkeyKing.Alt6"
       },
       {
         "avatarName": "Lu Bu",
-        "resourceName": "Hero_MonkeyKing.Alt8"
+        "resourceName": "Hero_MonkeyKing.Alt7"
       },
       {
         "avatarName": "Mountain Dew Monkey King",
-        "resourceName": "Hero_MonkeyKing.Alt9"
+        "resourceName": "Hero_MonkeyKing.Alt8"
       },
       {
         "avatarName": "Unbound Monkey King",
-        "resourceName": "Hero_MonkeyKing.Alt11"
+        "resourceName": "Hero_MonkeyKing.Alt9"
       },
       {
         "avatarName": "Breakaway Monkey King",
-        "resourceName": "Hero_MonkeyKing.Alt12"
+        "resourceName": "Hero_MonkeyKing.Alt11"
       },
       {
         "avatarName": "Six Eared Macaque",
-        "resourceName": "Hero_MonkeyKing.Alt13"
+        "resourceName": "Hero_MonkeyKing.Alt12"
       },
       {
         "avatarName": "Monkey Singer",
-        "resourceName": "Hero_MonkeyKing.Alt14"
+        "resourceName": "Hero_MonkeyKing.Alt13"
       },
       {
         "avatarName": "Shinobi Monkey King",
+        "resourceName": "Hero_MonkeyKing.Alt14"
+      },
+      {
+        "avatarName": "Prodigy King",
         "resourceName": "Hero_MonkeyKing.Alt15"
       },
       {
-        "avatarName": "Prodigy King",
-        "resourceName": "Hero_MonkeyKing.Alt16"
-      },
-      {
-        "avatarName": "Prodigy King",
-        "resourceName": ""
-      },
-      {
         "avatarName": "Throwback Monkey King",
-        "resourceName": ""
+        "resourceName": "Hero_MonkeyKing.Classic"
       },
       {
         "avatarName": "Jade Macaque",
-        "resourceName": ""
+        "resourceName": "Hero_MonkeyKing.Alt16"
       }
     ]
   },
@@ -3744,31 +3740,35 @@
       },
       {
         "avatarName": "Stonewall Pebbles",
-        "resourceName": "Hero_Rocky.Alt10"
-      },
-      {
-        "avatarName": "Chuck Pebbles",
         "resourceName": "Hero_Rocky.Alt11"
       },
       {
+        "avatarName": "Chuck Pebbles",
+        "resourceName": "Hero_Rocky.Alt10"
+      },
+      {
         "avatarName": "Pebbles Tier ONE",
-        "resourceName": "Hero_Rocky.Alt12"
+        "resourceName": "Hero_Rocky.trophy_skin01"
       },
       {
         "avatarName": "Pebbles Tier TWO",
-        "resourceName": "Hero_Rocky.Alt13"
+        "resourceName": "Hero_Rocky.trophy_skin02"
       },
       {
         "avatarName": "Pebbles Tier THREE",
-        "resourceName": ""
+        "resourceName": "Hero_Rocky.trophy_skin03"
+      },
+      {
+        "avatarName": "POG Pebbles",
+        "resourceName": "Hero_Rocky.pog_skin"
       },
       {
         "avatarName": "P-800",
-        "resourceName": ""
+        "resourceName": "Hero_Rocky.Alt12"
       },
       {
         "avatarName": "Diamante",
-        "resourceName": ""
+        "resourceName": "Hero_Rocky.Alt13"
       }
     ]
   },
@@ -3854,23 +3854,23 @@
       },
       {
         "avatarName": "Ascension Pharaoh",
-        "resourceName": "Hero_Mumra.Alt6"
+        "resourceName": "Hero_Mumra.set_ascension"
       },
       {
         "avatarName": "Cyberian Husky",
-        "resourceName": "Hero_Mumra.Alt7"
+        "resourceName": "Hero_Mumra.Alt6"
       },
       {
         "avatarName": "Songkran Pharaoh (EN)",
-        "resourceName": "Hero_Mumra.Alt8"
+        "resourceName": "Hero_Mumra.Alt7"
       },
       {
         "avatarName": "Songkran Pharaoh",
-        "resourceName": "Hero_Mumra.Alt9"
+        "resourceName": "Hero_Mumra.Alt8"
       },
       {
         "avatarName": "Doge Anubis",
-        "resourceName": ""
+        "resourceName": "Hero_Mumra.Alt9"
       }
     ]
   },
@@ -4981,11 +4981,11 @@
       },
       {
         "avatarName": "EXO Soulstealer",
-        "resourceName": "Hero_Soulstealer.Alt7"
+        "resourceName": ""
       },
       {
         "avatarName": "Soulchiller",
-        "resourceName": ""
+        "resourceName": "Hero_Soulstealer.Alt7"
       }
     ]
   },

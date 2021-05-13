@@ -53,7 +53,9 @@ namespace HoNAvatarManager.Core
         {
             var resourceIndex = -1;
 
-            for (int i = 0; i <= 3; i++)
+            var resourcesNumber = _appConfiguration.GetHoNPath().Any(p => p.Contains("x64")) ? 4 : 3;
+
+            for (int i = 0; i <= resourcesNumber; i++)
             {
                 var heroes = GetResourcesHeroes(i);
 
@@ -85,8 +87,9 @@ namespace HoNAvatarManager.Core
 
             using (var resourcesZip = ZipFile.Open(resourcesPath, ZipArchiveMode.Read))
             {
-                return resourcesZip.Entries
-                    .Where(e => e.FullName.StartsWith("heroes/"))
+                var heroEntities = resourcesZip.Entries.Where(e => e.FullName.StartsWith("heroes/"));
+
+                return heroEntities
                     .Select(h => h.FullName
                         .Split("/").ElementAtOrDefault(1))
                         .Where(h => !string.IsNullOrEmpty(h))
