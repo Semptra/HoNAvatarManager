@@ -3,9 +3,8 @@ using System.IO;
 using System.Linq;
 using AngleSharp.Dom;
 using HoNAvatarManager.Core.Extensions;
-using HoNAvatarManager.Core.Helpers;
 
-namespace HoNAvatarManager.Core.Parsers.Hero
+namespace HoNAvatarManager.Core.Parsers.Model
 {
     internal class ModelEntityParser : EntityParser
     {
@@ -37,36 +36,40 @@ namespace HoNAvatarManager.Core.Parsers.Hero
 
             var resultAnimations = new List<IElement>();
 
-            foreach (var heroModelAnimation in heroModelAnimations)
+            for (int i = 0; i < heroModelAnimations.Count; i++)
             {
+                var heroModelAnimation = heroModelAnimations[i];
                 var heroModelAnimationName = heroModelAnimation.GetAttribute("name");
 
                 var avatarModelAnimation = avatarModelAnimations.FirstOrDefault(animation => animation.GetAttribute("name") == heroModelAnimationName);
 
                 if (avatarModelAnimation != null)
                 {
+                    Logging.Logger.Log.Information($"[{i + 1}/{heroModelAnimations.Count}] Using avatar animation for [{heroModelAnimationName}].");
                     resultAnimations.Add(avatarModelAnimation);
                 }
                 else
                 {
                     IElement avatarAnimation;
 
-                    if (heroModelAnimationName.StartsWith("knock") || 
-                        heroModelAnimationName.StartsWith("getup") || 
-                        heroModelAnimationName.StartsWith("bored") || 
+                    if (heroModelAnimationName.StartsWith("knock")    || 
+                        heroModelAnimationName.StartsWith("getup")    || 
+                        heroModelAnimationName.StartsWith("bored")    || 
                         heroModelAnimationName.StartsWith("portrait"))
                     {
                         avatarAnimation = avatarModelAnimations.First(animation => animation.GetAttribute("name") == "idle");
+                        Logging.Logger.Log.Information($"[{i + 1}/{heroModelAnimations.Count}] Replaced avatar animation [{heroModelAnimationName}] with [{avatarAnimation.GetAttribute("name")}].");
                     }
-                    else if (heroModelAnimationName.StartsWith("taunt"))
+                    else if (heroModelAnimationName.StartsWith("taunt") ||
+                             heroModelAnimationName.StartsWith("attack"))
                     {
                         avatarAnimation = avatarModelAnimations.First(animation => animation.GetAttribute("name").StartsWith("attack"));
+                        Logging.Logger.Log.Information($"[{i + 1}/{heroModelAnimations.Count}] Replaced avatar animation [{heroModelAnimationName}] with [{avatarAnimation.GetAttribute("name")}].");
                     }
                     else
                     {
-                        System.Console.WriteLine($"Cannot find a replacement for animation {heroModelAnimationName}.");
-                        continue;
-                        //throw ThrowHelper.AnimationNotFoundException($"Cannot find a replacement for animation {heroModelAnimationName}.", heroModelAnimationName);
+                        Logging.Logger.Log.Information($"[{i + 1}/{heroModelAnimations.Count}] Using original hero animation for [{heroModelAnimationName}].");
+                        avatarAnimation = heroModelAnimation;
                     }
 
                     var clonedAvatarAnimation = (IElement)avatarAnimation.Clone();

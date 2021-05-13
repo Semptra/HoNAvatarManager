@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
-using HoNAvatarManager.Core.Exceptions;
+using System.Threading;
 using HoNAvatarManager.Core.Helpers;
-using HoNAvatarManager.Core.Logging;
 using HoNAvatarManager.Core.Parsers;
+using Polly;
 
 namespace HoNAvatarManager.Core
 {
@@ -17,8 +17,16 @@ namespace HoNAvatarManager.Core
         private readonly ResourcesManager _resourcesManager;
         private readonly XmlManager _xmlManager;
 
+        private readonly Policy _retryFileCopyPolicy = Policy.Handle<IOException>()
+            .Retry(3, onRetry: (exception, retryCount) =>
+            {
+                Logging.Logger.Log.Error($"[Retry {retryCount}/3] Cannot copy hero resource to HoN directory. Please close HoN before using the Avatar Manager.");
+                Thread.Sleep(TimeSpan.FromSeconds(1));
+            });
+
         public AvatarManager()
         {
+            
 #if Windows
             if (!PlatformSpecific.Windows.Utilities.IsAdministrator())
             {
@@ -29,7 +37,7 @@ namespace HoNAvatarManager.Core
             _configurationManager = new ConfigurationManager("appsettings.json");
             _appConfiguration = _configurationManager.GetAppConfiguration();
 
-            if (!Directory.Exists(_appConfiguration.GetHoNPath()))
+            if (!_appConfiguration.GetHoNPath().Any())
             {
                 throw ThrowHelper.DirectoryNotFoundException($"HoN directory not found at {_appConfiguration.HoNPath32} or {_appConfiguration.HoNPath64}.");
             }
@@ -73,7 +81,12 @@ namespace HoNAvatarManager.Core
 
                 _resourcesManager.PackHeroResources(heroResourcesDirectory, heroResourcesS2ZFilePath);
 
-                File.Copy(heroResourcesS2ZFilePath, Path.Combine(_appConfiguration.GetHoNPath(), "game", heroResourcesS2ZFileName), true);
+                foreach (var honPath in _appConfiguration.GetHoNPath())
+                {
+                    var targetPath = Path.Combine(honPath, "game", heroResourcesS2ZFileName);
+
+                    _retryFileCopyPolicy.Execute(() => File.Copy(heroResourcesS2ZFilePath, targetPath, true));
+                }
             }
             finally
             {
@@ -83,8 +96,6 @@ namespace HoNAvatarManager.Core
 
         public void SetHeroAvatarUnpacked(string hero, string avatar)
         {
-            Logger.Log.Verbose("verbose test");
-
             var extractionDirectory = Path.Combine(Path.GetTempPath(), Path.GetRandomFileName());
             Directory.CreateDirectory(extractionDirectory);
 
@@ -113,17 +124,22 @@ namespace HoNAvatarManager.Core
                     parser.SetEntity(heroDirectoryPath, avatarKey);
                 }
 
-                var destinationHeroDirectory = Path.Combine(_appConfiguration.GetHoNPath(), "game", "heroes");
-
-                Directory.CreateDirectory(destinationHeroDirectory);
-
-                foreach (string dirPath in Directory.GetDirectories(heroResourcesDirectory, "*", SearchOption.AllDirectories))
-                {
-                    Directory.CreateDirectory(dirPath.Replace(heroResourcesDirectory, destinationHeroDirectory));
-                }
-
                 foreach (string newPath in Directory.GetFiles(heroResourcesDirectory, "*.*", SearchOption.AllDirectories))
                 {
+                    var destinationHeroDirectory = Path.Combine(newPath, "game", "heroes");
+
+                    if (Directory.Exists(destinationHeroDirectory))
+                    {
+                        Directory.Delete(destinationHeroDirectory);
+                    }
+
+                    Directory.CreateDirectory(destinationHeroDirectory);
+
+                    foreach (string dirPath in Directory.GetDirectories(heroResourcesDirectory, "*", SearchOption.AllDirectories))
+                    {
+                        Directory.CreateDirectory(dirPath.Replace(heroResourcesDirectory, destinationHeroDirectory));
+                    }
+                
                     File.Copy(newPath, newPath.Replace(heroResourcesDirectory, destinationHeroDirectory), true);
                 }
             }
@@ -135,11 +151,14 @@ namespace HoNAvatarManager.Core
 
         public void RemoveHeroAvatar(string hero)
         {
-            var heroResourcesPath = Path.Combine(_appConfiguration.GetHoNPath(), "game", $"resources_{hero.Replace(" ", string.Empty)}.s2z");
-
-            if (File.Exists(heroResourcesPath))
+            foreach (var honPath in _appConfiguration.GetHoNPath())
             {
-                File.Delete(heroResourcesPath);
+                var heroResourcesPath = Path.Combine(honPath, "game", $"resources_{hero.Replace(" ", string.Empty)}.s2z");
+
+                if (File.Exists(heroResourcesPath))
+                {
+                    File.Delete(heroResourcesPath);
+                }
             }
         }
 

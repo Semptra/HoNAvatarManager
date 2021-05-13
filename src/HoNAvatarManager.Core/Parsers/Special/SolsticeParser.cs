@@ -1,5 +1,5 @@
 ﻿using System.IO;
-using HoNAvatarManager.Core.Parsers.Hero;
+using HoNAvatarManager.Core.Parsers.Model;
 
 namespace HoNAvatarManager.Core.Parsers.Special
 {

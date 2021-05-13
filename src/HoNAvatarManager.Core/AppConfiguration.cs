@@ -1,5 +1,6 @@
-﻿using System.IO;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
+using System.IO;
 
 namespace HoNAvatarManager.Core
 {
@@ -11,9 +12,17 @@ namespace HoNAvatarManager.Core
         [JsonProperty("HoNPath64")]
         public string HoNPath64 { get; set; }
 
-        public string GetHoNPath()
+        public IEnumerable<string> GetHoNPath()
         {
-            return Directory.Exists(HoNPath64) ? HoNPath64 : HoNPath32;
+            if (Directory.Exists(HoNPath64))
+            {
+                yield return HoNPath64;
+            }
+
+            if (Directory.Exists(HoNPath32))
+            {
+                yield return HoNPath32;
+            }
         }
     }
 }
