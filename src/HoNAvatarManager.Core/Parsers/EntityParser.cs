@@ -62,7 +62,9 @@ namespace HoNAvatarManager.Core.Parsers
                 return avatarDirectoryPath;
             }
 
-            throw ThrowHelper.DirectoryNotFoundException($"Directory not found for avatar {avatarKey}.");
+            Logging.Logger.Log.Warning("Directory not found for avatar { avatarKey}. Using default avatar directory.");
+
+            return heroDirectoryPath;
         }
 
         protected string GetHeroEntityPath(string heroDirectoryPath)

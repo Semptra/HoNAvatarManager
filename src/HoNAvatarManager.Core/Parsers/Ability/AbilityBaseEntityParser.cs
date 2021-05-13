@@ -22,7 +22,7 @@ namespace HoNAvatarManager.Core.Parsers.Ability
 
             foreach (var heroAbilityDirectory in heroAbilityDirectories)
             {
-                var entityFiles = Directory.EnumerateFiles(heroAbilityDirectory, $"{entityName}*.entity");
+                var entityFiles = Directory.EnumerateFiles(heroAbilityDirectory, $"{entityName}*.entity", SearchOption.AllDirectories);
 
                 foreach (var entityFile in entityFiles)
                 {
