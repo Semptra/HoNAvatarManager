@@ -2,6 +2,6 @@
 {
     internal interface IEntityParser
     {
-        void SetEntity(string heroDirectoryPath, string avatarKey);
+        void SetEntity(string extractedDirectoryPath, string resultDirectoryPath, string avatarKey);
     }
 }

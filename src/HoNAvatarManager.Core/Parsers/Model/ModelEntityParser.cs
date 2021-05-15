@@ -2,10 +2,13 @@
 using System.IO;
 using System.Linq;
 using AngleSharp.Dom;
+using HoNAvatarManager.Core.Attributes;
 using HoNAvatarManager.Core.Extensions;
+using Logger = HoNAvatarManager.Core.Logging.Logger;
 
 namespace HoNAvatarManager.Core.Parsers.Model
 {
+    [EntityParserPriority(2)]
     internal class ModelEntityParser : EntityParser
     {
         public ModelEntityParser(XmlManager xmlManager) : base(xmlManager)
@@ -13,23 +16,23 @@ namespace HoNAvatarManager.Core.Parsers.Model
 
         }
 
-        public override void SetEntity(string heroDirectoryPath, string avatarKey)
+        public override void SetEntity(string extractedDirectoryPath, string resultDirectoryPath, string avatarKey)
         {
-            var heroModelFilePath = Path.Combine(heroDirectoryPath, $"model.mdf");
+            var targetModelFilePath = Path.Combine(resultDirectoryPath, "model.mdf");
 
-            var avatarDirectory = GetAvatarDirectory(heroDirectoryPath, avatarKey);
-            var avatarModelFilePath = Path.Combine(avatarDirectory, $"model.mdf");
+            var avatarDirectory = GetAvatarDirectory(extractedDirectoryPath, avatarKey);
+            var avatarModelFilePath = Path.Combine(avatarDirectory, "model.mdf");
 
-            SetAvatarModel(heroModelFilePath, avatarModelFilePath);
+            SetAvatarModel(targetModelFilePath, avatarModelFilePath);
         }
 
-        protected void SetAvatarModel(string heroModelFilePath, string avatarModelFilePath)
+        protected void SetAvatarModel(string targetModelFilePath, string avatarModelFilePath)
         {
-            var heroModelXml = _xmlManager.GetXmlDocument(heroModelFilePath);
+            var heroModelXml = _xmlManager.GetXmlDocument(targetModelFilePath);
 
             if (!File.Exists(avatarModelFilePath))
             {
-                Logging.Logger.Log.Warning("Model file not found for avatar.");
+                Logger.Log.Warning("Model file not found for avatar.");
                 return;
             }
 
@@ -52,7 +55,7 @@ namespace HoNAvatarManager.Core.Parsers.Model
 
                 if (avatarModelAnimation != null)
                 {
-                    Logging.Logger.Log.Information($"[{i + 1}/{heroModelAnimations.Count}] Using avatar animation for [{heroModelAnimationName}].");
+                    Logger.Log.Information("  Using avatar animation for [{0}].", heroModelAnimationName);
                     resultAnimations.Add(avatarModelAnimation);
                 }
                 else
@@ -65,17 +68,17 @@ namespace HoNAvatarManager.Core.Parsers.Model
                         heroModelAnimationName.StartsWith("portrait"))
                     {
                         avatarAnimation = avatarModelAnimations.First(animation => animation.GetAttribute("name") == "idle");
-                        Logging.Logger.Log.Information($"[{i + 1}/{heroModelAnimations.Count}] Replaced avatar animation [{heroModelAnimationName}] with [{avatarAnimation.GetAttribute("name")}].");
+                        Logger.Log.Information("- [{0}/{1}] Replaced avatar animation [{2}] with [{3}].", i + 1, heroModelAnimations.Count, heroModelAnimationName, avatarAnimation.GetAttribute("name"));
                     }
                     else if (heroModelAnimationName.StartsWith("taunt") ||
                              heroModelAnimationName.StartsWith("attack"))
                     {
                         avatarAnimation = avatarModelAnimations.First(animation => animation.GetAttribute("name").StartsWith("attack"));
-                        Logging.Logger.Log.Information($"[{i + 1}/{heroModelAnimations.Count}] Replaced avatar animation [{heroModelAnimationName}] with [{avatarAnimation.GetAttribute("name")}].");
+                        Logger.Log.Information("- [{0}/{1}] Replaced avatar animation [{2}] with [{3}].", i + 1, heroModelAnimations.Count, heroModelAnimationName, avatarAnimation.GetAttribute("name"));
                     }
                     else
                     {
-                        Logging.Logger.Log.Information($"[{i + 1}/{heroModelAnimations.Count}] Using original hero animation for [{heroModelAnimationName}].");
+                        Logger.Log.Information("- [{0}/{1}] Using original hero animation for [{2}].", i + 1, heroModelAnimations.Count, heroModelAnimationName);
                         avatarAnimation = heroModelAnimation;
                     }
 

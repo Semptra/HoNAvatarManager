@@ -1,10 +1,13 @@
 ﻿using System.IO;
 using System.Linq;
+using HoNAvatarManager.Core.Attributes;
 using HoNAvatarManager.Core.Extensions;
 using HoNAvatarManager.Core.Helpers;
+using Logger = HoNAvatarManager.Core.Logging.Logger;
 
 namespace HoNAvatarManager.Core.Parsers.Hero
 {
+    [EntityParserPriority(2)]
     internal class HeroEntityParser : EntityParser
     {
         public HeroEntityParser(XmlManager xmlManager) : base(xmlManager)
@@ -12,9 +15,9 @@ namespace HoNAvatarManager.Core.Parsers.Hero
 
         }
 
-        public override void SetEntity(string heroDirectoryPath, string avatarKey)
+        public override void SetEntity(string extractedDirectoryPath, string resultDirectoryPath, string avatarKey)
         {
-            SetEntityInternal(heroDirectoryPath, avatarKey, "hero");
+            SetEntityInternal(resultDirectoryPath, avatarKey, "hero");
         }
 
         protected void SetEntityInternal(string heroDirectoryPath, string avatarKey, string entityName)
@@ -52,7 +55,9 @@ namespace HoNAvatarManager.Core.Parsers.Hero
                 return;
             }
 
-            entityElement.SetElementAttributes(entityAvatarElement, "announcersound").SetElementChilds(entityAvatarElement);
+            Logger.Log.Information("  Set entity attributes for file {0}", new FileInfo(entityFilePath).Name);
+
+            entityElement.SetElementAttributes(entityAvatarElement, SkippedAttributes).SetElementChilds(entityAvatarElement);
 
             entityXml.SaveXml(entityFilePath);
         }

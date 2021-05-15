@@ -4,23 +4,26 @@ using System.IO;
 using System.IO.Compression;
 using System.Linq;
 using System.Threading;
+using Polly;
 using HoNAvatarManager.Core.Helpers;
 using HoNAvatarManager.Core.Parsers;
-using Polly;
+using Logger = HoNAvatarManager.Core.Logging.Logger;
 
 namespace HoNAvatarManager.Core
 {
     public class AvatarManager
     {
+        private const int TOTAL_RETRY_COUNT = 3;
+
         private readonly ConfigurationManager _configurationManager;
         private readonly AppConfiguration _appConfiguration;
         private readonly ResourcesManager _resourcesManager;
         private readonly XmlManager _xmlManager;
 
         private readonly Policy _retryFileCopyPolicy = Policy.Handle<IOException>()
-            .Retry(3, onRetry: (exception, retryCount) =>
+            .Retry(TOTAL_RETRY_COUNT, onRetry: (exception, retryCount) =>
             {
-                Logging.Logger.Log.Error($"[Retry {retryCount}/3] Cannot copy hero resource to HoN directory. Please close HoN before using the Avatar Manager.");
+                Logger.Log.Error("[Retry {0}/{1}] Cannot copy hero resource to HoN directory. Please close HoN before using the Avatar Manager.", retryCount, TOTAL_RETRY_COUNT);
                 Thread.Sleep(TimeSpan.FromSeconds(1));
             });
 
@@ -48,38 +51,45 @@ namespace HoNAvatarManager.Core
 
         public void SetHeroAvatar(string hero, string avatar)
         {
-            var extractionDirectory = Path.Combine(Path.GetTempPath(), Path.GetRandomFileName());
-            Directory.CreateDirectory(extractionDirectory);
+            var extractionDirectory = CreateTempDirectory();
+            var resultDirectory = CreateTempDirectory();
 
             try
             {
                 var heroResourcesName = GetHeroResourcesName(hero);
-                var rootResourcesDirectory = _resourcesManager.ExtractHeroResources(extractionDirectory, heroResourcesName);
-                var heroResourcesDirectory = Path.Combine(rootResourcesDirectory, "heroes");
-                var heroDirectoryPath = Path.Combine(heroResourcesDirectory, heroResourcesName);
-                var heroEntityPath = GetHeroEntityPath(heroDirectoryPath, heroResourcesName);
 
-                var heroXml = _xmlManager.GetXmlDocument(heroEntityPath);
+                _resourcesManager.ExtractHeroResources(extractionDirectory, heroResourcesName);
 
-                var heroNode = heroXml.QuerySelector("hero");
-                var avatarElements = heroNode.QuerySelectorAll("altavatar");
+                var extractedHeroResourcesDirectory = Path.Combine(extractionDirectory, "heroes");
+                var extractedHeroDirectoryPath = Path.Combine(extractedHeroResourcesDirectory, heroResourcesName);
+
+                var resultHeroResourcesDirectory = Path.Combine(resultDirectory, "heroes");
+                var resultHeroDirectoryPath = Path.Combine(resultHeroResourcesDirectory, heroResourcesName);
+
                 var avatarKey = GetHeroAvatarKey(hero, avatar);
-                var avatarElement = avatarElements.FirstOrDefault(a => string.Equals(a.GetAttribute("key"), avatarKey, StringComparison.InvariantCultureIgnoreCase));
 
-                if (avatarElement == null)
+                if (!IsAvatarExists(avatarKey, extractedHeroDirectoryPath, heroResourcesName))
                 {
                     throw ThrowHelper.AvatarNotFoundException($"Avatar {avatar} not found for hero {hero}.", avatar);
                 }
 
-                foreach (var parser in EntityParser.GetRegisteredEntityParsers(_xmlManager))
+                var entityParsers = EntityParser.GetRegisteredEntityParsers(_xmlManager).ToList();
+
+                Logger.Log.Information("Found {0} entity parsers.", entityParsers.Count);
+                
+                for (int i = 0; i< entityParsers.Count; i++)
                 {
-                    parser.SetEntity(heroDirectoryPath, avatarKey);
+                    var entityParser = entityParsers[i];
+
+                    Logger.Log.Information("[{0}/{1}] Executing [{2}].", i + 1, entityParsers.Count, entityParser.GetType().Name);
+
+                    entityParser.SetEntity(extractedHeroDirectoryPath, resultHeroDirectoryPath, avatarKey);
                 }
 
                 var heroResourcesS2ZFileName = $"resources_{hero.Replace(" ", string.Empty)}.s2z";
-                var heroResourcesS2ZFilePath = Path.Combine(rootResourcesDirectory, heroResourcesS2ZFileName);
+                var heroResourcesS2ZFilePath = Path.Combine(resultDirectory, heroResourcesS2ZFileName);
 
-                _resourcesManager.PackHeroResources(heroResourcesDirectory, heroResourcesS2ZFilePath);
+                _resourcesManager.PackHeroResources(resultHeroResourcesDirectory, heroResourcesS2ZFilePath);
 
                 foreach (var honPath in _appConfiguration.GetHoNPath())
                 {
@@ -91,62 +101,63 @@ namespace HoNAvatarManager.Core
             finally
             {
                 Directory.Delete(extractionDirectory, true);
+                Directory.Delete(resultDirectory, true);
             }
         }
 
         public void SetHeroAvatarUnpacked(string hero, string avatar)
         {
-            var extractionDirectory = Path.Combine(Path.GetTempPath(), Path.GetRandomFileName());
-            Directory.CreateDirectory(extractionDirectory);
-
-            try
-            {
-                var heroResourcesName = GetHeroResourcesName(hero);
-                var rootResourcesDirectory = _resourcesManager.ExtractHeroResources(extractionDirectory, heroResourcesName);
-                var heroResourcesDirectory = Path.Combine(rootResourcesDirectory, "heroes");
-                var heroDirectoryPath = Path.Combine(heroResourcesDirectory, heroResourcesName);
-                var heroEntityPath = GetHeroEntityPath(heroDirectoryPath, heroResourcesName);
-
-                var heroXml = _xmlManager.GetXmlDocument(heroEntityPath);
-
-                var heroNode = heroXml.QuerySelector("hero");
-                var avatarElements = heroNode.QuerySelectorAll("altavatar");
-                var avatarKey = GetHeroAvatarKey(hero, avatar);
-                var avatarElement = avatarElements.FirstOrDefault(a => string.Equals(a.GetAttribute("key"), avatarKey, StringComparison.InvariantCultureIgnoreCase));
-
-                if (avatarElement == null)
-                {
-                    throw ThrowHelper.AvatarNotFoundException($"Avatar {avatar} not found for hero {hero}.", avatar);
-                }
-
-                foreach (var parser in EntityParser.GetRegisteredEntityParsers(_xmlManager))
-                {
-                    parser.SetEntity(heroDirectoryPath, avatarKey);
-                }
-
-                foreach (string newPath in Directory.GetFiles(heroResourcesDirectory, "*.*", SearchOption.AllDirectories))
-                {
-                    var destinationHeroDirectory = Path.Combine(newPath, "game", "heroes");
-
-                    if (Directory.Exists(destinationHeroDirectory))
-                    {
-                        Directory.Delete(destinationHeroDirectory);
-                    }
-
-                    Directory.CreateDirectory(destinationHeroDirectory);
-
-                    foreach (string dirPath in Directory.GetDirectories(heroResourcesDirectory, "*", SearchOption.AllDirectories))
-                    {
-                        Directory.CreateDirectory(dirPath.Replace(heroResourcesDirectory, destinationHeroDirectory));
-                    }
-                
-                    File.Copy(newPath, newPath.Replace(heroResourcesDirectory, destinationHeroDirectory), true);
-                }
-            }
-            finally
-            {
-                Directory.Delete(extractionDirectory, true);
-            }
+            // var extractionDirectory = Path.Combine(Path.GetTempPath(), Path.GetRandomFileName());
+            // Directory.CreateDirectory(extractionDirectory);
+            // 
+            // try
+            // {
+            //     var heroResourcesName = GetHeroResourcesName(hero);
+            //     var rootResourcesDirectory = _resourcesManager.ExtractHeroResources(extractionDirectory, heroResourcesName);
+            //     var heroResourcesDirectory = Path.Combine(rootResourcesDirectory, "heroes");
+            //     var heroDirectoryPath = Path.Combine(heroResourcesDirectory, heroResourcesName);
+            //     var heroEntityPath = GetHeroEntityPath(heroDirectoryPath, heroResourcesName);
+            // 
+            //     var heroXml = _xmlManager.GetXmlDocument(heroEntityPath);
+            // 
+            //     var heroNode = heroXml.QuerySelector("hero");
+            //     var avatarElements = heroNode.QuerySelectorAll("altavatar");
+            //     var avatarKey = GetHeroAvatarKey(hero, avatar);
+            //     var avatarElement = avatarElements.FirstOrDefault(a => string.Equals(a.GetAttribute("key"), avatarKey, StringComparison.InvariantCultureIgnoreCase));
+            // 
+            //     if (avatarElement == null)
+            //     {
+            //         throw ThrowHelper.AvatarNotFoundException($"Avatar {avatar} not found for hero {hero}.", avatar);
+            //     }
+            // 
+            //     foreach (var parser in EntityParser.GetRegisteredEntityParsers(_xmlManager))
+            //     {
+            //         parser.SetEntity(heroDirectoryPath, avatarKey);
+            //     }
+            // 
+            //     foreach (string newPath in Directory.GetFiles(heroResourcesDirectory, "*.*", SearchOption.AllDirectories))
+            //     {
+            //         var destinationHeroDirectory = Path.Combine(newPath, "game", "heroes");
+            // 
+            //         if (Directory.Exists(destinationHeroDirectory))
+            //         {
+            //             Directory.Delete(destinationHeroDirectory);
+            //         }
+            // 
+            //         Directory.CreateDirectory(destinationHeroDirectory);
+            // 
+            //         foreach (string dirPath in Directory.GetDirectories(heroResourcesDirectory, "*", SearchOption.AllDirectories))
+            //         {
+            //             Directory.CreateDirectory(dirPath.Replace(heroResourcesDirectory, destinationHeroDirectory));
+            //         }
+            //     
+            //         File.Copy(newPath, newPath.Replace(heroResourcesDirectory, destinationHeroDirectory), true);
+            //     }
+            // }
+            // finally
+            // {
+            //     Directory.Delete(extractionDirectory, true);
+            // }
         }
 
         public void RemoveHeroAvatar(string hero)
@@ -180,6 +191,29 @@ namespace HoNAvatarManager.Core
 
                 return avatarNodes.Select(n => n.Attributes["key"].Value);
             }
+        }
+
+        private string CreateTempDirectory()
+        {
+            var tempDirectoryPath = Path.Combine(Path.GetTempPath(), Path.GetRandomFileName());
+
+            Directory.CreateDirectory(tempDirectoryPath);
+
+            return tempDirectoryPath;
+        }
+
+        private bool IsAvatarExists(string avatarKey, string heroDirectoryPath, string heroResourcesName)
+        {
+            var heroEntityPath = GetHeroEntityPath(heroDirectoryPath, heroResourcesName);
+
+            var heroXml = _xmlManager.GetXmlDocument(heroEntityPath);
+
+            var heroNode = heroXml.QuerySelector("hero");
+            var avatarElements = heroNode.QuerySelectorAll("altavatar");
+
+            var avatarElement = avatarElements.FirstOrDefault(a => string.Equals(a.GetAttribute("key"), avatarKey, StringComparison.InvariantCultureIgnoreCase));
+
+            return avatarElement != null;
         }
 
         public string GetHeroAvatarFriendlyName(string hero, string avatarResourceName)

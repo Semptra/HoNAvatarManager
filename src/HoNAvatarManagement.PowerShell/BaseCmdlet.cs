@@ -8,12 +8,12 @@ namespace HoNAvatarManager.PowerShell
     {
         protected override void BeginProcessing()
         {
-            Logger.Configuration.WriteTo.PowerShellSink();
-
-            if (MyInvocation.BoundParameters.ContainsKey("Verbose"))
-            {
-                Logger.Configuration.MinimumLevel.Verbose();
-            }
+            // Logger.Configuration.WriteTo.PowerShellSink();
+            // 
+            // if (MyInvocation.BoundParameters.ContainsKey("Verbose"))
+            // {
+            //     Logger.Configuration.MinimumLevel.Verbose();
+            // }
         }
     }
 }

@@ -1,9 +1,12 @@
 ﻿using System.IO;
 using System.Linq;
+using HoNAvatarManager.Core.Attributes;
 using HoNAvatarManager.Core.Extensions;
 
 namespace HoNAvatarManager.Core.Parsers.Ability
 {
+    [Disabled]
+    [EntityParserPriority(1)]
     internal class AbilityFilesEntityParser : EntityParser
     {
         public AbilityFilesEntityParser(XmlManager xmlManager) : base(xmlManager)
@@ -11,15 +14,15 @@ namespace HoNAvatarManager.Core.Parsers.Ability
     
         }
     
-        public override void SetEntity(string heroDirectoryPath, string avatarKey)
+        public override void SetEntity(string extractedDirectoryPath, string resultDirectoryPath, string avatarKey)
         {
             if (avatarKey.IsClassicAvatar())
             {
                 return;
             }
     
-            var avatarDirectoryPath = GetAvatarDirectory(heroDirectoryPath, avatarKey);
-            var heroAbilityDirectories = Directory.EnumerateDirectories(heroDirectoryPath, "ability_*").Select(d => new DirectoryInfo(d));
+            var avatarDirectoryPath = GetAvatarDirectory(extractedDirectoryPath, avatarKey);
+            var heroAbilityDirectories = Directory.EnumerateDirectories(extractedDirectoryPath, "ability_*").Select(d => new DirectoryInfo(d));
             var avatarAbilityDirectories = Directory.EnumerateDirectories(avatarDirectoryPath, "ability_*").Select(d => new DirectoryInfo(d));
     
             foreach (var avatarAbilityDirectory in avatarAbilityDirectories)
@@ -29,7 +32,7 @@ namespace HoNAvatarManager.Core.Parsers.Ability
                 foreach (var avatarAbilityFile in avatarAbilityFiles)
                 {
                     var avatarAbilityFileRelativePath = avatarAbilityFile.FullName.Replace(avatarDirectoryPath, string.Empty);
-                    var newAvatarAbilityFilePath = new FileInfo(Path.Join(heroDirectoryPath, avatarAbilityFileRelativePath));
+                    var newAvatarAbilityFilePath = new FileInfo(Path.Join(extractedDirectoryPath, avatarAbilityFileRelativePath));
     
                     Directory.CreateDirectory(newAvatarAbilityFilePath.DirectoryName);
     

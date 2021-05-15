@@ -15,7 +15,7 @@ namespace HoNAvatarManager.Core
             _appConfiguration = appConfiguration;
         }
 
-        public string ExtractHeroResources(string extractionDirectory, string hero)
+        public void ExtractHeroResources(string extractionDirectory, string hero)
         {
             using (var heroResourcesZip = GetHeroResourcesZip(hero))
             {
@@ -32,8 +32,6 @@ namespace HoNAvatarManager.Core
                     heroEntry.ExtractToFile(heroEntryFilePath);
                 }
             }
-
-            return extractionDirectory;
         }
 
         public void PackHeroResources(string heroResourcesPath, string outputPath)
