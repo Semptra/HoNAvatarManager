@@ -24,6 +24,8 @@ namespace HoNAvatarManager.Core.Extensions
 
             foreach (var attribute in otherElementAttributes.Where(attribute => !skipAttributes.Contains(attribute.Name)))
             {
+                Logging.Logger.Log.Information("    Set attribute {0} with value {1}", attribute.Name, attribute.Value);
+
                 thisElement.SetAttribute(attribute.Name, attribute.Value);
             }
 
@@ -35,6 +37,21 @@ namespace HoNAvatarManager.Core.Extensions
             foreach (var childElement in otherElement.ChildNodes.OfType<IElement>().ToList())
             {
                 thisElement.CopyNodeToRoot(childElement);
+            }
+
+            return thisElement;
+        }
+
+        public static IElement RemoveChildNodes(this IElement thisElement, params string[] childs)
+        {
+            foreach (var child in childs)
+            {
+                var childsToRemove = thisElement.ChildNodes.OfType<IElement>().Where(e => childs.Any(c => e.NodeName == c)).ToList();
+
+                foreach (var childToRemove in childsToRemove)
+                {
+                    childToRemove.Remove();
+                }
             }
 
             return thisElement;

@@ -1,9 +1,12 @@
 ﻿using System.IO;
 using System.Linq;
+using HoNAvatarManager.Core.Attributes;
 using HoNAvatarManager.Core.Extensions;
 
 namespace HoNAvatarManager.Core.Parsers.Model
 {
+    [Disabled]
+    [EntityParserPriority(1)]
     internal class SoundsFilesEntityParser : EntityParser
     {
         public SoundsFilesEntityParser(XmlManager xmlManager) : base(xmlManager)
@@ -11,15 +14,15 @@ namespace HoNAvatarManager.Core.Parsers.Model
 
         }
 
-        public override void SetEntity(string heroDirectoryPath, string avatarKey)
+        public override void SetEntity(string extractedDirectoryPath, string resultDirectoryPath, string avatarKey)
         {
             if (avatarKey.IsClassicAvatar())
             {
                 return;
             }
 
-            var avatarDirectoryPath = GetAvatarDirectory(heroDirectoryPath, avatarKey);
-            var heroSoundDirectoryPath = Path.Combine(heroDirectoryPath, "sounds");
+            var avatarDirectoryPath = GetAvatarDirectory(extractedDirectoryPath, avatarKey);
+            var heroSoundDirectoryPath = Path.Combine(extractedDirectoryPath, "sounds");
             var avatarSoundDirectoryPath = Path.Combine(avatarDirectoryPath, "sounds");
 
             if (!Directory.Exists(avatarSoundDirectoryPath))

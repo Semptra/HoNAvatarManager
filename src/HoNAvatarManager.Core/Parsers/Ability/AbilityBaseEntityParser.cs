@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System.Linq;
 using HoNAvatarManager.Core.Extensions;
+using Logger = HoNAvatarManager.Core.Logging.Logger;
 
 namespace HoNAvatarManager.Core.Parsers.Ability
 {
@@ -22,7 +23,7 @@ namespace HoNAvatarManager.Core.Parsers.Ability
 
             foreach (var heroAbilityDirectory in heroAbilityDirectories)
             {
-                var entityFiles = Directory.EnumerateFiles(heroAbilityDirectory, $"{entityName}*.entity", SearchOption.AllDirectories);
+                var entityFiles = Directory.EnumerateFiles(heroAbilityDirectory, $"*{entityName}*.entity", SearchOption.AllDirectories);
 
                 foreach (var entityFile in entityFiles)
                 {
@@ -43,7 +44,9 @@ namespace HoNAvatarManager.Core.Parsers.Ability
                         continue;
                     }
 
-                    entityElement.SetElementAttributes(entityAvatarElement).SetElementChilds(entityAvatarElement);
+                    Logger.Log.Information("  Set entity attributes for file {0}", new FileInfo(entityFile).Name);
+
+                    entityElement.SetElementAttributes(entityAvatarElement, SkippedAttributes).SetElementChilds(entityAvatarElement);
 
                     entityXml.SaveXml(entityFile);
                 }
