@@ -51,9 +51,7 @@ namespace HoNAvatarManager.Core
         {
             var resourceIndex = -1;
 
-            var resourcesNumber = _appConfiguration.GetHoNPath().Any(p => p.Contains("x64")) ? 4 : 3;
-
-            for (int i = 0; i <= resourcesNumber; i++)
+            for (int i = 0; i <= 4; i++)
             {
                 var heroes = GetResourcesHeroes(i);
 
@@ -80,7 +78,7 @@ namespace HoNAvatarManager.Core
 
             if (!File.Exists(resourcesPath))
             {
-                throw ThrowHelper.FileNotFoundException("Resources file not found.", resourcesPath);
+                return Enumerable.Empty<string>();
             }
 
             using (var resourcesZip = ZipFile.Open(resourcesPath, ZipArchiveMode.Read))
