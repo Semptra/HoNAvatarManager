@@ -3,9 +3,9 @@
 namespace HoNAvatarManager.Core.Parsers.Ability
 {
     [EntityParserPriority(2)]
-    internal class StateEnemyEntityParser : AbilityBaseEntityParser
+    internal class StateEntityParser : AbilityBaseEntityParser
     {
-        public StateEnemyEntityParser(XmlManager xmlManager) : base(xmlManager)
+        public StateEntityParser(XmlManager xmlManager) : base(xmlManager)
         {
 
         }
