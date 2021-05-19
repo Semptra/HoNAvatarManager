@@ -1,6 +1,9 @@
-﻿using System.Management.Automation;
+﻿using System;
+using System.Collections.Generic;
+using System.Management.Automation;
 using HoNAvatarManager.Core;
 using HoNAvatarManager.PowerShell.Completers;
+using HoNAvatarManager.PowerShell.Telemetry;
 
 namespace HoNAvatarManager.PowerShell
 {
@@ -17,9 +20,33 @@ namespace HoNAvatarManager.PowerShell
 
         protected override void ProcessRecord()
         {
-            var avatarManager = new AvatarManager();
+            var isTelemetryEnabled = ConfigurationManager.GetAppConfiguration().TelemetryEnabled;
 
-            avatarManager.SetHeroAvatar(Hero, Avatar);
+            try
+            {
+                if (isTelemetryEnabled)
+                {
+                    TelemetryClient.TrackSetHeroAvatarEvent(Hero, Avatar);
+                }
+
+                var avatarManager = new AvatarManager();
+
+                avatarManager.SetHeroAvatar(Hero, Avatar);
+            }
+            catch (Exception ex)
+            {
+                if (isTelemetryEnabled)
+                {
+                    TelemetryClient.TrackException(ex, new Dictionary<string, string> 
+                    { 
+                        { "Cmdlet", "Set-HeroAvatar" },
+                        { "Hero", Hero },
+                        { "Avatar", Avatar }
+                    });
+                }
+
+                throw;
+            }
         }
     }
 }

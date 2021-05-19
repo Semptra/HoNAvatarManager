@@ -15,7 +15,6 @@ namespace HoNAvatarManager.Core
     {
         private const int TOTAL_RETRY_COUNT = 3;
 
-        private readonly ConfigurationManager _configurationManager;
         private readonly AppConfiguration _appConfiguration;
         private readonly ResourcesManager _resourcesManager;
         private readonly XmlManager _xmlManager;
@@ -37,8 +36,7 @@ namespace HoNAvatarManager.Core
             }
 #endif
 
-            _configurationManager = new ConfigurationManager("appsettings.json");
-            _appConfiguration = _configurationManager.GetAppConfiguration();
+            _appConfiguration = ConfigurationManager.GetAppConfiguration();
 
             if (!_appConfiguration.GetHoNPath().Any())
             {

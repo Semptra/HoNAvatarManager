@@ -20,16 +20,19 @@ namespace HoNAvatarManager.PowerShell
                 throw new DirectoryNotFoundException($"HoN directory not found at {Path}.");
             }
 
-            var configurationManager = new ConfigurationManager("appsettings.json");
+            var configuration = ConfigurationManager.GetAppConfiguration();
 
             if (x64.ToBool())
             {
-                configurationManager.SetAppConfiguration(new AppConfiguration { HoNPath64 = Path });
+                configuration.HoNPath64 = Path;
+                
             }
             else
             {
-                configurationManager.SetAppConfiguration(new AppConfiguration { HoNPath32 = Path });
+                configuration.HoNPath32 = Path;
             }
+
+            ConfigurationManager.SetAppConfiguration(configuration);
         }
     }
 }

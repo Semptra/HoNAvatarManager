@@ -12,7 +12,7 @@
 RootModule = 'HoNAvatarManager.PowerShell.dll'
 
 # Version number of this module.
-ModuleVersion = '0.1.6'
+ModuleVersion = '0.1.9'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -69,10 +69,12 @@ Description = 'Hero avatar manager for Heroes of Newerth'
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = @()
+FunctionsToExport = '*'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
-CmdletsToExport = 'Remove-HeroAvatar',
+CmdletsToExport = 'Disable-HoNAvatarManagerTelemetry',
+                  'Enable-HoNAvatarManagerTelemetry',
+                  'Remove-HeroAvatar',
                   'Set-HeroAvatar',
                   'Set-HeroAvatarUnpacked',
                   'Set-HoNPath'
