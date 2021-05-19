@@ -4,28 +4,23 @@ using Newtonsoft.Json;
 
 namespace HoNAvatarManager.Core
 {
-    public class ConfigurationManager
+    public static class ConfigurationManager
     {
-        private readonly string _configurationFileName;
+        private const string CONFIGURATION_FILE_NAME = "appsettings.json";
 
-        public ConfigurationManager(string configurationFileName)
-        {
-            _configurationFileName = configurationFileName;
-        }
-
-        public AppConfiguration GetAppConfiguration()
+        public static AppConfiguration GetAppConfiguration()
         {
             return JsonConvert.DeserializeObject<AppConfiguration>(File.ReadAllText(GetAppsettingsPath()));
         }
 
-        public void SetAppConfiguration(AppConfiguration appConfiguration) 
+        public static void SetAppConfiguration(AppConfiguration appConfiguration) 
         {
             File.WriteAllText(GetAppsettingsPath(), JsonConvert.SerializeObject(appConfiguration));
         }
 
-        private string GetAppsettingsPath()
+        private static string GetAppsettingsPath()
         {
-            return Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), _configurationFileName);
+            return Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), CONFIGURATION_FILE_NAME);
         }
     }
 }

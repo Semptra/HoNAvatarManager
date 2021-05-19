@@ -12,6 +12,9 @@ namespace HoNAvatarManager.Core
         [JsonProperty("HoNPath64")]
         public string HoNPath64 { get; set; }
 
+        [JsonProperty("TelemetryEnabled")]
+        public bool TelemetryEnabled { get; set; }
+
         public IEnumerable<string> GetHoNPath()
         {
             if (Directory.Exists(HoNPath64))

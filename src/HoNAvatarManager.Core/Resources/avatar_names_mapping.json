@@ -415,15 +415,15 @@
       },
       {
         "avatarName": "Bone Behemoth",
-        "resourceName": "Hero_Behemoth.Alt3"
+        "resourceName": "Hero_Behemoth.main_reskin"
       },
       {
         "avatarName": "Steamoth",
-        "resourceName": "Hero_Behemoth.Alt4"
+        "resourceName": "Hero_Behemoth.Alt3"
       },
       {
         "avatarName": "Basher Behemoth",
-        "resourceName": "Hero_Behemoth.Alt5"
+        "resourceName": "Hero_Behemoth.Alt4"
       },
       {
         "avatarName": "POG Behemoth",
@@ -431,19 +431,19 @@
       },
       {
         "avatarName": "Rune Weaver",
-        "resourceName": "Hero_Behemoth.Alt6"
+        "resourceName": "Hero_Behemoth.Alt5"
       },
       {
         "avatarName": "Atlas",
-        "resourceName": "Hero_Behemoth.Alt7"
+        "resourceName": "Hero_Behemoth.Alt6"
       },
       {
         "avatarName": "Surfer Dude Behemoth",
-        "resourceName": "Hero_Behemoth.Alt8"
+        "resourceName": "Hero_Behemoth.Alt7"
       },
       {
         "avatarName": "Construction Worker Behemoth",
-        "resourceName": "Hero_Behemoth.Alt9"
+        "resourceName": "Hero_Behemoth.Alt8"
       },
       {
         "avatarName": "Carnelian Paragon Behemoth",
@@ -451,19 +451,23 @@
       },
       {
         "avatarName": "Anhur",
-        "resourceName": "Hero_Behemoth.Alt11"
-      },
-      {
-        "avatarName": "Plushie Behe",
         "resourceName": "Hero_Behemoth.Alt12"
       },
       {
-        "avatarName": "Misfit Behe",
+        "avatarName": "Plushie Behe",
         "resourceName": "Hero_Behemoth.Alt13"
       },
       {
-        "avatarName": "F.L.E.X Behemoth",
+        "avatarName": "Misfit Behe",
         "resourceName": "Hero_Behemoth.Alt14"
+      },
+      {
+        "avatarName": "EXO Behe",
+        "resourceName": "Hero_Behemoth.Alt15"
+      },
+      {
+        "avatarName": "F.L.E.X Behemoth",
+        "resourceName": "Hero_Behemoth.Alt16"
       }
     ]
   },
@@ -1867,11 +1871,11 @@
       },
       {
         "avatarName": "Sabre Tooth Archer",
-        "resourceName": "Hero_ForsakenArcher.Alt3"
+        "resourceName": "Hero_ForsakenArcher.main_reskin"
       },
       {
         "avatarName": "Pra Ram Archer",
-        "resourceName": "Hero_ForsakenArcher.Alt4"
+        "resourceName": "Hero_ForsakenArcher.Alt3"
       },
       {
         "avatarName": "POG Forsaken Archer",
@@ -1879,15 +1883,15 @@
       },
       {
         "avatarName": "Sinew",
-        "resourceName": "Hero_ForsakenArcher.Alt5"
+        "resourceName": "Hero_ForsakenArcher.Alt4"
       },
       {
         "avatarName": "Forsaken Death Prowler",
-        "resourceName": "Hero_ForsakenArcher.Alt6"
+        "resourceName": "Hero_ForsakenArcher.Alt5"
       },
       {
         "avatarName": "Siam Warrior Forsaken Archer",
-        "resourceName": "Hero_ForsakenArcher.Alt7"
+        "resourceName": "Hero_ForsakenArcher.Alt6"
       },
       {
         "avatarName": "Songkran Archer",
@@ -1895,19 +1899,19 @@
       },
       {
         "avatarName": "Forsaken Siren",
-        "resourceName": "Hero_ForsakenArcher.Alt9"
+        "resourceName": "Hero_ForsakenArcher.Alt7"
       },
       {
         "avatarName": "Mars",
-        "resourceName": "Hero_ForsakenArcher.Alt10"
+        "resourceName": "Hero_ForsakenArcher.Alt9"
       },
       {
         "avatarName": "Yumi",
-        "resourceName": "Hero_ForsakenArcher.Alt11"
+        "resourceName": "Hero_ForsakenArcher.Alt10"
       },
       {
         "avatarName": "Santa's Little Archer",
-        "resourceName": ""
+        "resourceName": "Hero_ForsakenArcher.Alt11"
       }
     ]
   },
@@ -2851,7 +2855,7 @@
       },
       {
         "avatarName": "Horseman Conquest",
-        "resourceName": "Hero_Maliken.Alt2"
+        "resourceName": "Hero_Maliken.Alt"
       },
       {
         "avatarName": "Young Maliken",
